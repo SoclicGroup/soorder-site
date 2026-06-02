@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurateurs — Soorder</title>
+  <meta name="description" content="Soorder simplifie vos commandes fournisseurs. Commandez, suivez, gérez vos factures — depuis une seule app mobile." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Soorder</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="restaurateur.html" class="active">Restaurateurs</a></li>
+    <li><a href="fournisseur.html">Fournisseurs</a></li>
+    <li><a href="prix.html">Tarifs</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Commencer</a>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="restaurateur.html">Restaurateurs</a>
+  <a href="fournisseur.html">Fournisseurs</a>
+  <a href="prix.html">Tarifs</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="badge animate">🍽️ Pour les restaurateurs</span>
+    <h1 class="animate delay-1">Facilitez vos<br><span class="gradient-text">commandes fournisseurs</span></h1>
+    <p class="animate delay-2">Finis les appels téléphoniques, les fax et les tableurs. Soorder réunit tous vos fournisseurs sur une seule plateforme mobile.</p>
+    <div class="hero-actions animate delay-3">
+      <a href="contact.html" class="btn btn-primary">Essayer gratuitement</a>
+      <a href="prix.html" class="btn btn-outline">Voir les tarifs — CHF 29/mois</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AVANTAGES PRINCIPAUX -->
+<section>
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">✦ Vos avantages</span>
+      <h2>Tout ce qui change avec Soorder</h2>
+      <p>4 piliers pour transformer votre façon de gérer les approvisionnements.</p>
+    </div>
+
+    <div class="bento">
+      <div class="card animate delay-1" style="grid-column: span 6; padding: 2.5rem;">
+        <div class="feat-icon" style="font-size: 2rem; width: 64px; height: 64px;">⚡</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Commandes fluides</h3>
+        <p style="font-size: 0.95rem; line-height: 1.75;">Simplification maximale avec une plateforme intuitive. Parcourez les catalogues de vos fournisseurs, ajoutez vos produits au panier et passez commande en quelques secondes. Économisez des heures chaque semaine sur la gestion des approvisionnements.</p>
+        <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <div>
+            <div style="font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--accent);">3×</div>
+            <div style="font-size: 0.8rem; color: var(--text-m);">plus rapide qu'un appel</div>
+          </div>
+          <div>
+            <div style="font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--accent);">0</div>
+            <div style="font-size: 0.8rem; color: var(--text-m);">erreur de commande</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card animate delay-2" style="grid-column: span 6; padding: 2.5rem;">
+        <div class="feat-icon" style="font-size: 2rem; width: 64px; height: 64px;">🏪</div>
+        <h3 style="font-size: 1.4rem; margin-bottom: 0.8rem;">Plateforme complète</h3>
+        <p style="font-size: 0.95rem; line-height: 1.75;">Tous vos fournisseurs, toutes vos commandes, toutes vos offres réunies dans un seul endroit. Plus besoin de jongler entre différents systèmes, emails ou applications. Soorder est votre hub d'approvisionnement unique.</p>
+        <ul style="margin-top: 1.2rem; list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+          <li style="display: flex; gap: 0.6rem; font-size: 0.88rem; color: var(--text-m);"><span style="color: var(--accent);">✓</span> Tous vos fournisseurs centralisés</li>
+          <li style="display: flex; gap: 0.6rem; font-size: 0.88rem; color: var(--text-m);"><span style="color: var(--accent);">✓</span> Historique complet des commandes</li>
+          <li style="display: flex; gap: 0.6rem; font-size: 0.88rem; color: var(--text-m);"><span style="color: var(--accent);">✓</span> Suivi des livraisons en temps réel</li>
+        </ul>
+      </div>
+
+      <div class="card animate delay-1" style="grid-column: span 4; background: linear-gradient(145deg, #0d2018, #0a1510);">
+        <div class="feat-icon">🎁</div>
+        <h3>Offres exclusives</h3>
+        <p>Accédez aux meilleures promotions de vos fournisseurs en avant-première. Économisez sur vos achats grâce à des deals négociés exclusivement pour les membres Soorder.</p>
+      </div>
+
+      <div class="card animate delay-2" style="grid-column: span 4;">
+        <div class="feat-icon">🧾</div>
+        <h3>Contrôle des factures</h3>
+        <p>Suivi automatique de toutes vos factures, archivage intelligent et gestion de vos dépenses par fournisseur, par mois ou par catégorie de produit.</p>
+      </div>
+
+      <div class="card animate delay-3" style="grid-column: span 4;">
+        <div class="feat-icon">💬</div>
+        <h3>Messagerie directe</h3>
+        <p>Échangez directement avec vos fournisseurs depuis l'app. Posez vos questions sur les produits, discutez des délais de livraison sans quitter Soorder.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMMENT ÇA MARCHE -->
+<section>
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">✦ Comment ça marche</span>
+      <h2>Démarrez en 3 étapes</h2>
+      <p>Configuration rapide, prise en main immédiate.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+      <div class="card animate delay-1" style="text-align: center;">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #000; font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">1</div>
+        <h3>Créez votre compte</h3>
+        <p>Inscrivez-vous en 2 minutes sur l'app ou sur le web. Renseignez votre établissement et ajoutez vos fournisseurs habituels.</p>
+      </div>
+      <div class="card animate delay-2" style="text-align: center;">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #000; font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">2</div>
+        <h3>Parcourez les catalogues</h3>
+        <p>Explorez les produits de vos fournisseurs avec prix et disponibilité en temps réel. Filtrez, comparez, et construisez votre commande.</p>
+      </div>
+      <div class="card animate delay-3" style="text-align: center;">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: #000; font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">3</div>
+        <h3>Commandez et suivez</h3>
+        <p>Validez en un tap. Suivez votre livraison en temps réel et retrouvez toutes vos factures automatiquement archivées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TÉMOIGNAGES -->
+<section>
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">✦ Témoignages</span>
+      <h2>Ce que disent nos restaurateurs</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card animate delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Soorder a complètement transformé notre façon de commander. Plus de téléphones, plus de fax — tout se passe sur l'app. Un gain de temps incroyable au quotidien."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">NS</div>
+          <div>
+            <div class="testi-name">N. Sulejmani</div>
+            <div class="testi-role">Chic Chicken, Genève</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card animate delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"En tant que pâtissier, la précision des commandes est essentielle. Avec Soorder, zéro erreur, zéro oubli. L'interface est claire et nos fournisseurs adorent aussi."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MP</div>
+          <div>
+            <div class="testi-name">M. Palazzo</div>
+            <div class="testi-role">Pâtisserie AMO, Genève</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;">🍽️ Restaurateurs</span>
+    <h2>Prêt à commander autrement ?</h2>
+    <p>Rejoignez des centaines de restaurateurs qui gagnent du temps chaque jour avec Soorder.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Démarrer — CHF 29/mois</a>
+      <a href="prix.html" class="btn btn-outline">Comparer les offres</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Soorder</div>
+        <p>La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="restaurateur.html">Restaurateurs</a></li>
+          <li><a href="fournisseur.html">Fournisseurs</a></li>
+          <li><a href="prix.html">Tarifs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li>
+          <li><a href="#">Rue de Lyon 19</a></li>
+          <li><a href="#">1201 Genève</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Soorder. Tous droits réservés.</p>
+      <p>Politique de confidentialité · CGU</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
