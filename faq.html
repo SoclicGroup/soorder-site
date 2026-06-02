@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Soorder</title>
+  <meta name="description" content="Toutes les réponses à vos questions sur Soorder. Comment s'inscrire, changer d'abonnement, gérer ses commandes et plus." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Soorder</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="restaurateur.html">Restaurateurs</a></li>
+    <li><a href="fournisseur.html">Fournisseurs</a></li>
+    <li><a href="prix.html">Tarifs</a></li>
+    <li><a href="faq.html" class="active">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Commencer</a>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="restaurateur.html">Restaurateurs</a>
+  <a href="fournisseur.html">Fournisseurs</a>
+  <a href="prix.html">Tarifs</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="badge animate">❓ Questions fréquentes</span>
+    <h1 class="animate delay-1">Tout ce que vous<br><span class="gradient-text">voulez savoir</span></h1>
+    <p class="animate delay-2">Vous avez une question ? Il y a de grandes chances que la réponse soit ici. Sinon, notre équipe est là pour vous aider.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ CONTENT -->
+<section>
+  <div class="container">
+
+    <!-- Général -->
+    <div style="max-width: 760px; margin: 0 auto;">
+      <div class="section-header animate" style="text-align: left; margin-bottom: 2rem;">
+        <span class="badge">🌐 Général</span>
+      </div>
+      <div class="faq-list animate delay-1">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Qu'est-ce que Soorder exactement ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Soorder est une application mobile et web qui connecte les restaurateurs avec leurs fournisseurs. Elle centralise les commandes, le suivi des livraisons, la gestion des factures et la communication en une seule plateforme intuitive. L'objectif : supprimer les appels téléphoniques, les fax et les emails pour des commandes plus rapides, plus fiables et sans erreur.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Soorder est-il disponible dans toute la Suisse ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Soorder est basé à Genève et opère principalement en Suisse romande. Nous travaillons activement à l'expansion vers d'autres régions suisses. Contactez-nous si vous êtes hors de la région genevoise — nous serons heureux de vous informer de notre disponibilité dans votre secteur.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Sur quelles plateformes est disponible l'application ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Soorder est disponible sur iOS (App Store) et Android (Google Play). Une version web est également accessible depuis n'importe quel navigateur, pour une flexibilité maximale sur tous vos appareils.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Est-ce que Soorder prend une commission sur les commandes ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Non. Soorder fonctionne sur un modèle d'abonnement mensuel fixe, sans aucune commission prélevée sur vos commandes. CHF 29/mois pour les restaurateurs, CHF 59/mois pour les fournisseurs. Vos marges restent intactes.</div>
+        </div>
+      </div>
+
+      <!-- Restaurateurs -->
+      <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
+        <span class="badge">🍽️ Restaurateurs</span>
+      </div>
+      <div class="faq-list animate delay-1">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment trouver mes fournisseurs habituels sur Soorder ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Après inscription, vous pouvez rechercher vos fournisseurs par nom ou par catégorie (produits frais, épicerie, boissons, etc.). S'ils sont déjà inscrits sur Soorder, vous les ajoutez en un clic. S'ils ne sont pas encore présents, vous pouvez les inviter directement depuis l'app — nous nous chargeons de leur onboarding.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Puis-je commander auprès de plusieurs fournisseurs en même temps ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Oui, c'est l'un des grands avantages de Soorder. Vous pouvez passer des commandes auprès de plusieurs fournisseurs simultanément, chacune étant gérée indépendamment. Vous recevez les confirmations et suivez chaque livraison séparément depuis votre tableau de bord.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment fonctionnent les offres exclusives ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Les fournisseurs Soorder peuvent créer des promotions réservées aux membres de la plateforme. Ces offres apparaissent dans un onglet dédié de votre application, avec la remise applicable et la durée de validité clairement affichées. Vous profitez de prix négociés que vous n'auriez pas ailleurs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment sont gérées mes factures sur Soorder ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Chaque commande génère automatiquement une facture numérique archivée dans votre espace Soorder. Vous pouvez filtrer par fournisseur, par période ou par montant, exporter en PDF et partager directement avec votre comptable. Fini le classement manuel.</div>
+        </div>
+      </div>
+
+      <!-- Fournisseurs -->
+      <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
+        <span class="badge">🚚 Fournisseurs</span>
+      </div>
+      <div class="faq-list animate delay-1">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment numériser mon catalogue produit ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Notre équipe vous accompagne dans la création de votre catalogue lors de l'onboarding. Vous pouvez ensuite le gérer vous-même depuis le back-office : ajouter des produits, modifier les prix et les stocks en temps réel, ajouter des photos. Les changements sont visibles immédiatement par vos clients restaurateurs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment fonctionne le Top Rank ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Le Top Rank est une fonctionnalité incluse dans l'abonnement Fournisseur qui positionne votre profil en priorité dans les résultats de recherche des restaurateurs sur Soorder. Plus vous êtes visible, plus vous recevez de demandes de commandes. C'est un avantage compétitif immédiat sur la plateforme.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Puis-je gérer plusieurs livreurs depuis Soorder ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Oui. Vous pouvez ajouter tous vos livreurs dans votre compte Soorder, leur assigner des commandes et suivre leurs itinéraires en temps réel sur une carte. L'app livreur est disponible séparément et se synchronise automatiquement avec votre tableau de bord fournisseur.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Mes clients existants doivent-ils aussi s'inscrire sur Soorder ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Pour commander via Soorder, vos clients restaurateurs doivent avoir un compte. Vous pouvez les inviter directement depuis la plateforme. L'inscription restaurateur est simple et rapide — moins de 5 minutes. Nous avons aussi des ressources pour les aider à prendre en main l'app.</div>
+        </div>
+      </div>
+
+      <!-- Abonnements -->
+      <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
+        <span class="badge">💳 Abonnements & Paiements</span>
+      </div>
+      <div class="faq-list animate delay-1">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Comment puis-je modifier mon abonnement ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Vous pouvez modifier votre plan depuis les paramètres de votre compte Soorder, ou contacter notre équipe support. Les changements d'abonnement prennent effet au début du mois suivant. Vous pouvez passer de restaurateur à fournisseur ou vice-versa à tout moment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Y a-t-il un engagement minimum ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Aucun engagement minimum. Les abonnements sont mensuels et résiliables à tout moment. Vous pouvez annuler depuis votre compte sans avoir à contacter un conseiller. Votre accès reste actif jusqu'à la fin de la période payée.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Quels moyens de paiement acceptez-vous ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Nous acceptons les principales cartes de crédit et débit (Visa, Mastercard, American Express) ainsi que TWINT pour les clients suisses. Les paiements sont sécurisés via notre prestataire de paiement certifié PCI-DSS.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Puis-je avoir une facture mensuelle pour ma comptabilité ?
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Oui. Chaque mois, une facture de votre abonnement Soorder est automatiquement générée et disponible dans votre espace client. Vous pouvez la télécharger en PDF ou configurer un envoi automatique par email à votre adresse comptabilité.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- STILL HAVE QUESTIONS -->
+<section class="cta-section">
+  <div class="container">
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;">💬 Besoin d'aide ?</span>
+    <h2>Votre question n'est pas ici ?</h2>
+    <p>Notre équipe est disponible pour répondre à toutes vos questions, qu'il s'agisse de fonctionnalités, de tarifs ou d'intégration.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Nous écrire</a>
+      <a href="mailto:contact@soorder.ch" class="btn btn-outline">contact@soorder.ch</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Soorder</div>
+        <p>La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="restaurateur.html">Restaurateurs</a></li>
+          <li><a href="fournisseur.html">Fournisseurs</a></li>
+          <li><a href="prix.html">Tarifs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li>
+          <li><a href="#">Rue de Lyon 19</a></li>
+          <li><a href="#">1201 Genève</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Soorder. Tous droits réservés.</p>
+      <p>Politique de confidentialité · CGU</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
