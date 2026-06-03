@@ -8,64 +8,16 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <style>
-    .job-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-    }
-    .job-card:hover {
-      border-color: var(--border-h);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    }
-    .job-tag {
-      display: inline-flex;
-      gap: 0.4rem;
-      align-items: center;
-      background: var(--accent-glow);
-      border: 1px solid var(--border-h);
-      color: var(--accent);
-      padding: 0.25rem 0.75rem;
-      border-radius: 100px;
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    .job-meta {
-      display: flex;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-      margin: 1rem 0;
-    }
-    .job-meta-item {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.82rem;
-      color: var(--text-m);
-    }
-    .culture-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.2rem;
-    }
-    .culture-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.8rem 1.5rem;
-      text-align: center;
-    }
+    .job-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;transition:border-color 0.3s,transform 0.3s,box-shadow 0.3s;display:flex;flex-direction:column;}
+    .job-card:hover{border-color:var(--border-h);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+    .job-tag{display:inline-flex;gap:0.4rem;align-items:center;background:var(--accent-glow);border:1px solid var(--border-h);color:var(--accent);padding:0.25rem 0.75rem;border-radius:100px;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;}
+    .job-meta{display:flex;gap:0.8rem;flex-wrap:wrap;margin:1rem 0;}
+    .job-meta-item{display:flex;align-items:center;gap:0.35rem;font-size:0.82rem;color:var(--text-m);}
+    .culture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;}
+    .culture-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1.8rem 1.5rem;text-align:center;}
   </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav">
   <a href="index.html" class="nav-logo">Soorder</a>
   <ul class="nav-links">
@@ -80,82 +32,34 @@
   <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 <div class="nav-mobile" id="mobileMenu">
-  <a href="index.html">Accueil</a>
-  <a href="restaurateur.html">Restaurateurs</a>
-  <a href="fournisseur.html">Fournisseurs</a>
-  <a href="prix.html">Tarifs</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html">Accueil</a><a href="restaurateur.html">Restaurateurs</a><a href="fournisseur.html">Fournisseurs</a><a href="prix.html">Tarifs</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
   <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
 </div>
-
-<!-- HERO -->
 <section class="page-hero">
   <div class="container">
     <span class="badge animate"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>On recrute</span>
     <h1 class="animate delay-1">Construisons ensemble<br><span class="gradient-text">la restauration de demain</span></h1>
     <p class="animate delay-2">Soorder est une startup genevoise en pleine croissance. Nous cherchons des personnes passionées, autonomes et prêtes à avoir un impact réel sur la restauration suisse.</p>
-    <div class="hero-actions animate delay-3">
-      <a href="#postes" class="btn btn-primary">Voir les postes ouverts</a>
-      <a href="apropos.html" class="btn btn-outline">En savoir plus sur Soorder</a>
-    </div>
+    <div class="hero-actions animate delay-3"><a href="#postes" class="btn btn-primary">Voir les postes ouverts</a><a href="apropos.html" class="btn btn-outline">En savoir plus sur Soorder</a></div>
   </div>
 </section>
-
 <div class="divider"></div>
-
-<!-- CULTURE -->
 <section>
   <div class="container">
     <div class="section-header animate">
       <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" /></svg>Notre culture</span>
-      <h2>Pourquoi rejoindre Soorder ?</h2>
+      <h2>Pourquoi rejoindre Soorder ?</h2>
       <p>Une startup à taille humaine, avec un impact concret sur des milliers de professionnels de la restauration.</p>
     </div>
     <div class="culture-grid" style="max-width: 960px; margin: 0 auto;">
-      <div class="culture-card animate delay-1">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-          </svg>
-        </div>
-        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Impact immédiat</h3>
-        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Votre travail touche directement des centaines de restaurateurs et fournisseurs genevois. Pas de bureaucratie, pas de sillos — vos décisions comptent dès le premier jour.</p>
-      </div>
-      <div class="culture-card animate delay-2">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-          </svg>
-        </div>
-        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Équipe soudée</h3>
-        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Une petite équipe, une grande ambiance. On se challenge, on s'entraide, on fête les victoires ensemble. La culture de bienveillance n'est pas un slogan chez nous — c'est notre quotidien.</p>
-      </div>
-      <div class="culture-card animate delay-3">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
-          </svg>
-        </div>
-        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Croissance rapide</h3>
-        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Soorder est en forte croissance. Rejoindre maintenant, c'est participer à l'écriture de l'histoire et avoir l'opportunité d'évoluer rapidement avec l'entreprise.</p>
-      </div>
-      <div class="culture-card animate delay-1">
-        <div style="margin-bottom: 1rem; display: flex; justify-content: center;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-          </svg>
-        </div>
-        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Genève &amp; flex</h3>
-        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Bureau à Genève (Rue de la Navigation 1), flex télétravail selon les postes. On croit à la présence quand ça compte, et à la liberté quand ça fonctionne.</p>
-      </div>
+      <div class="culture-card animate delay-1"><div style="margin-bottom: 1rem; display: flex; justify-content: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg></div><h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Impact immédiat</h3><p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Votre travail touche directement des centaines de restaurateurs et fournisseurs genevois. Pas de bureaucratie, pas de sillos — vos décisions comptent dès le premier jour.</p></div>
+      <div class="culture-card animate delay-2"><div style="margin-bottom: 1rem; display: flex; justify-content: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg></div><h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Équipe soudée</h3><p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Une petite équipe, une grande ambiance. On se challenge, on s'entraide, on fête les victoires ensemble. La culture de bienveillance n'est pas un slogan chez nous — c'est notre quotidien.</p></div>
+      <div class="culture-card animate delay-3"><div style="margin-bottom: 1rem; display: flex; justify-content: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg></div><h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Croissance rapide</h3><p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Soorder est en forte croissance. Rejoindre maintenant, c'est participer à l'écriture de l'histoire et avoir l'opportunité d'évoluer rapidement avec l'entreprise.</p></div>
+      <div class="culture-card animate delay-1"><div style="margin-bottom: 1rem; display: flex; justify-content: center;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg></div><h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Genève &amp; flex</h3><p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Bureau à Genève (Rue de la Navigation 1), flex télétravail selon les postes. On croit à la présence quand ça compte, et à la liberté quand ça fonctionne.</p></div>
     </div>
   </div>
 </section>
-
 <div class="divider"></div>
-
-<!-- POSTES -->
 <section id="postes">
   <div class="container">
     <div class="section-header animate">
@@ -164,99 +68,59 @@
       <p>Tous les postes sont basés à Genève. Candidatures spontanées bienvenues à <a href="mailto:contact@soorder.ch" style="color: var(--accent);">contact@soorder.ch</a></p>
     </div>
     <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 860px; margin: 0 auto;">
-
       <div class="job-card animate delay-1">
         <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-          <div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Développeur·euse Full Stack</h3>
-            <div class="job-meta">
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg>Hybride</span>
-            </div>
-          </div>
+          <div><h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Développeur·euse Full Stack</h3>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg>Hybride</span>
+          </div></div>
           <span class="job-tag">Tech</span>
         </div>
-        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu rejoins notre équipe produit pour développer et maintenir la plateforme Soorder (app mobile React Native + backend Node.js). Tu travailles directement avec les co-fondateurs sur des fonctionnalités clés : système de commandes, tracking des livraisons, tableau de bord fournisseurs. Tu es autonome, tu aimes les produits bien construits et tu n'as pas peur de tout toucher.</p>
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Stack &amp; compétences</div>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">React Native</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Node.js</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">PostgreSQL</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">TypeScript</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">AWS / GCP</span>
-          </div>
-        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu rejoins notre équipe produit pour développer et maintenir la plateforme Soorder (app mobile React Native + backend Node.js). Tu travailles directement avec les co-fondateurs sur des fonctionnalités clés : système de commandes, tracking des livraisons, tableau de bord fournisseurs.</p>
+        <div style="margin-bottom: 1.5rem;"><div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Stack &amp; compétences</div><div style="display: flex; gap: 0.5rem; flex-wrap: wrap;"><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">React Native</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Node.js</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">PostgreSQL</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">TypeScript</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">AWS / GCP</span></div></div>
         <a href="mailto:contact@soorder.ch?subject=Candidature%20D%C3%A9veloppeur%20Full%20Stack" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
       </div>
-
       <div class="job-card animate delay-2">
         <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-          <div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Business Developer Romande</h3>
-            <div class="job-meta">
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>Mobilité requise</span>
-            </div>
-          </div>
+          <div><h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Business Developer Romande</h3>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>Mobilité requise</span>
+          </div></div>
           <span class="job-tag">Commercial</span>
         </div>
-        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es le ou la premier·e point de contact entre Soorder et les nouveaux clients. Tu prospectes, qualifies, démo et signes — restaurants, groupes, franchises et fournisseurs de Suisse romande. Tu construis les relations à long terme et tu remontes les feedbacks terrain pour améliorer le produit. Tu connais le monde de la restauration ou tu as envie de le découvrir en profondeur.</p>
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Prospection B2B</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français natif</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Permis B</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">2+ ans expérience</span>
-          </div>
-        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es le ou la premier·e point de contact entre Soorder et les nouveaux clients. Tu prospectes, qualifies, démo et signes — restaurants, groupes, franchises et fournisseurs de Suisse romande.</p>
+        <div style="margin-bottom: 1.5rem;"><div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div><div style="display: flex; gap: 0.5rem; flex-wrap: wrap;"><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Prospection B2B</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français natif</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Permis B</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">2+ ans expérience</span></div></div>
         <a href="mailto:contact@soorder.ch?subject=Candidature%20Business%20Developer" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
       </div>
-
       <div class="job-card animate delay-3">
         <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-          <div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Customer Success Manager</h3>
-            <div class="job-meta">
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
-              <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg>Hybride</span>
-            </div>
-          </div>
+          <div><h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Customer Success Manager</h3>
+          <div class="job-meta">
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Genève</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>CDI</span>
+            <span class="job-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg>Hybride</span>
+          </div></div>
           <span class="job-tag">Customer</span>
         </div>
-        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es la voix de nos clients chez Soorder. Tu onboardes les nouveaux utilisateurs (restaurateurs et fournisseurs), tu t'assures qu'ils adoptent la plateforme et en tirent la pleine valeur. Tu gères le support, construis les ressources d'aide et travailles avec le produit pour réduire le churn. Tu aimes les gens, tu es organisé·e et tu as le sens du service.</p>
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Relation client</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français / Anglais</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Outils CRM</span>
-            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Empathie ++ </span>
-          </div>
-        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es la voix de nos clients chez Soorder. Tu onboardes les nouveaux utilisateurs, tu t'assures qu'ils adoptent la plateforme et en tirent la pleine valeur. Tu gères le support et travailles avec le produit pour réduire le churn.</p>
+        <div style="margin-bottom: 1.5rem;"><div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div><div style="display: flex; gap: 0.5rem; flex-wrap: wrap;"><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Relation client</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français / Anglais</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Outils CRM</span><span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Empathie ++</span></div></div>
         <a href="mailto:contact@soorder.ch?subject=Candidature%20Customer%20Success" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
       </div>
     </div>
   </div>
 </section>
-
 <section class="cta-section">
   <div class="container">
     <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="margin-right:5px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>Candidature spontanée</span>
-    <h2>Votre profil ne correspond pas ?</h2>
+    <h2>Votre profil ne correspond pas ?</h2>
     <p>On reste ouverts aux profils atypiques et aux candidatures spontanées. Si vous croyez en ce qu'on construit, écrivez-nous.</p>
-    <div class="hero-actions">
-      <a href="mailto:contact@soorder.ch?subject=Candidature%20spontan%C3%A9e" class="btn btn-primary">Envoyer votre CV</a>
-      <a href="apropos.html" class="btn btn-outline">Découvrir Soorder</a>
-    </div>
+    <div class="hero-actions"><a href="mailto:contact@soorder.ch?subject=Candidature%20spontan%C3%A9e" class="btn btn-primary">Envoyer votre CV</a><a href="apropos.html" class="btn btn-outline">Découvrir Soorder</a></div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -275,11 +139,10 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 Soorder. Tous droits réservés.</p>
-      <p>Politique de confidentialité · CGU</p>
+      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;">CGU</a></p>
     </div>
   </div>
 </footer>
-
 <script>
 function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
 const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
