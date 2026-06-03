@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrières — Soorder</title>
+  <meta name="description" content="Rejoignez l'équipe Soorder à Genève. Startup en croissance, impact réel, postes ouverts en tech, business et customer success." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .job-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .job-card:hover {
+      border-color: var(--border-h);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    .job-tag {
+      display: inline-flex;
+      gap: 0.4rem;
+      align-items: center;
+      background: var(--accent-glow);
+      border: 1px solid var(--border-h);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .job-meta {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    .job-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.82rem;
+      color: var(--text-m);
+    }
+    .culture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+    .culture-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Soorder</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="restaurateur.html">Restaurateurs</a></li>
+    <li><a href="fournisseur.html">Fournisseurs</a></li>
+    <li><a href="prix.html">Tarifs</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Commencer</a>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="restaurateur.html">Restaurateurs</a>
+  <a href="fournisseur.html">Fournisseurs</a>
+  <a href="prix.html">Tarifs</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="badge animate">💼 On recrute</span>
+    <h1 class="animate delay-1">Construisons ensemble<br><span class="gradient-text">la restauration de demain</span></h1>
+    <p class="animate delay-2">Soorder est une startup genevoise en pleine croissance. Nous cherchons des personnes passionnées, autonomes et prêtes à avoir un impact réel sur la restauration suisse.</p>
+    <div class="hero-actions animate delay-3">
+      <a href="#postes" class="btn btn-primary">Voir les postes ouverts</a>
+      <a href="apropos.html" class="btn btn-outline">En savoir plus sur Soorder</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CULTURE -->
+<section>
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">🌱 Notre culture</span>
+      <h2>Pourquoi rejoindre Soorder ?</h2>
+      <p>Une startup à taille humaine, avec un impact concret sur des milliers de professionnels de la restauration.</p>
+    </div>
+    <div class="culture-grid" style="max-width: 960px; margin: 0 auto;">
+      <div class="culture-card animate delay-1">
+        <div style="font-size: 2.2rem; margin-bottom: 1rem;">🚀</div>
+        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Impact immédiat</h3>
+        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Votre travail touche directement des centaines de restaurateurs et fournisseurs genevois. Pas de bureaucratie, pas de sillos — vos décisions comptent dès le premier jour.</p>
+      </div>
+      <div class="culture-card animate delay-2">
+        <div style="font-size: 2.2rem; margin-bottom: 1rem;">🤝</div>
+        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Équipe soudée</h3>
+        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Une petite équipe, une grande ambiance. On se challenge, on s'entraide, on fête les victoires ensemble. La culture de bienveillance n'est pas un slogan chez nous — c'est notre quotidien.</p>
+      </div>
+      <div class="culture-card animate delay-3">
+        <div style="font-size: 2.2rem; margin-bottom: 1rem;">📈</div>
+        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Croissance rapide</h3>
+        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Soorder est en forte croissance. Rejoindre maintenant, c'est participer à l'écriture de l'histoire et avoir l'opportunité d'évoluer rapidement avec l'entreprise.</p>
+      </div>
+      <div class="culture-card animate delay-1">
+        <div style="font-size: 2.2rem; margin-bottom: 1rem;">🏙️</div>
+        <h3 style="font-size: 1rem; margin-bottom: 0.6rem; font-family: 'Outfit', sans-serif;">Genève & flex</h3>
+        <p style="font-size: 0.85rem; color: var(--text-m); line-height: 1.7;">Bureau à Genève (Rue de la Navigation 1), flex télétravail selon les postes. On croit à la présence quand ça compte, et à la liberté quand ça fonctionne.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- POSTES -->
+<section id="postes">
+  <div class="container">
+    <div class="section-header animate">
+      <span class="badge">💼 Postes ouverts</span>
+      <h2>3 postes à pourvoir</h2>
+      <p>Tous les postes sont basés à Genève. Candidatures spontanées bienvenues à <a href="mailto:contact@soorder.ch" style="color: var(--accent);">contact@soorder.ch</a></p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 860px; margin: 0 auto;">
+
+      <!-- Poste 1 -->
+      <div class="job-card animate delay-1">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Développeur·euse Full Stack</h3>
+            <div class="job-meta">
+              <span class="job-meta-item">📍 Genève</span>
+              <span class="job-meta-item">💼 CDI</span>
+              <span class="job-meta-item">🖥️ Hybride</span>
+            </div>
+          </div>
+          <span class="job-tag">Tech</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu rejoins notre équipe produit pour développer et maintenir la plateforme Soorder (app mobile React Native + backend Node.js). Tu travailles directement avec les co-fondateurs sur des fonctionnalités clés : système de commandes, tracking des livraisons, tableau de bord fournisseurs. Tu es autonome, tu aimes les produits bien construits et tu n'as pas peur de tout toucher.</p>
+        <div style="margin-bottom: 1.5rem;">
+          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Stack & compétences</div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">React Native</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Node.js</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">PostgreSQL</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">TypeScript</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">AWS / GCP</span>
+          </div>
+        </div>
+        <a href="mailto:contact@soorder.ch?subject=Candidature%20Développeur%20Full%20Stack" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
+      </div>
+
+      <!-- Poste 2 -->
+      <div class="job-card animate delay-2">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Business Developer Romande</h3>
+            <div class="job-meta">
+              <span class="job-meta-item">📍 Genève</span>
+              <span class="job-meta-item">💼 CDI</span>
+              <span class="job-meta-item">🚗 Mobilité requise</span>
+            </div>
+          </div>
+          <span class="job-tag">Commercial</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es le ou la premier·e point de contact entre Soorder et les nouveaux clients. Tu prospectes, qualifies, démo et signes — restaurants, groupes, franchises et fournisseurs de Suisse romande. Tu construis les relations à long terme et tu remontes les feedbacks terrain pour améliorer le produit. Tu connais le monde de la restauration ou tu as envie de le découvrir en profondeur.</p>
+        <div style="margin-bottom: 1.5rem;">
+          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Prospection B2B</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français natif</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Permis B</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">2+ ans expérience</span>
+          </div>
+        </div>
+        <a href="mailto:contact@soorder.ch?subject=Candidature%20Business%20Developer" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
+      </div>
+
+      <!-- Poste 3 -->
+      <div class="job-card animate delay-3">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem;">Customer Success Manager</h3>
+            <div class="job-meta">
+              <span class="job-meta-item">📍 Genève</span>
+              <span class="job-meta-item">💼 CDI</span>
+              <span class="job-meta-item">🌐 Hybride</span>
+            </div>
+          </div>
+          <span class="job-tag">Customer</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-m); line-height: 1.75; margin-bottom: 1.5rem;">Tu es la voix de nos clients chez Soorder. Tu onboardes les nouveaux utilisateurs (restaurateurs et fournisseurs), tu t'assures qu'ils adoptent la plateforme et en tirent la pleine valeur. Tu gères le support, construis les ressources d'aide et travailles avec le produit pour réduire le churn. Tu aimes les gens, tu es organisé·e et tu as le sens du service.</p>
+        <div style="margin-bottom: 1.5rem;">
+          <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-s); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.6rem;">Profil recherché</div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Relation client</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Français / Anglais</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Outils CRM</span>
+            <span style="background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 0.25rem 0.6rem; font-size: 0.78rem; color: var(--text-m);">Empathie ++ </span>
+          </div>
+        </div>
+        <a href="mailto:contact@soorder.ch?subject=Candidature%20Customer%20Success" class="btn btn-primary" style="align-self: flex-start; font-size: 0.88rem; padding: 0.7rem 1.5rem;">Postuler →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA candidature spontanée -->
+<section class="cta-section">
+  <div class="container">
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;">📨 Candidature spontanée</span>
+    <h2>Votre profil ne correspond pas ?</h2>
+    <p>On reste ouverts aux profils atypiques et aux candidatures spontanées. Si vous croyez en ce qu'on construit, écrivez-nous.</p>
+    <div class="hero-actions">
+      <a href="mailto:contact@soorder.ch?subject=Candidature%20spontanée" class="btn btn-primary">Envoyer votre CV</a>
+      <a href="apropos.html" class="btn btn-outline">Découvrir Soorder</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Soorder</div>
+        <p>La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="restaurateur.html">Restaurateurs</a></li>
+          <li><a href="fournisseur.html">Fournisseurs</a></li>
+          <li><a href="prix.html">Tarifs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="carrieres.html">Carrières</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li>
+          <li><a href="#">Rue de la Navigation 1</a></li>
+          <li><a href="#">1201 Genève</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Soorder. Tous droits réservés.</p>
+      <p>Politique de confidentialité · CGU</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
