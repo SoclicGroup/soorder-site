@@ -84,43 +84,6 @@
               <span><a href="mailto:contact@soorder.ch" style="color: var(--accent);">contact@soorder.ch</a></span>
             </div>
           </div>
-          <div class="contact-info-item">
-            <div class="contact-icon">⏰</div>
-            <div class="contact-info-text">
-              <strong>Disponibilité</strong>
-              <span>Lun – Ven : 9h00 – 18h00<br>Réponse sous 24h ouvrées</span>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-icon">🌐</div>
-            <div class="contact-info-text">
-              <strong>Site web</strong>
-              <span><a href="https://www.soorder.ch" style="color: var(--accent);">www.soorder.ch</a></span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Raisons de nous contacter -->
-        <div style="margin-top: 3rem;" class="animate delay-2">
-          <h3 style="font-size: 1rem; margin-bottom: 1.2rem; color: var(--text-m); font-family: 'Outfit', sans-serif;">Pourquoi nous contacter ?</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.7rem;">
-            <div class="card" style="padding: 1rem 1.2rem; display: flex; align-items: center; gap: 0.8rem; cursor: default;">
-              <span style="font-size: 1.1rem;">🍽️</span>
-              <span style="font-size: 0.88rem; color: var(--text-m);">Je suis restaurateur et je veux démarrer</span>
-            </div>
-            <div class="card" style="padding: 1rem 1.2rem; display: flex; align-items: center; gap: 0.8rem; cursor: default;">
-              <span style="font-size: 1.1rem;">🚚</span>
-              <span style="font-size: 0.88rem; color: var(--text-m);">Je suis fournisseur et je veux rejoindre le réseau</span>
-            </div>
-            <div class="card" style="padding: 1rem 1.2rem; display: flex; align-items: center; gap: 0.8rem; cursor: default;">
-              <span style="font-size: 1.1rem;">🏢</span>
-              <span style="font-size: 0.88rem; color: var(--text-m);">J'ai une franchise ou un groupe multi-sites</span>
-            </div>
-            <div class="card" style="padding: 1rem 1.2rem; display: flex; align-items: center; gap: 0.8rem; cursor: default;">
-              <span style="font-size: 1.1rem;">💬</span>
-              <span style="font-size: 0.88rem; color: var(--text-m);">J'ai une question sur l'application</span>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -129,7 +92,7 @@
         <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">Envoyez-nous un message</h3>
         <p style="font-size: 0.88rem; color: var(--text-m); margin-bottom: 2rem;">Nous vous répondons dans les 24 heures ouvrées.</p>
 
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label for="prenom">Prénom</label>
@@ -149,12 +112,13 @@
             <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre établissement" />
           </div>
           <div class="form-group">
-            <label for="profil">Vous êtes</label>
-            <select id="profil" name="profil">
-              <option value="" disabled selected>Sélectionnez votre profil</option>
-              <option value="restaurateur">Restaurateur</option>
-              <option value="fournisseur">Fournisseur</option>
-              <option value="franchise">Franchise / Groupe</option>
+            <label for="motif">Motif de votre demande</label>
+            <select id="motif" name="motif" required>
+              <option value="" disabled selected>Sélectionnez un motif</option>
+              <option value="restaurateur">Je suis restaurateur et je veux démarrer</option>
+              <option value="fournisseur">Je suis fournisseur et je veux rejoindre le réseau</option>
+              <option value="franchise">J'ai une franchise ou un groupe multi-sites</option>
+              <option value="question">J'ai une question sur l'application</option>
               <option value="autre">Autre</option>
             </select>
           </div>
@@ -191,7 +155,7 @@
         <div style="font-size: 2rem; margin-bottom: 0.8rem;">📍</div>
         <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">Nous rendre visite</h3>
         <p style="font-size: 0.85rem; margin-bottom: 1rem;">Rue de la Navigation 1<br>1201 Genève</p>
-        <a href="https://maps.google.com/?q=Rue+de+Lyon+19+1201+Geneve" target="_blank" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;">Ouvrir Maps</a>
+        <a href="https://maps.google.com/?q=Rue+de+la+Navigation+1+1201+Geneve" target="_blank" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;">Ouvrir Maps</a>
       </div>
       <div class="card animate delay-3" style="text-align: center;">
         <div style="font-size: 2rem; margin-bottom: 0.8rem;">❓</div>
@@ -252,15 +216,30 @@
 
 <script>
 function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
+  const form = e.target;
+  const btn  = form.querySelector('button[type="submit"]');
   btn.textContent = 'Envoi en cours...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
-  }, 1200);
+  try {
+    const r = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+    if (r.ok) {
+      form.reset();
+      btn.style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    } else {
+      btn.textContent = 'Erreur — réessayez';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Erreur — réessayez';
+    btn.disabled = false;
+  }
 }
 const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
