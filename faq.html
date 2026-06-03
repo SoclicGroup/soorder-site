@@ -9,8 +9,6 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav">
   <a href="index.html" class="nav-logo">Soorder</a>
   <ul class="nav-links">
@@ -25,137 +23,68 @@
   <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 <div class="nav-mobile" id="mobileMenu">
-  <a href="index.html">Accueil</a>
-  <a href="restaurateur.html">Restaurateurs</a>
-  <a href="fournisseur.html">Fournisseurs</a>
-  <a href="prix.html">Tarifs</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html">Accueil</a><a href="restaurateur.html">Restaurateurs</a><a href="fournisseur.html">Fournisseurs</a><a href="prix.html">Tarifs</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
   <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
 </div>
-
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
     <span class="badge animate"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg>Questions fréquentes</span>
     <h1 class="animate delay-1">Tout ce que vous<br><span class="gradient-text">voulez savoir</span></h1>
-    <p class="animate delay-2">Vous avez une question ? Il y a de grandes chances que la réponse soit ici. Sinon, notre équipe est là pour vous aider.</p>
+    <p class="animate delay-2">Vous avez une question ? Il y a de grandes chances que la réponse soit ici. Sinon, notre équipe est là pour vous aider.</p>
   </div>
 </section>
-
 <div class="divider"></div>
-
-<!-- FAQ CONTENT -->
 <section>
   <div class="container">
     <div style="max-width: 760px; margin: 0 auto;">
-
       <div class="section-header animate" style="text-align: left; margin-bottom: 2rem;">
         <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>Général</span>
       </div>
       <div class="faq-list animate delay-1">
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que Soorder exactement ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Soorder est une application mobile et web qui connecte les restaurateurs avec leurs fournisseurs. Elle centralise les commandes, le suivi des livraisons, la gestion des factures et la communication en une seule plateforme intuitive. L'objectif : supprimer les appels téléphoniques, les fax et les emails pour des commandes plus rapides, plus fiables et sans erreur.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Soorder est-il disponible dans toute la Suisse ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Soorder est basé à Genève et opère principalement en Suisse romande. Nous travaillons activement à l'expansion vers d'autres régions suisses. Contactez-nous si vous êtes hors de la région genevoise — nous serons heureux de vous informer de notre disponibilité dans votre secteur.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Sur quelles plateformes est disponible l'application ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Soorder est disponible sur iOS (App Store) et Android (Google Play). Une version web est également accessible depuis n'importe quel navigateur, pour une flexibilité maximale sur tous vos appareils.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Est-ce que Soorder prend une commission sur les commandes ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Non. Soorder fonctionne sur un modèle d'abonnement mensuel fixe, sans aucune commission prélevée sur vos commandes. CHF 29/mois pour les restaurateurs, CHF 59/mois pour les fournisseurs. Vos marges restent intactes.</div>
-        </div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que Soorder exactement ?<span class="faq-icon">+</span></div><div class="faq-a">Soorder est une application mobile et web qui connecte les restaurateurs avec leurs fournisseurs. Elle centralise les commandes, le suivi des livraisons, la gestion des factures et la communication en une seule plateforme intuitive. L'objectif : supprimer les appels téléphoniques, les fax et les emails pour des commandes plus rapides, plus fiables et sans erreur.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Soorder est-il disponible dans toute la Suisse ?<span class="faq-icon">+</span></div><div class="faq-a">Soorder est basé à Genève et opère principalement en Suisse romande. Nous travaillons activement à l'expansion vers d'autres régions suisses. Contactez-nous si vous êtes hors de la région genevoise — nous serons heureux de vous informer de notre disponibilité dans votre secteur.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Sur quelles plateformes est disponible l'application ?<span class="faq-icon">+</span></div><div class="faq-a">Soorder est disponible sur iOS (App Store) et Android (Google Play). Une version web est également accessible depuis n'importe quel navigateur, pour une flexibilité maximale sur tous vos appareils.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Est-ce que Soorder prend une commission sur les commandes ?<span class="faq-icon">+</span></div><div class="faq-a">Non. Soorder fonctionne sur un modèle d'abonnement mensuel fixe, sans aucune commission prélevée sur vos commandes. CHF 29/mois pour les restaurateurs, CHF 59/mois pour les fournisseurs. Vos marges restent intactes.</div></div>
       </div>
-
       <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
         <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" /></svg>Restaurateurs</span>
       </div>
       <div class="faq-list animate delay-1">
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment trouver mes fournisseurs habituels sur Soorder ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Après inscription, vous pouvez rechercher vos fournisseurs par nom ou par catégorie (produits frais, épicerie, boissons, etc.). S'ils sont déjà inscrits sur Soorder, vous les ajoutez en un clic. S'ils ne sont pas encore présents, vous pouvez les inviter directement depuis l'app — nous nous chargeons de leur onboarding.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Puis-je commander auprès de plusieurs fournisseurs en même temps ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Oui, c'est l'un des grands avantages de Soorder. Vous pouvez passer des commandes auprès de plusieurs fournisseurs simultanément, chacune étant gérée indépendamment. Vous recevez les confirmations et suivez chaque livraison séparément depuis votre tableau de bord.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment fonctionnent les offres exclusives ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Les fournisseurs Soorder peuvent créer des promotions réservées aux membres de la plateforme. Ces offres apparaissent dans un onglet dédié de votre application, avec la remise applicable et la durée de validité clairement affichées. Vous profitez de prix négociés que vous n'auriez pas ailleurs.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment sont gérées mes factures sur Soorder ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Chaque commande génère automatiquement une facture numérique archivée dans votre espace Soorder. Vous pouvez filtrer par fournisseur, par période ou par montant, exporter en PDF et partager directement avec votre comptable. Fini le classement manuel.</div>
-        </div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment trouver mes fournisseurs habituels sur Soorder ?<span class="faq-icon">+</span></div><div class="faq-a">Après inscription, vous pouvez rechercher vos fournisseurs par nom ou par catégorie. S'ils sont déjà inscrits sur Soorder, vous les ajoutez en un clic. S'ils ne sont pas encore présents, vous pouvez les inviter directement depuis l'app — nous nous chargeons de leur onboarding.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Puis-je commander auprès de plusieurs fournisseurs en même temps ?<span class="faq-icon">+</span></div><div class="faq-a">Oui, c'est l'un des grands avantages de Soorder. Vous pouvez passer des commandes auprès de plusieurs fournisseurs simultanément, chacune étant gérée indépendamment. Vous recevez les confirmations et suivez chaque livraison séparément depuis votre tableau de bord.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment fonctionnent les offres exclusives ?<span class="faq-icon">+</span></div><div class="faq-a">Les fournisseurs Soorder peuvent créer des promotions réservées aux membres de la plateforme. Ces offres apparaissent dans un onglet dédié de votre application, avec la remise applicable et la durée de validité clairement affichées.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment sont gérées mes factures sur Soorder ?<span class="faq-icon">+</span></div><div class="faq-a">Chaque commande génère automatiquement une facture numérique archivée dans votre espace Soorder. Vous pouvez filtrer par fournisseur, par période ou par montant, exporter en PDF et partager directement avec votre comptable.</div></div>
       </div>
-
       <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
         <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>Fournisseurs</span>
       </div>
       <div class="faq-list animate delay-1">
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment numériser mon catalogue produit ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Notre équipe vous accompagne dans la création de votre catalogue lors de l'onboarding. Vous pouvez ensuite le gérer vous-même depuis le back-office : ajouter des produits, modifier les prix et les stocks en temps réel, ajouter des photos. Les changements sont visibles immédiatement par vos clients restaurateurs.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment fonctionne le Top Rank ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Le Top Rank est une fonctionnalité incluse dans l'abonnement Fournisseur qui positionne votre profil en priorité dans les résultats de recherche des restaurateurs sur Soorder. Plus vous êtes visible, plus vous recevez de demandes de commandes. C'est un avantage compétitif immédiat sur la plateforme.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Puis-je gérer plusieurs livreurs depuis Soorder ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Oui. Vous pouvez ajouter tous vos livreurs dans votre compte Soorder, leur assigner des commandes et suivre leurs itinéraires en temps réel sur une carte. L'app livreur est disponible séparément et se synchronise automatiquement avec votre tableau de bord fournisseur.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Mes clients existants doivent-ils aussi s'inscrire sur Soorder ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Pour commander via Soorder, vos clients restaurateurs doivent avoir un compte. Vous pouvez les inviter directement depuis la plateforme. L'inscription restaurateur est simple et rapide — moins de 5 minutes. Nous avons aussi des ressources pour les aider à prendre en main l'app.</div>
-        </div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment numériser mon catalogue produit ?<span class="faq-icon">+</span></div><div class="faq-a">Notre équipe vous accompagne dans la création de votre catalogue lors de l'onboarding. Vous pouvez ensuite le gérer vous-même depuis le back-office : ajouter des produits, modifier les prix et les stocks en temps réel. Les changements sont visibles immédiatement par vos clients restaurateurs.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment fonctionne le Top Rank ?<span class="faq-icon">+</span></div><div class="faq-a">Le Top Rank est une fonctionnalité incluse dans l'abonnement Fournisseur qui positionne votre profil en priorité dans les résultats de recherche des restaurateurs sur Soorder. Plus vous êtes visible, plus vous recevez de demandes de commandes.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Puis-je gérer plusieurs livreurs depuis Soorder ?<span class="faq-icon">+</span></div><div class="faq-a">Oui. Vous pouvez ajouter tous vos livreurs dans votre compte Soorder, leur assigner des commandes et suivre leurs itinéraires en temps réel sur une carte. L'app livreur est disponible séparément et se synchronise automatiquement avec votre tableau de bord fournisseur.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Mes clients existants doivent-ils aussi s'inscrire sur Soorder ?<span class="faq-icon">+</span></div><div class="faq-a">Pour commander via Soorder, vos clients restaurateurs doivent avoir un compte. Vous pouvez les inviter directement depuis la plateforme. L'inscription restaurateur est simple et rapide — moins de 5 minutes.</div></div>
       </div>
-
       <div class="section-header animate" style="text-align: left; margin-bottom: 2rem; margin-top: 4rem;">
         <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" /></svg>Abonnements &amp; Paiements</span>
       </div>
       <div class="faq-list animate delay-1">
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Comment puis-je modifier mon abonnement ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Vous pouvez modifier votre plan depuis les paramètres de votre compte Soorder, ou contacter notre équipe support. Les changements d'abonnement prennent effet au début du mois suivant. Vous pouvez passer de restaurateur à fournisseur ou vice-versa à tout moment.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Y a-t-il un engagement minimum ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Aucun engagement minimum. Les abonnements sont mensuels et résiliables à tout moment. Vous pouvez annuler depuis votre compte sans avoir à contacter un conseiller. Votre accès reste actif jusqu'à la fin de la période payée.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Quels moyens de paiement acceptez-vous ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Nous acceptons les principales cartes de crédit et débit (Visa, Mastercard, American Express) ainsi que TWINT pour les clients suisses. Les paiements sont sécurisés via notre prestataire de paiement certifié PCI-DSS.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)">Puis-je avoir une facture mensuelle pour ma comptabilité ?<span class="faq-icon">+</span></div>
-          <div class="faq-a">Oui. Chaque mois, une facture de votre abonnement Soorder est automatiquement générée et disponible dans votre espace client. Vous pouvez la télécharger en PDF ou configurer un envoi automatique par email à votre adresse comptabilité.</div>
-        </div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Comment puis-je modifier mon abonnement ?<span class="faq-icon">+</span></div><div class="faq-a">Vous pouvez modifier votre plan depuis les paramètres de votre compte Soorder, ou contacter notre équipe support. Les changements d'abonnement prennent effet au début du mois suivant.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Y a-t-il un engagement minimum ?<span class="faq-icon">+</span></div><div class="faq-a">Aucun engagement minimum. Les abonnements sont mensuels et résiliables à tout moment. Vous pouvez annuler depuis votre compte sans avoir à contacter un conseiller. Votre accès reste actif jusqu'à la fin de la période payée.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Quels moyens de paiement acceptez-vous ?<span class="faq-icon">+</span></div><div class="faq-a">Nous acceptons les principales cartes de crédit et débit (Visa, Mastercard, American Express) ainsi que TWINT pour les clients suisses. Les paiements sont sécurisés via notre prestataire de paiement certifié PCI-DSS.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Puis-je avoir une facture mensuelle pour ma comptabilité ?<span class="faq-icon">+</span></div><div class="faq-a">Oui. Chaque mois, une facture de votre abonnement Soorder est automatiquement générée et disponible dans votre espace client. Vous pouvez la télécharger en PDF ou configurer un envoi automatique par email à votre adresse comptabilité.</div></div>
       </div>
     </div>
   </div>
 </section>
-
 <div class="divider"></div>
-
 <section class="cta-section">
   <div class="container">
-    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="margin-right:5px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>Besoin d'aide ?</span>
-    <h2>Votre question n'est pas ici ?</h2>
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="margin-right:5px;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>Besoin d'aide ?</span>
+    <h2>Votre question n'est pas ici ?</h2>
     <p>Notre équipe est disponible pour répondre à toutes vos questions, qu'il s'agisse de fonctionnalités, de tarifs ou d'intégration.</p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Nous écrire</a>
-      <a href="mailto:contact@soorder.ch" class="btn btn-outline">contact@soorder.ch</a>
-    </div>
+    <div class="hero-actions"><a href="contact.html" class="btn btn-primary">Nous écrire</a><a href="mailto:contact@soorder.ch" class="btn btn-outline">contact@soorder.ch</a></div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -174,11 +103,10 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 Soorder. Tous droits réservés.</p>
-      <p>Politique de confidentialité · CGU</p>
+      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;">CGU</a></p>
     </div>
   </div>
 </footer>
-
 <script>
 function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
 function toggleFaq(el) {
