@@ -76,10 +76,6 @@
           <span class="stat-value">98%</span>
           <span class="stat-label">Satisfaction client</span>
         </div>
-        <div class="stat-item">
-          <span class="stat-value">CHF</span>
-          <span class="stat-label">Paiement sécurisé</span>
-        </div>
       </div>
     </div>
   </div>
@@ -97,7 +93,6 @@
     </div>
 
     <div class="bento">
-      <!-- Grande card gauche -->
       <div class="card animate" style="grid-column: span 5; grid-row: span 2; background: linear-gradient(145deg, #0d2018, #0a1510); min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end;">
         <div style="font-size: 3rem; margin-bottom: 1.5rem;">📱</div>
         <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;">Une seule app pour tout gérer</h3>
@@ -106,7 +101,6 @@
           <a href="restaurateur.html" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;">Voir les fonctionnalités →</a>
         </div>
       </div>
-      <!-- Cards droites -->
       <div class="card animate delay-1" style="grid-column: span 7;">
         <div class="feat-icon">⚡</div>
         <h3>Commandes en temps réel</h3>
@@ -122,7 +116,6 @@
         <h3>Tableau de bord ventes</h3>
         <p>Visualisez vos performances, ventes et statistiques en un coup d'œil.</p>
       </div>
-      <!-- Bas -->
       <div class="card animate delay-1" style="grid-column: span 4;">
         <div class="feat-icon">🧾</div>
         <h3>Contrôle des factures</h3>
@@ -324,7 +317,6 @@
 function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
-// Animate on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
