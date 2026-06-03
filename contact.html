@@ -9,23 +9,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init('PUBLIC_KEY');</script>
-  <style>
-    .success-msg {
-      display: none;
-      background: rgba(46,204,113,0.1);
-      border: 1px solid var(--accent);
-      border-radius: var(--radius-sm);
-      padding: 1rem 1.5rem;
-      color: var(--accent);
-      font-weight: 600;
-      text-align: center;
-      margin-top: 1rem;
-    }
-  </style>
+  <style>.success-msg{display:none;background:rgba(46,204,113,0.1);border:1px solid var(--accent);border-radius:var(--radius-sm);padding:1rem 1.5rem;color:var(--accent);font-weight:600;text-align:center;margin-top:1rem;}</style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav class="nav">
   <a href="index.html" class="nav-logo">Soorder</a>
   <ul class="nav-links">
@@ -40,16 +26,9 @@
   <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 <div class="nav-mobile" id="mobileMenu">
-  <a href="index.html">Accueil</a>
-  <a href="restaurateur.html">Restaurateurs</a>
-  <a href="fournisseur.html">Fournisseurs</a>
-  <a href="prix.html">Tarifs</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html">Accueil</a><a href="restaurateur.html">Restaurateurs</a><a href="fournisseur.html">Fournisseurs</a><a href="prix.html">Tarifs</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
   <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
 </div>
-
-<!-- PAGE HERO -->
 <section class="page-hero" style="padding-bottom: 3rem;">
   <div class="container">
     <span class="badge animate"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>Contact</span>
@@ -57,101 +36,46 @@
     <p class="animate delay-2">Notre équipe est disponible pour répondre à toutes vos questions et vous aider à démarrer sur Soorder.</p>
   </div>
 </section>
-
 <div class="divider"></div>
-
-<!-- CONTACT MAIN -->
 <section>
   <div class="container">
     <div class="contact-grid">
-
-      <!-- INFO -->
       <div>
         <div class="section-header animate" style="text-align: left; margin-bottom: 2.5rem;">
           <span class="badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" style="vertical-align:middle;margin-right:5px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>Nos coordonnées</span>
           <h2 style="margin-top: 1rem;">On est là pour vous</h2>
         </div>
-
         <div class="contact-info animate delay-1">
           <div class="contact-info-item">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-            </div>
-            <div class="contact-info-text">
-              <strong>Adresse</strong>
-              <span>Rue de la Navigation 1<br>1201 Genève, Suisse</span>
-            </div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg></div>
+            <div class="contact-info-text"><strong>Adresse</strong><span>Rue de la Navigation 1<br>1201 Genève, Suisse</span></div>
           </div>
           <div class="contact-info-item">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-            </div>
-            <div class="contact-info-text">
-              <strong>Email</strong>
-              <span><a href="mailto:contact@soorder.ch" style="color: var(--accent);">contact@soorder.ch</a></span>
-            </div>
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg></div>
+            <div class="contact-info-text"><strong>Email</strong><span><a href="mailto:contact@soorder.ch" style="color: var(--accent);">contact@soorder.ch</a></span></div>
           </div>
         </div>
       </div>
-
-      <!-- FORM -->
       <div class="card animate delay-2" style="padding: 2.5rem;">
         <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">Envoyez-nous un message</h3>
         <p style="font-size: 0.88rem; color: var(--text-m); margin-bottom: 2rem;">Nous vous répondons dans les 24 heures ouvrées.</p>
-
         <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
-            <div class="form-group">
-              <label for="prenom">Prénom</label>
-              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
-            </div>
-            <div class="form-group">
-              <label for="nom">Nom</label>
-              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
-            </div>
+            <div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required /></div>
+            <div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required /></div>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.ch" required />
-          </div>
-          <div class="form-group">
-            <label for="entreprise">Entreprise</label>
-            <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre établissement" />
-          </div>
-          <div class="form-group">
-            <label for="motif">Motif de votre demande</label>
-            <select id="motif" name="motif" required>
-              <option value="" disabled selected>Sélectionnez un motif</option>
-              <option value="restaurateur">Je suis restaurateur et je veux démarrer</option>
-              <option value="fournisseur">Je suis fournisseur et je veux rejoindre le réseau</option>
-              <option value="franchise">J'ai une franchise ou un groupe multi-sites</option>
-              <option value="question">J'ai une question sur l'application</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Décrivez votre besoin, vos questions ou votre projet..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 1rem;">
-            Envoyer le message ✦
-          </button>
-          <div class="success-msg" id="successMsg">
-            ✓ Message envoyé ! Nous vous répondons sous 24h.
-          </div>
-          <p style="font-size: 0.75rem; color: var(--text-s); text-align: center; margin-top: 0.8rem;">Vos données sont traitées conformément à notre politique de confidentialité.</p>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.ch" required /></div>
+          <div class="form-group"><label for="entreprise">Entreprise</label><input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre établissement" /></div>
+          <div class="form-group"><label for="motif">Motif de votre demande</label><select id="motif" name="motif" required><option value="" disabled selected>Sélectionnez un motif</option><option value="restaurateur">Je suis restaurateur et je veux démarrer</option><option value="fournisseur">Je suis fournisseur et je veux rejoindre le réseau</option><option value="franchise">J'ai une franchise ou un groupe multi-sites</option><option value="question">J'ai une question sur l'application</option><option value="autre">Autre</option></select></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Décrivez votre besoin, vos questions ou votre projet..." required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 1rem;">Envoyer le message ✦</button>
+          <div class="success-msg" id="successMsg">✓ Message envoyé ! Nous vous répondons sous 24h.</div>
+          <p style="font-size: 0.75rem; color: var(--text-s); text-align: center; margin-top: 0.8rem;">Vos données sont traitées conformément à notre <a href="confidentialite.html" style="color:var(--accent);">politique de confidentialité</a>.</p>
         </form>
       </div>
     </div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -170,28 +94,21 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 Soorder. Tous droits réservés.</p>
-      <p>Politique de confidentialité · CGU</p>
+      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;">CGU</a></p>
     </div>
   </div>
 </footer>
-
 <script>
 function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
 function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
-  const btn  = form.querySelector('button[type="submit"]');
+  const btn = form.querySelector('button[type="submit"]');
   btn.textContent = 'Envoi en cours...';
   btn.disabled = true;
   emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', form)
-    .then(() => {
-      form.reset();
-      btn.style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
-    }, () => {
-      btn.textContent = 'Erreur — réessayez';
-      btn.disabled = false;
-    });
+    .then(() => { form.reset(); btn.style.display = 'none'; document.getElementById('successMsg').style.display = 'block'; },
+    () => { btn.textContent = 'Erreur — réessayez'; btn.disabled = false; });
 }
 const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
