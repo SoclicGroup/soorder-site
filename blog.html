@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Soorder</title>
+  <meta name="description" content="Conseils pour restaurateurs et fournisseurs, actualités Soorder et témoignages terrain. Insights & actualités de la restauration suisse." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .article-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover {
+      border-color: var(--border-h);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.45);
+    }
+    .article-thumb {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      flex-shrink: 0;
+    }
+    .article-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .article-cat {
+      display: inline-flex;
+      align-items: center;
+      background: var(--accent-glow);
+      border: 1px solid var(--border-h);
+      color: var(--accent);
+      padding: 0.2rem 0.7rem;
+      border-radius: 100px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+    .article-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.7rem;
+      color: var(--text);
+    }
+    .article-excerpt {
+      font-size: 0.85rem;
+      color: var(--text-m);
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 1.2rem;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--text-s);
+      border-top: 1px solid var(--border);
+      padding-top: 0.8rem;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Soorder</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="restaurateur.html">Restaurateurs</a></li>
+    <li><a href="fournisseur.html">Fournisseurs</a></li>
+    <li><a href="prix.html">Tarifs</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Commencer</a>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="restaurateur.html">Restaurateurs</a>
+  <a href="fournisseur.html">Fournisseurs</a>
+  <a href="prix.html">Tarifs</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="badge animate">📝 Blog</span>
+    <h1 class="animate delay-1">Insights &<br><span class="gradient-text">actualités</span></h1>
+    <p class="animate delay-2">Conseils pratiques pour restaurateurs et fournisseurs, retours d'expérience terrain et actualités de Soorder.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ARTICLES -->
+<section>
+  <div class="container">
+
+    <!-- Article vedette -->
+    <div class="animate" style="margin-bottom: 3rem;">
+      <div class="article-card" style="flex-direction: row; max-width: 100%; height: auto;" onclick="window.location='#'">
+        <div class="article-thumb" style="width: 340px; flex-shrink: 0; background: linear-gradient(135deg, #0d2018, #1a3a20); height: auto; min-height: 240px;">
+          📱
+        </div>
+        <div class="article-body" style="padding: 2.5rem;">
+          <span class="article-cat">Conseils pratiques</span>
+          <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem; letter-spacing: -0.02em;">Comment digitaliser vos commandes fournisseurs en 2025</h2>
+          <p style="font-size: 0.92rem; color: var(--text-m); line-height: 1.8; margin-bottom: 1.5rem;">En 2025, de nombreux restaurateurs commandent encore leurs marchandises par téléphone, SMS ou WhatsApp. Ces méthodes, bien que familières, génèrent des erreurs, des oublis et une perte de temps considérable. La digitalisation des commandes fournisseurs n'est plus une option réservée aux grands groupes — c'est désormais accessible à tous les établissements, quelle que soit leur taille. Dans cet article, nous expliquons étape par étape comment migrer vers un système digital sans perturber votre activité quotidienne, avec les bons outils, les bonnes pratiques et les erreurs à éviter lors de la transition.</p>
+          <div class="article-meta" style="border-top: 1px solid var(--border); padding-top: 1rem;">
+            <span>15 janvier 2025</span>
+            <span style="color: var(--accent); font-weight: 600; font-size: 0.82rem;">Lire l'article →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grille des autres articles -->
+    <div class="articles-grid">
+
+      <div class="article-card animate delay-1" onclick="window.location='#'">
+        <div class="article-thumb" style="background: linear-gradient(135deg, #1a0d0d, #2a1010);">🍽️</div>
+        <div class="article-body">
+          <span class="article-cat">Restauration</span>
+          <h3 class="article-title">Les 5 erreurs que font les restaurateurs avec leurs fournisseurs</h3>
+          <p class="article-excerpt">Commander trop tard, ne pas comparer les prix, oublier de relancer — les erreurs courantes dans la gestion des approvisionnements coûtent cher. Voici les 5 pièges les plus fréquents identifiés après avoir accompagné des centaines de restaurateurs genevois, et surtout comment les éviter simplement. Ces erreurs sont souvent systémiques : elles viennent d'une mauvaise organisation plutôt que d'un manque de rigueur.</p>
+          <div class="article-meta">
+            <span>3 mars 2025</span>
+            <span style="color: var(--accent); font-size: 0.78rem;">Lire →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card animate delay-2" onclick="window.location='#'">
+        <div class="article-thumb" style="background: linear-gradient(135deg, #0d1a0d, #0f2a15);">🚀</div>
+        <div class="article-body">
+          <span class="article-cat">Actualités</span>
+          <h3 class="article-title">Soorder lève des fonds pour accélérer son expansion en Suisse romande</h3>
+          <p class="article-excerpt">Soorder annonce aujourd'hui une levée de fonds qui va lui permettre d'accélérer son développement commercial en Suisse romande et de renforcer son équipe produit. Cette levée valide notre modèle et notre approche locale-first de la digitalisation de la restauration. Les fonds seront investis dans le recrutement, le développement produit et l'expansion géographique vers Lausanne, Fribourg et le Valais.</p>
+          <div class="article-meta">
+            <span>18 avril 2025</span>
+            <span style="color: var(--accent); font-size: 0.78rem;">Lire →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card animate delay-3" onclick="window.location='#'">
+        <div class="article-thumb" style="background: linear-gradient(135deg, #1a1a0d, #2a280a);">⭐</div>
+        <div class="article-body">
+          <span class="article-cat">Témoignages</span>
+          <h3 class="article-title">Témoignage : comment Chic Chicken a gagné 3h par semaine</h3>
+          <p class="article-excerpt">N. Sulejmani, gérant de Chic Chicken à Genève, nous raconte comment il a adopté Soorder et ce que ça a changé dans son quotidien. Avant : appels téléphoniques à 7h du matin, erreurs de commandes, factures perdues. Après : 3 minutes pour passer commande, zéro erreur depuis 6 mois, et une vision claire de ses dépenses fournisseurs. Son témoignage illustre parfaitement ce que la digitalisation peut apporter à un restaurant indépendant.</p>
+          <div class="article-meta">
+            <span>2 juin 2025</span>
+            <span style="color: var(--accent); font-size: 0.78rem;">Lire →</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- NEWSLETTER -->
+<section class="cta-section">
+  <div class="container">
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;">📬 Newsletter</span>
+    <h2>Restez informé</h2>
+    <p>Recevez nos conseils et actualités directement dans votre boîte mail. Pas de spam — un email par mois, maximum.</p>
+    <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto;">
+      <input type="email" placeholder="votre@email.ch" style="flex: 1; min-width: 220px; background: var(--bg2); border: 1px solid var(--border-h); border-radius: 100px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.92rem; padding: 0.85rem 1.4rem; outline: none;" />
+      <button class="btn btn-primary" style="border-radius: 100px; white-space: nowrap;">S'abonner →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Soorder</div>
+        <p>La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a>
+          <a href="#" class="social-btn">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="restaurateur.html">Restaurateurs</a></li>
+          <li><a href="fournisseur.html">Fournisseurs</a></li>
+          <li><a href="prix.html">Tarifs</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="carrieres.html">Carrières</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li>
+          <li><a href="#">Rue de la Navigation 1</a></li>
+          <li><a href="#">1201 Genève</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Soorder. Tous droits réservés.</p>
+      <p>Politique de confidentialité · CGU</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
