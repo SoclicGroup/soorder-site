@@ -6,6 +6,8 @@
   <title>Contact — Soorder</title>
   <meta name="description" content="Contactez l'équipe Soorder. Rue de la Navigation 1, 1201 Genève. contact@soorder.ch" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('PUBLIC_KEY');</script>
   <style>
     .success-msg {
       display: none;
@@ -92,7 +94,7 @@
         <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">Envoyez-nous un message</h3>
         <p style="font-size: 0.88rem; color: var(--text-m); margin-bottom: 2rem;">Nous vous répondons dans les 24 heures ouvrées.</p>
 
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
+        <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label for="prenom">Prénom</label>
@@ -216,30 +218,21 @@
 
 <script>
 function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
-async function handleSubmit(e) {
+function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
   const btn  = form.querySelector('button[type="submit"]');
   btn.textContent = 'Envoi en cours...';
   btn.disabled = true;
-  try {
-    const r = await fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' }
-    });
-    if (r.ok) {
+  emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', form)
+    .then(() => {
       form.reset();
       btn.style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
-    } else {
+    }, () => {
       btn.textContent = 'Erreur — réessayez';
       btn.disabled = false;
-    }
-  } catch {
-    btn.textContent = 'Erreur — réessayez';
-    btn.disabled = false;
-  }
+    });
 }
 const observer = new IntersectionObserver((e) => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
