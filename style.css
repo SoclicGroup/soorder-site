@@ -272,7 +272,7 @@ section { padding: 100px 0; }
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 86px;
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1.5rem;
@@ -456,7 +456,7 @@ section { padding: 100px 0; }
 
 .pricing-features { list-style: none; margin-bottom: 2rem; flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
 .pricing-features li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.88rem; color: var(--text-m); }
-.pricing-features li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.pricing-features li::before { content: '\2713'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
 /* ===== FAQ ===== */
 .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.8rem; }
@@ -679,7 +679,7 @@ footer {
 
   /* ── Hero ── */
   .hero { min-height: auto; padding-top: 120px; padding-bottom: 3rem; }
-  .hero-title { font-size: 48px; line-height: 1.1; }
+  .hero-title { font-size: 58px; line-height: 1.1; }
   .hero-subtitle { font-size: 0.93rem; margin-bottom: 2rem; }
   .hero-eyebrow { margin-bottom: 1.2rem; }
 
