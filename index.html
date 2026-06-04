@@ -10,45 +10,51 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <a href="index.html" style="font-family:'Outfit',sans-serif;font-weight:800;font-size:22px;color:white;text-decoration:none;margin-right:auto;">So<span style="color:#2ecc71">order</span></a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Accueil</a></li>
-    <li><a href="restaurateur.html">Restaurateurs</a></li>
-    <li><a href="fournisseur.html">Fournisseurs</a></li>
-    <li><a href="prix.html">Tarifs</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html" class="active" data-i18n="nav.home">Accueil</a></li>
+    <li><a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a></li>
+    <li><a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a></li>
+    <li><a href="prix.html" data-i18n="nav.prix">Tarifs</a></li>
+    <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
   </ul>
-  <a href="contact.html" class="nav-cta">Commencer</a>
+  <select id="lang-switcher" onchange="switchLang(this.value)" style="background:#1a2e1f;color:#2ecc71;border:1px solid #2ecc71;border-radius:20px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;">
+    <option value="fr">🇫🇷 FR</option>
+    <option value="en">🇬🇧 EN</option>
+    <option value="de">🇩🇪 DE</option>
+    <option value="it">🇮🇹 IT</option>
+    <option value="es">🇪🇸 ES</option>
+    <option value="pt">🇵🇹 PT</option>
+  </select>
+  <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Commencer</a>
   <div class="nav-burger" id="burger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </div>
 </nav>
 <div class="nav-mobile" id="mobileMenu">
-  <a href="index.html">Accueil</a>
-  <a href="restaurateur.html">Restaurateurs</a>
-  <a href="fournisseur.html">Fournisseurs</a>
-  <a href="prix.html">Tarifs</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn btn-primary nav-cta">Commencer gratuitement</a>
+  <a href="index.html" data-i18n="nav.home">Accueil</a>
+  <a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a>
+  <a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a>
+  <a href="prix.html" data-i18n="nav.prix">Tarifs</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta.mob">Commencer gratuitement</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title animate">
+      <h1 class="hero-title animate" data-i18n="hero.title">
         Commandez<br>autrement.<br><span class="accent">Enfin.</span>
       </h1>
-      <p class="hero-subtitle animate delay-1">
+      <p class="hero-subtitle animate delay-1" data-i18n="hero.sub">
         Une application mobile pour permettre aux restaurateurs de commander facilement auprès de leurs fournisseurs, depuis une seule plateforme centralisée.
       </p>
       <div class="hero-actions animate delay-2">
-        <a href="restaurateur.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;">Je suis restaurateur</a>
-        <a href="fournisseur.html" class="btn btn-outline" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;">Je suis fournisseur</a>
+        <a href="restaurateur.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;" data-i18n="hero.btn1">Je suis restaurateur</a>
+        <a href="fournisseur.html" class="btn btn-outline" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;" data-i18n="hero.btn2">Je suis fournisseur</a>
       </div>
       <div class="store-btns animate delay-3">
         <a href="#" aria-label="Télécharger sur l'App Store">
@@ -58,20 +64,18 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40" width="180" height="60"><rect width="135" height="40" rx="6" fill="#000"/><path d="M10.438 7.2c-.4.425-.637 1.087-.637 1.95v22.7c0 .862.237 1.525.637 1.95l.1.1 12.712-12.712v-.3L10.538 7.1l-.1.1z" fill="url(#gp1a)"/><path d="M27.487 24.287l-4.237-4.25v-.3l4.25-4.25.1.062 5.025 2.862c1.437.812 1.437 2.15 0 2.974l-5.025 2.862-.113.04z" fill="url(#gp1b)"/><path d="M27.6 24.225L23.25 19.875 10.438 32.7c .475.5 1.25.562 2.137.062l15.025-8.537" fill="url(#gp1c)"/><path d="M27.6 15.525L12.575 6.988c-.887-.5-1.662-.438-2.137.062L23.25 19.875l4.35-4.35z" fill="url(#gp1d)"/><defs><linearGradient id="gp1a" x1="22.138" y1="8.312" x2="5.15" y2="25.3" gradientUnits="userSpaceOnUse"><stop stop-color="#00A0FF"/><stop offset="1" stop-color="#00A0FF" stop-opacity="0"/></linearGradient><linearGradient id="gp1b" x1="33.834" y1="19.875" x2="9.638" y2="19.875" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD900"/><stop offset="1" stop-color="#FF9100" stop-opacity="0"/></linearGradient><linearGradient id="gp1c" x1="25.8" y1="22.13" x2="3.7" y2="44.4" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A44"/><stop offset="1" stop-color="#C31162" stop-opacity="0"/></linearGradient><linearGradient id="gp1d" x1="7.3" y1="-0.18" x2="17.46" y2="10.05" gradientUnits="userSpaceOnUse"><stop stop-color="#32A071"/><stop offset="1" stop-color="#2DA771" stop-opacity="0"/></linearGradient></defs><text x="42" y="15" font-family="sans-serif" font-size="7" fill="#fff" opacity="0.8">GET IT ON</text><text x="42" y="27" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Google Play</text></svg>
         </a>
       </div>
-
-      <!-- Stats bar -->
       <div class="stats-bar animate delay-4">
         <div class="stat-item">
           <span class="stat-value">500+</span>
-          <span class="stat-label">Restaurateurs actifs</span>
+          <span class="stat-label" data-i18n="stat.l1">Restaurateurs actifs</span>
         </div>
         <div class="stat-item">
           <span class="stat-value">200+</span>
-          <span class="stat-label">Fournisseurs partenaires</span>
+          <span class="stat-label" data-i18n="stat.l2">Fournisseurs partenaires</span>
         </div>
         <div class="stat-item">
           <span class="stat-value">98%</span>
-          <span class="stat-label">Satisfaction client</span>
+          <span class="stat-label" data-i18n="stat.l3">Satisfaction client</span>
         </div>
       </div>
     </div>
@@ -80,82 +84,53 @@
 
 <div class="divider"></div>
 
-<!-- FEATURES BENTO -->
 <section>
   <div class="container">
     <div class="section-header animate">
-      <span class="badge">✦ Pourquoi Soorder</span>
-      <h2>Tout ce dont vous avez besoin,<br>en un seul endroit</h2>
-      <p>Soorder centralise commandes, livraisons, factures et communication entre restaurateurs et fournisseurs.</p>
+      <span class="badge" data-i18n="feat.badge">✦ Pourquoi Soorder</span>
+      <h2 data-i18n="feat.title">Tout ce dont vous avez besoin,<br>en un seul endroit</h2>
+      <p data-i18n="feat.sub">Soorder centralise commandes, livraisons, factures et communication entre restaurateurs et fournisseurs.</p>
     </div>
-
     <div class="bento">
       <div class="card animate" style="grid-column: span 5; grid-row: span 2; background: linear-gradient(145deg, #0d2018, #0a1510); min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end;">
         <div class="feat-icon" style="margin-bottom: 1.5rem;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 15.75h3" />
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 15.75h3" /></svg>
         </div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;">Une seule app pour tout gérer</h3>
-        <p>Commandes, livraisons, suivi et facturation — tout est centralisé dans une interface mobile intuitive.</p>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;" data-i18n="feat.card1.title">Une seule app pour tout gérer</h3>
+        <p data-i18n="feat.card1.text">Commandes, livraisons, suivi et facturation — tout est centralisé dans une interface mobile intuitive.</p>
         <div style="margin-top: 1.5rem;">
-          <a href="restaurateur.html" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;">Voir les fonctionnalités →</a>
+          <a href="restaurateur.html" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;" data-i18n="feat.card1.cta">Voir les fonctionnalités →</a>
         </div>
       </div>
       <div class="card animate delay-1" style="grid-column: span 7;">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-          </svg>
-        </div>
-        <h3>Commandes en temps réel</h3>
-        <p>Passez vos commandes en quelques secondes et suivez leur statut en temps réel directement depuis l'app.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg></div>
+        <h3 data-i18n="feat.card2.title">Commandes en temps réel</h3>
+        <p data-i18n="feat.card2.text">Passez vos commandes en quelques secondes et suivez leur statut en temps réel directement depuis l'app.</p>
       </div>
       <div class="card animate delay-2" style="grid-column: span 3;">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-          </svg>
-        </div>
-        <h3>Messagerie intégrée</h3>
-        <p>Communiquez directement avec vos fournisseurs sans quitter l'application.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg></div>
+        <h3 data-i18n="feat.card3.title">Messagerie intégrée</h3>
+        <p data-i18n="feat.card3.text">Communiquez directement avec vos fournisseurs sans quitter l'application.</p>
       </div>
       <div class="card animate delay-3" style="grid-column: span 4;">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-          </svg>
-        </div>
-        <h3>Tableau de bord ventes</h3>
-        <p>Visualisez vos performances, ventes et statistiques en un coup d'œil.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg></div>
+        <h3 data-i18n="feat.card4.title">Tableau de bord ventes</h3>
+        <p data-i18n="feat.card4.text">Visualisez vos performances, ventes et statistiques en un coup d'œil.</p>
       </div>
       <div class="card animate delay-1" style="grid-column: span 4;">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-          </svg>
-        </div>
-        <h3>Contrôle des factures</h3>
-        <p>Suivez, archivez et gérez toutes vos dépenses depuis un seul tableau de bord.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg></div>
+        <h3 data-i18n="feat.card5.title">Contrôle des factures</h3>
+        <p data-i18n="feat.card5.text">Suivez, archivez et gérez toutes vos dépenses depuis un seul tableau de bord.</p>
       </div>
       <div class="card animate delay-2" style="grid-column: span 4;">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
-          </svg>
-        </div>
-        <h3>Offres exclusives</h3>
-        <p>Accédez aux meilleures offres et promotions de vos fournisseurs préférés.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" /></svg></div>
+        <h3 data-i18n="feat.card6.title">Offres exclusives</h3>
+        <p data-i18n="feat.card6.text">Accédez aux meilleures offres et promotions de vos fournisseurs préférés.</p>
       </div>
       <div class="card animate delay-3" style="grid-column: span 4; background: linear-gradient(145deg, #0d2018, #0a1510);">
-        <div class="feat-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c-.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-          </svg>
-        </div>
-        <h3>Suivi des itinéraires</h3>
-        <p>Tracez les livraisons en temps réel et optimisez les tournées de vos livreurs.</p>
+        <div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c-.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" /></svg></div>
+        <h3 data-i18n="feat.card7.title">Suivi des itinéraires</h3>
+        <p data-i18n="feat.card7.text">Tracez les livraisons en temps réel et optimisez les tournées de vos livreurs.</p>
       </div>
     </div>
   </div>
@@ -163,13 +138,12 @@
 
 <div class="divider"></div>
 
-<!-- TÉMOIGNAGES -->
 <section>
   <div class="container">
     <div class="section-header animate">
-      <span class="badge">✦ Témoignages</span>
-      <h2>Ils font confiance à Soorder</h2>
-      <p>Des restaurateurs et fournisseurs de Genève nous font confiance au quotidien.</p>
+      <span class="badge" data-i18n="testi.badge">✦ Témoignages</span>
+      <h2 data-i18n="testi.title">Ils font confiance à Soorder</h2>
+      <p data-i18n="testi.sub">Des restaurateurs et fournisseurs de Genève nous font confiance au quotidien.</p>
     </div>
     <div class="testimonials-grid">
       <div class="testi-card animate delay-1">
@@ -177,10 +151,7 @@
         <p class="testi-text">"Soorder a complètement transformé notre façon de commander. Plus de téléphones, plus de fax — tout se passe sur l'app. Un gain de temps incroyable au quotidien."</p>
         <div class="testi-author">
           <div class="testi-avatar">NS</div>
-          <div>
-            <div class="testi-name">N. Sulejmani</div>
-            <div class="testi-role">Chic Chicken, Genève</div>
-          </div>
+          <div><div class="testi-name">N. Sulejmani</div><div class="testi-role">Chic Chicken, Genève</div></div>
         </div>
       </div>
       <div class="testi-card animate delay-2">
@@ -188,10 +159,7 @@
         <p class="testi-text">"En tant que pâtissier, la précision des commandes est essentielle. Avec Soorder, zéro erreur, zéro oubli. L'interface est claire et nos fournisseurs adorent aussi."</p>
         <div class="testi-author">
           <div class="testi-avatar">MP</div>
-          <div>
-            <div class="testi-name">M. Palazzo</div>
-            <div class="testi-role">Pâtisserie AMO, Genève</div>
-          </div>
+          <div><div class="testi-name">M. Palazzo</div><div class="testi-role">Pâtisserie AMO, Genève</div></div>
         </div>
       </div>
       <div class="testi-card animate delay-3">
@@ -199,10 +167,7 @@
         <p class="testi-text">"Côté fournisseur, la visibilité que nous offre Soorder est exceptionnelle. Le tableau de bord nous permet de gérer facilement nos clients et de créer des promos ciblées."</p>
         <div class="testi-author">
           <div class="testi-avatar">DS</div>
-          <div>
-            <div class="testi-name">D. Sarfati</div>
-            <div class="testi-role">Chic Distribution</div>
-          </div>
+          <div><div class="testi-name">D. Sarfati</div><div class="testi-role">Chic Distribution</div></div>
         </div>
       </div>
     </div>
@@ -211,58 +176,57 @@
 
 <div class="divider"></div>
 
-<!-- PRICING PREVIEW -->
 <section>
   <div class="container">
     <div class="section-header animate">
-      <span class="badge">✦ Tarifs transparents</span>
-      <h2>Simple. Sans surprise.</h2>
-      <p>Des abonnements adaptés à votre activité, sans engagement annuel obligatoire.</p>
+      <span class="badge" data-i18n="price.badge">✦ Tarifs transparents</span>
+      <h2 data-i18n="price.title">Simple. Sans surprise.</h2>
+      <p data-i18n="price.sub">Des abonnements adaptés à votre activité, sans engagement annuel obligatoire.</p>
     </div>
     <div class="pricing-grid">
       <div class="pricing-card animate delay-1">
-        <div class="pricing-plan">Restaurateur</div>
+        <div class="pricing-plan" data-i18n="price.plan1">Restaurateur</div>
         <div class="pricing-price"><span>CHF</span> 29 <span style="font-size: 1rem; font-weight: 400; opacity: 0.6;">HT</span></div>
-        <div class="pricing-period">par mois, par établissement</div>
-        <p class="pricing-desc">Tout ce qu'il faut pour commander intelligemment auprès de vos fournisseurs.</p>
+        <div class="pricing-period" data-i18n="price.period1">par mois, par établissement</div>
+        <p class="pricing-desc" data-i18n="price.desc1">Tout ce qu'il faut pour commander intelligemment auprès de vos fournisseurs.</p>
         <ul class="pricing-features">
-          <li>Commandes illimitées</li>
-          <li>Suivi des livraisons</li>
-          <li>Gestion des factures</li>
-          <li>Offres exclusives fournisseurs</li>
-          <li>Messagerie intégrée</li>
+          <li data-i18n="pf.1.1">Commandes illimitées</li>
+          <li data-i18n="pf.1.2">Suivi des livraisons</li>
+          <li data-i18n="pf.1.3">Gestion des factures</li>
+          <li data-i18n="pf.1.4">Offres exclusives fournisseurs</li>
+          <li data-i18n="pf.1.5">Messagerie intégrée</li>
         </ul>
-        <a href="contact.html" class="btn btn-outline" style="text-align:center; justify-content: center;">Commencer →</a>
+        <a href="contact.html" class="btn btn-outline" style="text-align:center; justify-content: center;" data-i18n="price.cta1">Commencer →</a>
       </div>
       <div class="pricing-card featured animate delay-2">
-        <div class="pricing-plan">Fournisseur</div>
+        <div class="pricing-plan" data-i18n="price.plan2">Fournisseur</div>
         <div class="pricing-price"><span>CHF</span> 59 <span style="font-size: 1rem; font-weight: 400; opacity: 0.6;">HT</span></div>
-        <div class="pricing-period">par mois</div>
-        <p class="pricing-desc">La solution complète pour gérer vos clients restaurateurs et booster vos ventes.</p>
+        <div class="pricing-period" data-i18n="price.period2">par mois</div>
+        <p class="pricing-desc" data-i18n="price.desc2">La solution complète pour gérer vos clients restaurateurs et booster vos ventes.</p>
         <ul class="pricing-features">
-          <li>Gestion multi-clients</li>
-          <li>Création de promotions</li>
-          <li>Gestion des livreurs</li>
-          <li>Catalogue produit numérisé</li>
-          <li>Tableau de bord ventes</li>
-          <li>Suivi des itinéraires</li>
-          <li>Top rank — visibilité accrue</li>
+          <li data-i18n="pf.2.1">Gestion multi-clients</li>
+          <li data-i18n="pf.2.2">Création de promotions</li>
+          <li data-i18n="pf.2.3">Gestion des livreurs</li>
+          <li data-i18n="pf.2.4">Catalogue produit numérisé</li>
+          <li data-i18n="pf.2.5">Tableau de bord ventes</li>
+          <li data-i18n="pf.2.6">Suivi des itinéraires</li>
+          <li data-i18n="pf.2.7">Top rank — visibilité accrue</li>
         </ul>
-        <a href="contact.html" class="btn btn-primary" style="text-align:center; justify-content: center;">Commencer →</a>
+        <a href="contact.html" class="btn btn-primary" style="text-align:center; justify-content: center;" data-i18n="price.cta2">Commencer →</a>
       </div>
       <div class="pricing-card animate delay-3">
-        <div class="pricing-plan">Franchise / Groupe</div>
-        <div class="pricing-price" style="font-size: 2rem;">Sur-mesure</div>
-        <div class="pricing-period">tarif personnalisé</div>
-        <p class="pricing-desc">Vous gérez plusieurs établissements ? Nous avons une solution adaptée à votre structure.</p>
+        <div class="pricing-plan" data-i18n="price.plan3">Franchise / Groupe</div>
+        <div class="pricing-price" style="font-size: 2rem;" data-i18n="price.plan3.price">Sur-mesure</div>
+        <div class="pricing-period" data-i18n="price.period3">tarif personnalisé</div>
+        <p class="pricing-desc" data-i18n="price.desc3">Vous gérez plusieurs établissements ? Nous avons une solution adaptée à votre structure.</p>
         <ul class="pricing-features">
-          <li>Gestion multi-sites</li>
-          <li>Tableau de bord centralisé</li>
-          <li>Facturation consolidée</li>
-          <li>Support dédié</li>
-          <li>Onboarding personnalisé</li>
+          <li data-i18n="pf.3.1">Gestion multi-sites</li>
+          <li data-i18n="pf.3.2">Tableau de bord centralisé</li>
+          <li data-i18n="pf.3.3">Facturation consolidée</li>
+          <li data-i18n="pf.3.4">Support dédié</li>
+          <li data-i18n="pf.3.5">Onboarding personnalisé</li>
         </ul>
-        <a href="contact.html" class="btn btn-ghost" style="text-align:center; justify-content: center;">Nous contacter →</a>
+        <a href="contact.html" class="btn btn-ghost" style="text-align:center; justify-content: center;" data-i18n="price.cta3">Nous contacter →</a>
       </div>
     </div>
   </div>
@@ -270,15 +234,14 @@
 
 <div class="divider"></div>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="container">
-    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;">✦ Prêt à démarrer ?</span>
-    <h2>Rejoignez Soorder aujourd'hui</h2>
-    <p>Des centaines de restaurateurs et fournisseurs genevois ont déjà adopté la plateforme. Pourquoi pas vous ?</p>
+    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;" data-i18n="cta.badge">✦ Prêt à démarrer ?</span>
+    <h2 data-i18n="cta.title">Rejoignez Soorder aujourd'hui</h2>
+    <p data-i18n="cta.sub">Des centaines de restaurateurs et fournisseurs genevois ont déjà adopté la plateforme. Pourquoi pas vous ?</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Démarrer maintenant</a>
-      <a href="prix.html" class="btn btn-outline">Voir les tarifs</a>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn1">Démarrer maintenant</a>
+      <a href="prix.html" class="btn btn-outline" data-i18n="cta.btn2">Voir les tarifs</a>
     </div>
     <div class="store-btns" style="margin-top: 2rem;">
       <a href="#" aria-label="Télécharger sur l'App Store">
@@ -291,31 +254,216 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" height="28" style="display:block"><text x="0" y="38" font-family="'Outfit',sans-serif" font-weight="800" font-size="42" fill="white" letter-spacing="-1">S</text><circle cx="62" cy="22" r="16" fill="none" stroke="white" stroke-width="5"/><circle cx="62" cy="6" r="4" fill="#080c0a"/><text x="82" y="38" font-family="'Outfit',sans-serif" font-weight="800" font-size="42" fill="white" letter-spacing="-1"> ORDER</text></svg></div>
-        <p>La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
+        <p data-i18n="ft.tag">La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
         <div class="footer-social">
           <a href="#" class="social-btn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
           <a href="#" class="social-btn" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
           <a href="https://www.instagram.com/soorder.ch" class="social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
         </div>
       </div>
-      <div class="footer-col"><h4>Produit</h4><ul><li><a href="restaurateur.html">Restaurateurs</a></li><li><a href="fournisseur.html">Fournisseurs</a></li><li><a href="prix.html">Tarifs</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div class="footer-col"><h4>Entreprise</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="apropos.html">À propos</a></li><li><a href="carrieres.html">Carrières</a></li><li><a href="blog.html">Blog</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li><li><a href="#">Rue de la Navigation 1</a></li><li><a href="#">1201 Genève</a></li><li><a href="#">Suisse</a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="ft.col1">Produit</h4><ul><li><a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a></li><li><a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a></li><li><a href="prix.html" data-i18n="nav.prix">Tarifs</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="ft.col2">Entreprise</h4><ul><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="apropos.html" data-i18n="ft.about">À propos</a></li><li><a href="carrieres.html" data-i18n="ft.jobs">Carrières</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h4 data-i18n="nav.contact">Contact</h4><ul><li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li><li><a href="#">Rue de la Navigation 1</a></li><li><a href="#">1201 Genève</a></li><li><a href="#">Suisse</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Soorder. Tous droits réservés.</p>
-      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;">CGU</a> · <a href="mentions-legales.html" style="color:var(--text-s);text-decoration:none;">Mentions légales</a></p>
+      <p data-i18n="ft.copy">© 2026 Soorder. Tous droits réservés.</p>
+      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.privacy">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.cgu">CGU</a> · <a href="mentions-legales.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.legal">Mentions légales</a></p>
     </div>
   </div>
 </footer>
 
 <script>
+const i18n = {
+  fr: {
+    'nav.home':'Accueil','nav.rest':'Restaurateurs','nav.four':'Fournisseurs','nav.prix':'Tarifs','nav.faq':'FAQ','nav.contact':'Contact','nav.cta':'Commencer','nav.cta.mob':'Commencer gratuitement',
+    'hero.title':'Commandez<br>autrement.<br><span class="accent">Enfin.</span>',
+    'hero.sub':'Une application mobile pour permettre aux restaurateurs de commander facilement auprès de leurs fournisseurs, depuis une seule plateforme centralisée.',
+    'hero.btn1':'Je suis restaurateur','hero.btn2':'Je suis fournisseur',
+    'stat.l1':'Restaurateurs actifs','stat.l2':'Fournisseurs partenaires','stat.l3':'Satisfaction client',
+    'feat.badge':'✦ Pourquoi Soorder','feat.title':'Tout ce dont vous avez besoin,<br>en un seul endroit',
+    'feat.sub':'Soorder centralise commandes, livraisons, factures et communication entre restaurateurs et fournisseurs.',
+    'feat.card1.title':'Une seule app pour tout gérer','feat.card1.text':'Commandes, livraisons, suivi et facturation — tout est centralisé dans une interface mobile intuitive.','feat.card1.cta':'Voir les fonctionnalités →',
+    'feat.card2.title':'Commandes en temps réel','feat.card2.text':'Passez vos commandes en quelques secondes et suivez leur statut en temps réel directement depuis l\'app.',
+    'feat.card3.title':'Messagerie intégrée','feat.card3.text':'Communiquez directement avec vos fournisseurs sans quitter l\'application.',
+    'feat.card4.title':'Tableau de bord ventes','feat.card4.text':'Visualisez vos performances, ventes et statistiques en un coup d\'œil.',
+    'feat.card5.title':'Contrôle des factures','feat.card5.text':'Suivez, archivez et gérez toutes vos dépenses depuis un seul tableau de bord.',
+    'feat.card6.title':'Offres exclusives','feat.card6.text':'Accédez aux meilleures offres et promotions de vos fournisseurs préférés.',
+    'feat.card7.title':'Suivi des itinéraires','feat.card7.text':'Tracez les livraisons en temps réel et optimisez les tournées de vos livreurs.',
+    'testi.badge':'✦ Témoignages','testi.title':'Ils font confiance à Soorder','testi.sub':'Des restaurateurs et fournisseurs de Genève nous font confiance au quotidien.',
+    'price.badge':'✦ Tarifs transparents','price.title':'Simple. Sans surprise.','price.sub':'Des abonnements adaptés à votre activité, sans engagement annuel obligatoire.',
+    'price.plan1':'Restaurateur','price.period1':'par mois, par établissement','price.desc1':'Tout ce qu\'il faut pour commander intelligemment auprès de vos fournisseurs.',
+    'pf.1.1':'Commandes illimitées','pf.1.2':'Suivi des livraisons','pf.1.3':'Gestion des factures','pf.1.4':'Offres exclusives fournisseurs','pf.1.5':'Messagerie intégrée','price.cta1':'Commencer →',
+    'price.plan2':'Fournisseur','price.period2':'par mois','price.desc2':'La solution complète pour gérer vos clients restaurateurs et booster vos ventes.',
+    'pf.2.1':'Gestion multi-clients','pf.2.2':'Création de promotions','pf.2.3':'Gestion des livreurs','pf.2.4':'Catalogue produit numérisé','pf.2.5':'Tableau de bord ventes','pf.2.6':'Suivi des itinéraires','pf.2.7':'Top rank — visibilité accrue','price.cta2':'Commencer →',
+    'price.plan3':'Franchise / Groupe','price.plan3.price':'Sur-mesure','price.period3':'tarif personnalisé','price.desc3':'Vous gérez plusieurs établissements ? Nous avons une solution adaptée à votre structure.',
+    'pf.3.1':'Gestion multi-sites','pf.3.2':'Tableau de bord centralisé','pf.3.3':'Facturation consolidée','pf.3.4':'Support dédié','pf.3.5':'Onboarding personnalisé','price.cta3':'Nous contacter →',
+    'cta.badge':'✦ Prêt à démarrer ?','cta.title':'Rejoignez Soorder aujourd\'hui','cta.sub':'Des centaines de restaurateurs et fournisseurs genevois ont déjà adopté la plateforme. Pourquoi pas vous ?','cta.btn1':'Démarrer maintenant','cta.btn2':'Voir les tarifs',
+    'ft.tag':'La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.','ft.copy':'© 2026 Soorder. Tous droits réservés.','ft.col1':'Produit','ft.col2':'Entreprise','ft.about':'À propos','ft.jobs':'Carrières','ft.privacy':'Politique de confidentialité','ft.cgu':'CGU','ft.legal':'Mentions légales'
+  },
+  en: {
+    'nav.home':'Home','nav.rest':'Restaurants','nav.four':'Suppliers','nav.prix':'Pricing','nav.faq':'FAQ','nav.contact':'Contact','nav.cta':'Get started','nav.cta.mob':'Get started free',
+    'hero.title':'Order<br>differently.<br><span class="accent">Finally.</span>',
+    'hero.sub':'A mobile app allowing restaurateurs to easily order from their suppliers, all from a single centralized platform.',
+    'hero.btn1':'I am a restaurateur','hero.btn2':'I am a supplier',
+    'stat.l1':'Active restaurants','stat.l2':'Partner suppliers','stat.l3':'Customer satisfaction',
+    'feat.badge':'✦ Why Soorder','feat.title':'Everything you need,<br>in one place',
+    'feat.sub':'Soorder centralizes orders, deliveries, invoices and communication between restaurants and suppliers.',
+    'feat.card1.title':'One app to manage everything','feat.card1.text':'Orders, deliveries, tracking and invoicing — all centralized in an intuitive mobile interface.','feat.card1.cta':'View features →',
+    'feat.card2.title':'Real-time orders','feat.card2.text':'Place orders in seconds and track their status in real time directly from the app.',
+    'feat.card3.title':'Integrated messaging','feat.card3.text':'Communicate directly with your suppliers without leaving the app.',
+    'feat.card4.title':'Sales dashboard','feat.card4.text':'Visualize your performance, sales and statistics at a glance.',
+    'feat.card5.title':'Invoice control','feat.card5.text':'Track, archive and manage all your expenses from a single dashboard.',
+    'feat.card6.title':'Exclusive offers','feat.card6.text':'Access the best deals and promotions from your favourite suppliers.',
+    'feat.card7.title':'Route tracking','feat.card7.text':'Track deliveries in real time and optimize your delivery rounds.',
+    'testi.badge':'✦ Testimonials','testi.title':'They trust Soorder','testi.sub':'Restaurants and suppliers in Geneva trust us every day.',
+    'price.badge':'✦ Transparent pricing','price.title':'Simple. No surprises.','price.sub':'Subscriptions tailored to your activity, no annual commitment required.',
+    'price.plan1':'Restaurant','price.period1':'per month, per location','price.desc1':'Everything you need to order smartly from your suppliers.',
+    'pf.1.1':'Unlimited orders','pf.1.2':'Delivery tracking','pf.1.3':'Invoice management','pf.1.4':'Exclusive supplier offers','pf.1.5':'Integrated messaging','price.cta1':'Get started →',
+    'price.plan2':'Supplier','price.period2':'per month','price.desc2':'The complete solution to manage your restaurant clients and boost your sales.',
+    'pf.2.1':'Multi-client management','pf.2.2':'Create promotions','pf.2.3':'Delivery driver management','pf.2.4':'Digital product catalogue','pf.2.5':'Sales dashboard','pf.2.6':'Route tracking','pf.2.7':'Top rank — increased visibility','price.cta2':'Get started →',
+    'price.plan3':'Franchise / Group','price.plan3.price':'Custom','price.period3':'custom pricing','price.desc3':'Managing multiple locations? We have a solution tailored to your structure.',
+    'pf.3.1':'Multi-site management','pf.3.2':'Centralized dashboard','pf.3.3':'Consolidated billing','pf.3.4':'Dedicated support','pf.3.5':'Custom onboarding','price.cta3':'Contact us →',
+    'cta.badge':'✦ Ready to start?','cta.title':'Join Soorder today','cta.sub':'Hundreds of restaurants and suppliers in Geneva have already adopted the platform. Why not you?','cta.btn1':'Get started now','cta.btn2':'View pricing',
+    'ft.tag':'The platform connecting local restaurants and suppliers in Switzerland. Local. Digital. Collaborative.','ft.copy':'© 2026 Soorder. All rights reserved.','ft.col1':'Product','ft.col2':'Company','ft.about':'About','ft.jobs':'Careers','ft.privacy':'Privacy policy','ft.cgu':'Terms','ft.legal':'Legal notice'
+  },
+  de: {
+    'nav.home':'Startseite','nav.rest':'Restaurants','nav.four':'Lieferanten','nav.prix':'Preise','nav.faq':'FAQ','nav.contact':'Kontakt','nav.cta':'Loslegen','nav.cta.mob':'Kostenlos starten',
+    'hero.title':'Bestellen<br>Sie anders.<br><span class="accent">Endlich.</span>',
+    'hero.sub':'Eine mobile App, mit der Gastronomen ganz einfach bei ihren Lieferanten bestellen können – alles auf einer einzigen Plattform.',
+    'hero.btn1':'Ich bin Gastronom','hero.btn2':'Ich bin Lieferant',
+    'stat.l1':'Aktive Restaurants','stat.l2':'Partner-Lieferanten','stat.l3':'Kundenzufriedenheit',
+    'feat.badge':'✦ Warum Soorder','feat.title':'Alles, was Sie brauchen,<br>an einem Ort',
+    'feat.sub':'Soorder zentralisiert Bestellungen, Lieferungen, Rechnungen und Kommunikation zwischen Restaurants und Lieferanten.',
+    'feat.card1.title':'Eine App für alles','feat.card1.text':'Bestellungen, Lieferungen, Tracking und Rechnungen – alles zentral in einer intuitiven mobilen Oberfläche.','feat.card1.cta':'Funktionen ansehen →',
+    'feat.card2.title':'Bestellungen in Echtzeit','feat.card2.text':'Geben Sie Bestellungen in Sekunden auf und verfolgen Sie deren Status in Echtzeit direkt in der App.',
+    'feat.card3.title':'Integriertes Messaging','feat.card3.text':'Kommunizieren Sie direkt mit Ihren Lieferanten, ohne die App zu verlassen.',
+    'feat.card4.title':'Verkaufs-Dashboard','feat.card4.text':'Visualisieren Sie Ihre Leistung, Umsätze und Statistiken auf einen Blick.',
+    'feat.card5.title':'Rechnungskontrolle','feat.card5.text':'Verfolgen, archivieren und verwalten Sie alle Ausgaben über ein einziges Dashboard.',
+    'feat.card6.title':'Exklusive Angebote','feat.card6.text':'Profitieren Sie von den besten Angeboten Ihrer Lieblingslieferanten.',
+    'feat.card7.title':'Routenverfolgung','feat.card7.text':'Verfolgen Sie Lieferungen in Echtzeit und optimieren Sie die Liefertouren.',
+    'testi.badge':'✦ Erfahrungsberichte','testi.title':'Sie vertrauen Soorder','testi.sub':'Restaurants und Lieferanten in Genf vertrauen uns täglich.',
+    'price.badge':'✦ Transparente Preise','price.title':'Einfach. Keine Überraschungen.','price.sub':'Abonnements, die auf Ihre Aktivität zugeschnitten sind, ohne Jahresverpflichtung.',
+    'price.plan1':'Restaurant','price.period1':'pro Monat, pro Standort','price.desc1':'Alles, was Sie brauchen, um intelligent bei Ihren Lieferanten zu bestellen.',
+    'pf.1.1':'Unbegrenzte Bestellungen','pf.1.2':'Lieferverfolgung','pf.1.3':'Rechnungsverwaltung','pf.1.4':'Exklusive Lieferantenangebote','pf.1.5':'Integriertes Messaging','price.cta1':'Loslegen →',
+    'price.plan2':'Lieferant','price.period2':'pro Monat','price.desc2':'Die vollständige Lösung zur Verwaltung Ihrer Restaurant-Kunden und zur Umsatzsteigerung.',
+    'pf.2.1':'Multi-Client-Verwaltung','pf.2.2':'Aktionen erstellen','pf.2.3':'Fahrerverwaltung','pf.2.4':'Digitaler Produktkatalog','pf.2.5':'Verkaufs-Dashboard','pf.2.6':'Routenverfolgung','pf.2.7':'Top Rank — erhöhte Sichtbarkeit','price.cta2':'Loslegen →',
+    'price.plan3':'Franchise / Gruppe','price.plan3.price':'Individuell','price.period3':'individueller Preis','price.desc3':'Mehrere Standorte? Wir haben eine auf Ihre Struktur zugeschnittene Lösung.',
+    'pf.3.1':'Multi-Standort-Verwaltung','pf.3.2':'Zentrales Dashboard','pf.3.3':'Konsolidierte Abrechnung','pf.3.4':'Dedizierter Support','pf.3.5':'Individuelles Onboarding','price.cta3':'Kontakt →',
+    'cta.badge':'✦ Bereit loszulegen?','cta.title':'Treten Sie Soorder noch heute bei','cta.sub':'Hunderte von Restaurants und Lieferanten in Genf haben die Plattform bereits übernommen. Warum nicht Sie?','cta.btn1':'Jetzt starten','cta.btn2':'Preise ansehen',
+    'ft.tag':'Die Plattform, die lokale Restaurants und Lieferanten in der Schweiz vernetzt. Lokal. Digital. Kollaborativ.','ft.copy':'© 2026 Soorder. Alle Rechte vorbehalten.','ft.col1':'Produkt','ft.col2':'Unternehmen','ft.about':'Über uns','ft.jobs':'Karriere','ft.privacy':'Datenschutzerklärung','ft.cgu':'AGB','ft.legal':'Impressum'
+  },
+  it: {
+    'nav.home':'Home','nav.rest':'Ristoratori','nav.four':'Fornitori','nav.prix':'Prezzi','nav.faq':'FAQ','nav.contact':'Contatto','nav.cta':'Inizia','nav.cta.mob':'Inizia gratis',
+    'hero.title':'Ordina<br>diversamente.<br><span class="accent">Finalmente.</span>',
+    'hero.sub':'Un\'app mobile per permettere ai ristoratori di ordinare facilmente dai loro fornitori, da un\'unica piattaforma centralizzata.',
+    'hero.btn1':'Sono un ristoratore','hero.btn2':'Sono un fornitore',
+    'stat.l1':'Ristoratori attivi','stat.l2':'Fornitori partner','stat.l3':'Soddisfazione clienti',
+    'feat.badge':'✦ Perché Soorder','feat.title':'Tutto ciò di cui hai bisogno,<br>in un unico posto',
+    'feat.sub':'Soorder centralizza ordini, consegne, fatture e comunicazioni tra ristoratori e fornitori.',
+    'feat.card1.title':'Un\'unica app per tutto','feat.card1.text':'Ordini, consegne, tracciamento e fatturazione — tutto centralizzato in un\'interfaccia mobile intuitiva.','feat.card1.cta':'Vedi le funzionalità →',
+    'feat.card2.title':'Ordini in tempo reale','feat.card2.text':'Effettua ordini in pochi secondi e segui il loro stato in tempo reale direttamente dall\'app.',
+    'feat.card3.title':'Messaggistica integrata','feat.card3.text':'Comunica direttamente con i tuoi fornitori senza uscire dall\'app.',
+    'feat.card4.title':'Dashboard vendite','feat.card4.text':'Visualizza le tue performance, le vendite e le statistiche in un colpo d\'occhio.',
+    'feat.card5.title':'Controllo fatture','feat.card5.text':'Monitora, archivia e gestisci tutte le spese da un unico dashboard.',
+    'feat.card6.title':'Offerte esclusive','feat.card6.text':'Accedi alle migliori offerte e promozioni dei tuoi fornitori preferiti.',
+    'feat.card7.title':'Tracciamento itinerari','feat.card7.text':'Traccia le consegne in tempo reale e ottimizza i giri dei tuoi corrieri.',
+    'testi.badge':'✦ Testimonianze','testi.title':'Si fidano di Soorder','testi.sub':'Ristoratori e fornitori di Ginevra si affidano a noi ogni giorno.',
+    'price.badge':'✦ Prezzi trasparenti','price.title':'Semplice. Senza sorprese.','price.sub':'Abbonamenti adatti alla tua attività, senza impegno annuale obbligatorio.',
+    'price.plan1':'Ristoratore','price.period1':'al mese, per locale','price.desc1':'Tutto ciò che serve per ordinare in modo intelligente dai tuoi fornitori.',
+    'pf.1.1':'Ordini illimitati','pf.1.2':'Tracciamento consegne','pf.1.3':'Gestione fatture','pf.1.4':'Offerte esclusive fornitori','pf.1.5':'Messaggistica integrata','price.cta1':'Inizia →',
+    'price.plan2':'Fornitore','price.period2':'al mese','price.desc2':'La soluzione completa per gestire i tuoi clienti ristoratori e aumentare le vendite.',
+    'pf.2.1':'Gestione multi-cliente','pf.2.2':'Crea promozioni','pf.2.3':'Gestione corrieri','pf.2.4':'Catalogo prodotti digitale','pf.2.5':'Dashboard vendite','pf.2.6':'Tracciamento itinerari','pf.2.7':'Top rank — visibilità aumentata','price.cta2':'Inizia →',
+    'price.plan3':'Franchising / Gruppo','price.plan3.price':'Su misura','price.period3':'prezzo personalizzato','price.desc3':'Gestisci più sedi? Abbiamo una soluzione adatta alla tua struttura.',
+    'pf.3.1':'Gestione multi-sede','pf.3.2':'Dashboard centralizzata','pf.3.3':'Fatturazione consolidata','pf.3.4':'Supporto dedicato','pf.3.5':'Onboarding personalizzato','price.cta3':'Contattaci →',
+    'cta.badge':'✦ Pronto a iniziare?','cta.title':'Unisciti a Soorder oggi','cta.sub':'Centinaia di ristoratori e fornitori ginevrini hanno già adottato la piattaforma. E tu?','cta.btn1':'Inizia adesso','cta.btn2':'Vedi i prezzi',
+    'ft.tag':'La piattaforma che connette ristoratori e fornitori locali in Svizzera. Locale. Digitale. Collaborativo.','ft.copy':'© 2026 Soorder. Tutti i diritti riservati.','ft.col1':'Prodotto','ft.col2':'Azienda','ft.about':'Chi siamo','ft.jobs':'Carriere','ft.privacy':'Privacy','ft.cgu':'Termini','ft.legal':'Note legali'
+  },
+  es: {
+    'nav.home':'Inicio','nav.rest':'Restauradores','nav.four':'Proveedores','nav.prix':'Precios','nav.faq':'FAQ','nav.contact':'Contacto','nav.cta':'Empezar','nav.cta.mob':'Empezar gratis',
+    'hero.title':'Pide<br>de otra manera.<br><span class="accent">Por fin.</span>',
+    'hero.sub':'Una app móvil que permite a los restauradores pedir fácilmente a sus proveedores, desde una única plataforma centralizada.',
+    'hero.btn1':'Soy restaurador','hero.btn2':'Soy proveedor',
+    'stat.l1':'Restauradores activos','stat.l2':'Proveedores asociados','stat.l3':'Satisfacción del cliente',
+    'feat.badge':'✦ Por qué Soorder','feat.title':'Todo lo que necesitas,<br>en un solo lugar',
+    'feat.sub':'Soorder centraliza pedidos, entregas, facturas y comunicación entre restauradores y proveedores.',
+    'feat.card1.title':'Una sola app para todo','feat.card1.text':'Pedidos, entregas, seguimiento y facturación — todo centralizado en una interfaz móvil intuitiva.','feat.card1.cta':'Ver funcionalidades →',
+    'feat.card2.title':'Pedidos en tiempo real','feat.card2.text':'Haz tus pedidos en segundos y sigue su estado en tiempo real directamente desde la app.',
+    'feat.card3.title':'Mensajería integrada','feat.card3.text':'Comunícate directamente con tus proveedores sin salir de la app.',
+    'feat.card4.title':'Panel de ventas','feat.card4.text':'Visualiza tu rendimiento, ventas y estadísticas de un vistazo.',
+    'feat.card5.title':'Control de facturas','feat.card5.text':'Sigue, archiva y gestiona todos tus gastos desde un solo panel.',
+    'feat.card6.title':'Ofertas exclusivas','feat.card6.text':'Accede a las mejores ofertas y promociones de tus proveedores favoritos.',
+    'feat.card7.title':'Seguimiento de rutas','feat.card7.text':'Sigue las entregas en tiempo real y optimiza las rutas de tus repartidores.',
+    'testi.badge':'✦ Testimonios','testi.title':'Ellos confían en Soorder','testi.sub':'Restauradores y proveedores de Ginebra confían en nosotros cada día.',
+    'price.badge':'✦ Precios transparentes','price.title':'Simple. Sin sorpresas.','price.sub':'Suscripciones adaptadas a tu actividad, sin compromiso anual obligatorio.',
+    'price.plan1':'Restaurador','price.period1':'al mes, por local','price.desc1':'Todo lo necesario para pedir de forma inteligente a tus proveedores.',
+    'pf.1.1':'Pedidos ilimitados','pf.1.2':'Seguimiento de entregas','pf.1.3':'Gestión de facturas','pf.1.4':'Ofertas exclusivas de proveedores','pf.1.5':'Mensajería integrada','price.cta1':'Empezar →',
+    'price.plan2':'Proveedor','price.period2':'al mes','price.desc2':'La solución completa para gestionar tus clientes restauradores y potenciar tus ventas.',
+    'pf.2.1':'Gestión multi-cliente','pf.2.2':'Crear promociones','pf.2.3':'Gestión de repartidores','pf.2.4':'Catálogo de productos digital','pf.2.5':'Panel de ventas','pf.2.6':'Seguimiento de rutas','pf.2.7':'Top rank — mayor visibilidad','price.cta2':'Empezar →',
+    'price.plan3':'Franquicia / Grupo','price.plan3.price':'A medida','price.period3':'precio personalizado','price.desc3':'¿Gestionas varios locales? Tenemos una solución adaptada a tu estructura.',
+    'pf.3.1':'Gestión multi-sede','pf.3.2':'Panel centralizado','pf.3.3':'Facturación consolidada','pf.3.4':'Soporte dedicado','pf.3.5':'Onboarding personalizado','price.cta3':'Contáctanos →',
+    'cta.badge':'✦ ¿Listo para empezar?','cta.title':'Únete a Soorder hoy','cta.sub':'Cientos de restauradores y proveedores ginebrinos ya han adoptado la plataforma. ¿Por qué no tú?','cta.btn1':'Empezar ahora','cta.btn2':'Ver precios',
+    'ft.tag':'La plataforma que conecta restauradores y proveedores locales en Suiza. Local. Digital. Colaborativo.','ft.copy':'© 2026 Soorder. Todos los derechos reservados.','ft.col1':'Producto','ft.col2':'Empresa','ft.about':'Acerca de','ft.jobs':'Empleo','ft.privacy':'Privacidad','ft.cgu':'Términos','ft.legal':'Aviso legal'
+  },
+  pt: {
+    'nav.home':'Início','nav.rest':'Restauradores','nav.four':'Fornecedores','nav.prix':'Preços','nav.faq':'FAQ','nav.contact':'Contacto','nav.cta':'Começar','nav.cta.mob':'Começar grátis',
+    'hero.title':'Encomende<br>de outra forma.<br><span class="accent">Finalmente.</span>',
+    'hero.sub':'Uma aplicação móvel que permite aos restauradores encomendar facilmente aos seus fornecedores, a partir de uma única plataforma centralizada.',
+    'hero.btn1':'Sou restaurador','hero.btn2':'Sou fornecedor',
+    'stat.l1':'Restauradores ativos','stat.l2':'Fornecedores parceiros','stat.l3':'Satisfação do cliente',
+    'feat.badge':'✦ Porquê Soorder','feat.title':'Tudo o que precisa,<br>num só lugar',
+    'feat.sub':'O Soorder centraliza encomendas, entregas, faturas e comunicação entre restauradores e fornecedores.',
+    'feat.card1.title':'Uma app para tudo','feat.card1.text':'Encomendas, entregas, rastreamento e faturação — tudo centralizado numa interface móvel intuitiva.','feat.card1.cta':'Ver funcionalidades →',
+    'feat.card2.title':'Encomendas em tempo real','feat.card2.text':'Faça encomendas em segundos e siga o seu estado em tempo real diretamente na app.',
+    'feat.card3.title':'Mensagens integradas','feat.card3.text':'Comunique diretamente com os seus fornecedores sem sair da app.',
+    'feat.card4.title':'Painel de vendas','feat.card4.text':'Visualize o seu desempenho, vendas e estatísticas de relance.',
+    'feat.card5.title':'Controlo de faturas','feat.card5.text':'Acompanhe, arquive e gira todas as despesas a partir de um único painel.',
+    'feat.card6.title':'Ofertas exclusivas','feat.card6.text':'Aceda às melhores ofertas e promoções dos seus fornecedores favoritos.',
+    'feat.card7.title':'Rastreamento de rotas','feat.card7.text':'Rastreie entregas em tempo real e otimize as rotas dos seus estafetas.',
+    'testi.badge':'✦ Testemunhos','testi.title':'Eles confiam no Soorder','testi.sub':'Restauradores e fornecedores de Genebra confiam em nós todos os dias.',
+    'price.badge':'✦ Preços transparentes','price.title':'Simples. Sem surpresas.','price.sub':'Subscrições adaptadas à sua atividade, sem compromisso anual obrigatório.',
+    'price.plan1':'Restaurador','price.period1':'por mês, por estabelecimento','price.desc1':'Tudo o que precisa para encomendar de forma inteligente aos seus fornecedores.',
+    'pf.1.1':'Encomendas ilimitadas','pf.1.2':'Rastreamento de entregas','pf.1.3':'Gestão de faturas','pf.1.4':'Ofertas exclusivas de fornecedores','pf.1.5':'Mensagens integradas','price.cta1':'Começar →',
+    'price.plan2':'Fornecedor','price.period2':'por mês','price.desc2':'A solução completa para gerir os seus clientes restauradores e aumentar as vendas.',
+    'pf.2.1':'Gestão multi-cliente','pf.2.2':'Criar promoções','pf.2.3':'Gestão de estafetas','pf.2.4':'Catálogo de produtos digital','pf.2.5':'Painel de vendas','pf.2.6':'Rastreamento de rotas','pf.2.7':'Top rank — visibilidade aumentada','price.cta2':'Começar →',
+    'price.plan3':'Franquia / Grupo','price.plan3.price':'Personalizado','price.period3':'preço personalizado','price.desc3':'Gere vários estabelecimentos? Temos uma solução adaptada à sua estrutura.',
+    'pf.3.1':'Gestão multi-local','pf.3.2':'Painel centralizado','pf.3.3':'Faturação consolidada','pf.3.4':'Suporte dedicado','pf.3.5':'Onboarding personalizado','price.cta3':'Contactar →',
+    'cta.badge':'✦ Pronto para começar?','cta.title':'Junte-se ao Soorder hoje','cta.sub':'Centenas de restauradores e fornecedores genebrinos já adotaram a plataforma. E você?','cta.btn1':'Começar agora','cta.btn2':'Ver preços',
+    'ft.tag':'A plataforma que liga restauradores e fornecedores locais na Suíça. Local. Digital. Colaborativo.','ft.copy':'© 2026 Soorder. Todos os direitos reservados.','ft.col1':'Produto','ft.col2':'Empresa','ft.about':'Sobre nós','ft.jobs':'Carreiras','ft.privacy':'Privacidade','ft.cgu':'Termos','ft.legal':'Aviso legal'
+  }
+};
+
+function switchLang(lang) {
+  if (!i18n[lang]) return;
+  var t = i18n[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  var sel = document.getElementById('lang-switcher');
+  if (sel) sel.value = lang;
+  document.documentElement.lang = lang;
+  localStorage.setItem('so-lang', lang);
+}
+
+(function() {
+  var lang = localStorage.getItem('so-lang') || 'fr';
+  if (lang !== 'fr') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() { switchLang(lang); });
+    } else {
+      switchLang(lang);
+    }
+  } else {
+    var sel = document.getElementById('lang-switcher');
+    if (sel) sel.value = 'fr';
+  }
+})();
+
 function toggleMenu() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
