@@ -250,7 +250,7 @@ section { padding: 100px 0; }
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: var(--nav-h);
+  padding-top: 120px;
 }
 
 .hero::before {
