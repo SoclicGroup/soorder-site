@@ -7,8 +7,7 @@
   <meta name="description" content="Contactez l'équipe Soorder." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>emailjs.init('PUBLIC_KEY');</script>
+
   <style>.success-msg{display:none;background:rgba(46,204,113,0.1);border:1px solid var(--accent);border-radius:var(--radius-sm);padding:1rem 1.5rem;color:var(--accent);font-weight:600;text-align:center;margin-top:1rem;}</style>
 </head>
 <body>
@@ -56,14 +55,15 @@
       <div class="card animate delay-2" style="padding: 2.5rem;">
         <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;" data-i18n="ct.form.h">Envoyez-nous un message</h3>
         <p style="font-size: 0.88rem; color: var(--text-m); margin-bottom: 2rem;" data-i18n="ct.form.sub">Nous vous répondons dans les 24 heures ouvrées.</p>
-        <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-row"><div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required /></div><div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Votre nom" required /></div></div>
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/mdavkvna" method="POST" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="_subject" value="Nouveau message - Soorder">
+          <div class="form-row"><div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="firstname" placeholder="Votre prénom" required /></div><div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="lastname" placeholder="Votre nom" required /></div></div>
           <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.ch" required /></div>
-          <div class="form-group"><label for="entreprise">Entreprise</label><input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre établissement" /></div>
-          <div class="form-group"><label for="motif">Motif de votre demande</label><select id="motif" name="motif" required><option value="" disabled selected>Sélectionnez un motif</option><option value="restaurateur">Je suis restaurateur et je veux démarrer</option><option value="fournisseur">Je suis fournisseur et je veux rejoindre le réseau</option><option value="franchise">J'ai une franchise ou un groupe multi-sites</option><option value="question">J'ai une question sur l'application</option><option value="autre">Autre</option></select></div>
+          <div class="form-group"><label for="entreprise">Entreprise</label><input type="text" id="entreprise" name="company" placeholder="Nom de votre établissement" /></div>
+          <div class="form-group"><label for="motif">Motif de votre demande</label><select id="motif" name="subject" required><option value="" disabled selected>Sélectionnez un motif</option><option value="restaurateur">Je suis restaurateur et je veux démarrer</option><option value="fournisseur">Je suis fournisseur et je veux rejoindre le réseau</option><option value="franchise">J'ai une franchise ou un groupe multi-sites</option><option value="question">J'ai une question sur l'application</option><option value="autre">Autre</option></select></div>
           <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Décrivez votre besoin, vos questions ou votre projet..." required></textarea></div>
           <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 1rem;">Envoyer le message ❖</button>
-          <div class="success-msg" id="successMsg">✓ Message envoyé ! Nous vous répondons sous 24h.</div>
+          <div class="success-msg" id="successMsg">Merci ! Votre message a bien été envoyé. Nous vous répondons sous 24h.</div>
           <p style="font-size: 0.75rem; color: var(--text-s); text-align: center; margin-top: 0.8rem;">Vos données sont traitées conformément à notre <a href="confidentialite.html" style="color:var(--accent);">politique de confidentialité</a>.</p>
         </form>
       </div>
@@ -86,7 +86,7 @@ const i18n={fr:{'nav.home':'Accueil','nav.rest':'Restaurateurs','nav.four':'Four
 function switchLang(lang){if(!i18n[lang])return;var t=i18n[lang];document.querySelectorAll('[data-i18n]').forEach(function(el){var key=el.getAttribute('data-i18n');if(t[key]!==undefined)el.innerHTML=t[key];});var sel=document.getElementById('lang-switcher');if(sel)sel.value=lang;document.documentElement.lang=lang;localStorage.setItem('so-lang',lang);}
 (function(){var lang=localStorage.getItem('so-lang')||'fr';if(lang!=='fr'){if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){switchLang(lang);});}else{switchLang(lang);}}else{var sel=document.getElementById('lang-switcher');if(sel)sel.value='fr';}})();
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
-function handleSubmit(e){e.preventDefault();var form=e.target;var btn=form.querySelector('button[type="submit"]');btn.textContent='Envoi en cours...';btn.disabled=true;emailjs.sendForm('SERVICE_ID','TEMPLATE_ID',form).then(()=>{form.reset();btn.style.display='none';document.getElementById('successMsg').style.display='block';},()=>{btn.textContent='Erreur — réessayez';btn.disabled=false;});}
+function handleSubmit(e){e.preventDefault();var form=e.target;var btn=form.querySelector('button[type="submit"]');btn.textContent='Envoi en cours...';btn.disabled=true;fetch('https://formspree.io/f/mdavkvna',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){if(r.ok){form.reset();btn.style.display='none';document.getElementById('successMsg').style.display='block';}else{btn.textContent='Erreur — réessayez';btn.disabled=false;}}).catch(function(){btn.textContent='Erreur — réessayez';btn.disabled=false;});}
 const observer=new IntersectionObserver((e)=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
 document.querySelectorAll('.animate').forEach(el=>observer.observe(el));
 </script>
