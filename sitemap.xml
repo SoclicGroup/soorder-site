@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://soorder.ch/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://soorder.ch/restaurateur.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/fournisseur.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/prix.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/faq.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/contact.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/apropos.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/blog.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://soorder.ch/carrieres.html</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://soorder.ch/confidentialite.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://soorder.ch/cgu.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://soorder.ch/mentions-legales.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+</urlset>
