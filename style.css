@@ -256,6 +256,7 @@ section { padding: 100px 0; }
   position: relative;
   overflow: hidden;
   padding-top: 140px;
+  padding-bottom: 80px;
 }
 
 .hero::before {
@@ -269,6 +270,34 @@ section { padding: 100px 0; }
 }
 
 .hero-content { text-align: center; max-width: 780px; margin: 0 auto; }
+
+/* ===== HERO COLUMN LAYOUT ===== */
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-text {
+  width: 100%;
+  text-align: center;
+}
+.hero-text .hero-subtitle { margin-left: auto; margin-right: auto; }
+.hero-text .hero-actions  { justify-content: center; }
+.hero-text .store-btns    { justify-content: center; }
+.hero-text .hero-eyebrow  { justify-content: center; }
+.hero-inner > .stats-bar  { width: 100%; margin-top: 3rem; }
+.hero-visual {
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .hero-eyebrow {
   display: flex;
