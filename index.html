@@ -109,133 +109,287 @@
         </div>
       </div><!-- /.hero-text -->
 
-      <!-- ── Mockup téléphone droite ── -->
+      <!-- ── Mockup téléphone droite (self-contained) ── -->
+      <style>
+        #soom,#soom *{box-sizing:border-box;}
+        #soom{
+          position:relative;
+          width:272px;
+          flex-shrink:0;
+          animation:soom_float 6s ease-in-out infinite;
+        }
+        @keyframes soom_float{
+          0%,100%{transform:translateY(0) rotate(-1.5deg);}
+          50%{transform:translateY(-14px) rotate(-1.5deg);}
+        }
+        #soom-glow{
+          position:absolute;inset:-50px;
+          background:radial-gradient(circle at 50% 48%,rgba(46,204,113,.15) 0%,transparent 62%);
+          pointer-events:none;z-index:0;
+        }
+        #soom-phone{
+          position:relative;z-index:1;
+          width:260px;margin:0 auto;
+          background:#0d1210;
+          border-radius:44px;
+          border:1.5px solid rgba(46,204,113,.22);
+          box-shadow:0 0 0 1px rgba(255,255,255,.04),0 48px 80px rgba(0,0,0,.7),0 0 55px rgba(46,204,113,.09),inset 0 1px 0 rgba(255,255,255,.06);
+          overflow:hidden;
+          font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+        }
+        /* Side-button nubs */
+        #soom-phone-wrap{position:relative;width:260px;margin:0 auto;}
+        #soom-phone-wrap::before{
+          content:'';position:absolute;left:-3px;top:96px;
+          width:3px;height:28px;background:rgba(46,204,113,.2);border-radius:2px 0 0 2px;
+          box-shadow:0 40px 0 rgba(46,204,113,.2);
+        }
+        #soom-phone-wrap::after{
+          content:'';position:absolute;right:-3px;top:115px;
+          width:3px;height:46px;background:rgba(46,204,113,.2);border-radius:0 2px 2px 0;
+        }
+        /* Dynamic island */
+        #soom-island{
+          width:86px;height:26px;background:#000;
+          border-radius:0 0 20px 20px;margin:0 auto;
+          position:relative;z-index:2;
+        }
+        /* Screen inner */
+        #soom-screen{padding:10px 15px 18px;}
+        /* Status bar */
+        #soom-sb{
+          display:flex;justify-content:space-between;align-items:center;
+          margin-bottom:11px;
+        }
+        #soom-sb-time{font-size:11px;font-weight:700;color:#fff;line-height:1;}
+        #soom-sb-name{font-size:11px;font-weight:800;color:#2ecc71;letter-spacing:.8px;line-height:1;}
+        #soom-sb-right{display:flex;align-items:center;gap:4px;}
+        /* Card */
+        #soom-card{
+          background:#121f18;
+          border-radius:16px;
+          border:1px solid rgba(46,204,113,.13);
+          padding:13px;
+          margin-bottom:11px;
+        }
+        /* Card head row */
+        #soom-card-head{
+          display:flex;justify-content:space-between;align-items:flex-start;
+          margin-bottom:9px;gap:6px;
+        }
+        #soom-order-num{font-size:12px;font-weight:800;color:#fff;margin-bottom:3px;line-height:1.2;}
+        #soom-route{
+          font-size:9px;color:#5a8070;line-height:1.3;
+          display:flex;align-items:center;gap:3px;white-space:nowrap;
+          overflow:hidden;text-overflow:ellipsis;max-width:150px;
+        }
+        #soom-pill{
+          display:flex;align-items:center;gap:5px;flex-shrink:0;
+          background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.26);
+          border-radius:20px;padding:4px 9px;
+          font-size:9px;font-weight:600;color:#2ecc71;
+          line-height:1;
+        }
+        #soom-pill-dot{
+          width:6px;height:6px;background:#2ecc71;border-radius:50%;
+          animation:soom_dot 2s ease-in-out infinite;flex-shrink:0;
+        }
+        @keyframes soom_dot{0%,100%{opacity:1;}50%{opacity:.3;}}
+        /* Divider */
+        #soom-divider{height:1px;background:rgba(46,204,113,.1);margin-bottom:9px;}
+        /* Items */
+        #soom-items{display:flex;flex-direction:column;gap:6px;margin-bottom:9px;}
+        .soom-item{
+          display:flex;justify-content:space-between;align-items:center;
+          padding:7px 9px;
+          background:rgba(46,204,113,.04);
+          border:1px solid rgba(46,204,113,.09);
+          border-radius:9px;
+          opacity:0;transform:translateX(-10px);
+          transition:opacity .38s ease,transform .38s ease;
+        }
+        .soom-item.soom-vis{opacity:1;transform:translateX(0);}
+        .soom-item-l{flex:1;min-width:0;}
+        .soom-item-name{font-size:10.5px;font-weight:600;color:#dde8e2;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .soom-item-qty{font-size:9px;color:#4a6b5a;margin-top:1px;line-height:1;}
+        .soom-item-price{font-size:10.5px;font-weight:700;color:#2ecc71;flex-shrink:0;margin-left:6px;line-height:1.2;}
+        /* Total */
+        #soom-total{
+          display:flex;justify-content:space-between;align-items:center;
+          padding-top:9px;border-top:1px solid rgba(46,204,113,.14);
+        }
+        #soom-total-lbl{font-size:10px;font-weight:600;color:#7a9a8a;}
+        #soom-total-val{font-size:13px;font-weight:800;color:#fff;}
+        /* CTA button */
+        #soom-cta{
+          width:100%;background:#2ecc71;color:#000;
+          border:none;border-radius:13px;padding:12px 14px;
+          font-size:12.5px;font-weight:700;cursor:default;
+          display:flex;align-items:center;justify-content:center;gap:6px;
+          font-family:'DM Sans',-apple-system,sans-serif;
+          outline:none;
+          animation:soom_cta_pulse 3s ease-in-out 3s infinite;
+        }
+        @keyframes soom_cta_pulse{
+          0%,100%{box-shadow:0 0 0 0 rgba(46,204,113,.45);}
+          50%{box-shadow:0 0 0 8px rgba(46,204,113,0);}
+        }
+        /* Floating notif chip */
+        #soom-notif{
+          position:absolute;bottom:-14px;left:-38px;
+          background:#0b1f12;border:1px solid rgba(46,204,113,.28);
+          border-radius:13px;padding:8px 12px;
+          display:flex;align-items:center;gap:9px;
+          box-shadow:0 10px 30px rgba(0,0,0,.6);
+          white-space:nowrap;z-index:10;
+          opacity:0;
+          animation:soom_notif 7s ease-in-out 3.8s infinite;
+        }
+        @keyframes soom_notif{
+          0%{opacity:0;transform:translateY(10px);}
+          10%{opacity:1;transform:translateY(0);}
+          70%{opacity:1;transform:translateY(0);}
+          88%{opacity:0;transform:translateY(-6px);}
+          100%{opacity:0;transform:translateY(10px);}
+        }
+        #soom-notif-icon{
+          width:26px;height:26px;background:#2ecc71;border-radius:7px;
+          display:flex;align-items:center;justify-content:center;
+          color:#000;font-weight:800;font-size:13px;flex-shrink:0;
+          font-family:'DM Sans',sans-serif;
+        }
+        #soom-notif-title{font-size:10.5px;font-weight:700;color:#fff;line-height:1.3;}
+        #soom-notif-sub{font-size:9px;color:#4a6b5a;margin-top:2px;line-height:1;}
+        /* Stat chip */
+        #soom-chip{
+          position:absolute;top:22px;right:-34px;
+          background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.28);
+          border-radius:20px;padding:5px 11px;
+          font-size:10px;color:#a0c8a8;white-space:nowrap;
+          backdrop-filter:blur(12px);
+          opacity:0;animation:soom_chip .5s ease .7s forwards;
+        }
+        #soom-chip b{color:#2ecc71;font-weight:800;}
+        @keyframes soom_chip{to{opacity:1;}}
+        /* Responsive */
+        @media(max-width:1024px){#soom-chip{display:none;}}
+        @media(max-width:680px){#soom{display:none;}}
+      </style>
+
       <div class="hero-visual" aria-hidden="true">
-        <div class="phone-glow"></div>
-        <div class="phone-wrap">
-          <div class="phone-frame">
-            <div class="phone-island"></div>
-            <div class="phone-screen">
+        <div id="soom">
+          <div id="soom-glow"></div>
+          <div id="soom-phone-wrap">
+            <div id="soom-phone">
+              <div id="soom-island"></div>
+              <div id="soom-screen">
 
-              <!-- Status bar -->
-              <div class="papp-statusbar">
-                <span>09:41</span>
-                <div class="sb-icons">
-                  <!-- Signal -->
-                  <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
-                    <rect x="0" y="5" width="3" height="6" rx="0.6" fill="#fff" opacity="0.35"/>
-                    <rect x="4" y="3" width="3" height="8" rx="0.6" fill="#fff" opacity="0.6"/>
-                    <rect x="8" y="1" width="3" height="10" rx="0.6" fill="#fff" opacity="0.8"/>
-                    <rect x="12" y="0" width="3" height="11" rx="0.6" fill="#fff"/>
-                  </svg>
-                  <!-- Wifi -->
-                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" aria-hidden="true">
-                    <path d="M7 8.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" fill="#fff"/>
-                    <path d="M2.6 6.4C4 4.9 5.9 4 7 4s3 .9 4.4 2.4l1.2-1.2C11 3.6 9.1 2.5 7 2.5S3 3.6 1.4 5.2l1.2 1.2z" fill="#fff" opacity="0.75"/>
-                    <path d="M0 3.5C2 1.4 4.4 0 7 0s5 1.4 7 3.5L12.8 4.7C11.2 3 9.2 2 7 2S2.8 3 1.2 4.7L0 3.5z" fill="#fff" opacity="0.45"/>
-                  </svg>
-                  <!-- Battery -->
-                  <svg width="24" height="12" viewBox="0 0 24 12" fill="none" aria-hidden="true">
-                    <rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="#fff" stroke-opacity="0.4"/>
-                    <rect x="2" y="2" width="15" height="8" rx="1.5" fill="#2ecc71"/>
-                    <path d="M22 4v4a2 2 0 0 0 0-4z" fill="#fff" opacity="0.5"/>
-                  </svg>
+                <!-- Status bar -->
+                <div id="soom-sb">
+                  <span id="soom-sb-time">09:41</span>
+                  <span id="soom-sb-name">soorder</span>
+                  <div id="soom-sb-right">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+                      <rect x="0" y="5" width="2.5" height="5" rx=".5" fill="#fff" opacity=".35"/>
+                      <rect x="3.5" y="3" width="2.5" height="7" rx=".5" fill="#fff" opacity=".55"/>
+                      <rect x="7" y="1" width="2.5" height="9" rx=".5" fill="#fff" opacity=".75"/>
+                      <rect x="10.5" y="0" width="2.5" height="10" rx=".5" fill="#fff"/>
+                    </svg>
+                    <svg width="22" height="11" viewBox="0 0 22 11" fill="none" aria-hidden="true">
+                      <rect x=".5" y=".5" width="18" height="10" rx="2.5" stroke="#fff" stroke-opacity=".35"/>
+                      <rect x="2" y="2" width="13" height="7" rx="1.5" fill="#2ecc71"/>
+                      <path d="M20 3.5v4a1.5 1.5 0 000-4z" fill="#fff" opacity=".45"/>
+                    </svg>
+                  </div>
                 </div>
-              </div>
 
-              <!-- App nav -->
-              <div class="papp-nav">
-                <button class="papp-back" tabindex="-1">
-                  <svg width="8" height="13" viewBox="0 0 8 13" fill="none" aria-hidden="true">
-                    <path d="M7 1L1 6.5 7 12" stroke="#2ecc71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Order card -->
+                <div id="soom-card">
+                  <div id="soom-card-head">
+                    <div style="min-width:0;flex:1;">
+                      <div id="soom-order-num">Commande #1842</div>
+                      <div id="soom-route">Chic Chicken&nbsp;→&nbsp;Chic Distribution</div>
+                    </div>
+                    <div id="soom-pill">
+                      <span id="soom-pill-dot"></span>En cours
+                    </div>
+                  </div>
+
+                  <div id="soom-divider"></div>
+
+                  <div id="soom-items">
+                    <div class="soom-item">
+                      <div class="soom-item-l">
+                        <div class="soom-item-name">Filet de saumon</div>
+                        <div class="soom-item-qty">× 12 kg</div>
+                      </div>
+                      <div class="soom-item-price">72.00</div>
+                    </div>
+                    <div class="soom-item">
+                      <div class="soom-item-l">
+                        <div class="soom-item-name">Entrecôte 400g</div>
+                        <div class="soom-item-qty">× 6 pcs</div>
+                      </div>
+                      <div class="soom-item-price">84.00</div>
+                    </div>
+                    <div class="soom-item">
+                      <div class="soom-item-l">
+                        <div class="soom-item-name">Mozzarella bufala</div>
+                        <div class="soom-item-qty">× 4 kg</div>
+                      </div>
+                      <div class="soom-item-price">48.00</div>
+                    </div>
+                    <div class="soom-item">
+                      <div class="soom-item-l">
+                        <div class="soom-item-name">Vacherin Mont-d'Or</div>
+                        <div class="soom-item-qty">× 2 pcs</div>
+                      </div>
+                      <div class="soom-item-price">43.50</div>
+                    </div>
+                  </div>
+
+                  <div id="soom-total">
+                    <span id="soom-total-lbl">Total HT</span>
+                    <span id="soom-total-val">CHF 247.50</span>
+                  </div>
+                </div>
+
+                <!-- Commander button -->
+                <button id="soom-cta" tabindex="-1">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
+                  Commander
                 </button>
-                <div class="papp-nav-center">
-                  <div class="papp-supplier">Chic Distribution</div>
-                  <div class="papp-online"><span class="online-dot"></span>En ligne</div>
-                </div>
-                <div class="papp-avatar">CD</div>
-              </div>
 
-              <!-- Order header -->
-              <div class="papp-order-head">
-                <div class="papp-order-meta">
-                  <span class="papp-order-date">Lun 9 juin · 08:34</span>
-                  <span class="papp-draft-badge">Brouillon</span>
-                </div>
-                <div class="papp-order-title">Nouvelle commande</div>
-              </div>
+              </div><!-- #soom-screen -->
+            </div><!-- #soom-phone -->
+          </div><!-- #soom-phone-wrap -->
 
-              <!-- Items -->
-              <div class="papp-items">
-                <div class="papp-item" style="--oi:0">
-                  <span class="papp-item-dot"></span>
-                  <div class="papp-item-info">
-                    <div class="papp-item-name">Filet de saumon</div>
-                    <div class="papp-item-qty">× 12 kg</div>
-                  </div>
-                  <div class="papp-item-price">48.00</div>
-                </div>
-                <div class="papp-item" style="--oi:1">
-                  <span class="papp-item-dot"></span>
-                  <div class="papp-item-info">
-                    <div class="papp-item-name">Entrecôte 400g</div>
-                    <div class="papp-item-qty">× 6 pcs</div>
-                  </div>
-                  <div class="papp-item-price">72.00</div>
-                </div>
-                <div class="papp-item" style="--oi:2">
-                  <span class="papp-item-dot"></span>
-                  <div class="papp-item-info">
-                    <div class="papp-item-name">Mozzarella bufala</div>
-                    <div class="papp-item-qty">× 4 kg</div>
-                  </div>
-                  <div class="papp-item-price">24.00</div>
-                </div>
-                <div class="papp-item" style="--oi:3">
-                  <span class="papp-item-dot"></span>
-                  <div class="papp-item-info">
-                    <div class="papp-item-name">Vacherin Mont-d'Or</div>
-                    <div class="papp-item-qty">× 2 pcs</div>
-                  </div>
-                  <div class="papp-item-price">36.00</div>
-                </div>
-              </div>
-
-              <!-- Total -->
-              <div class="papp-total">
-                <span class="papp-total-label">Total HT</span>
-                <span class="papp-total-val">180.00 CHF</span>
-              </div>
-
-              <!-- CTA -->
-              <button class="papp-cta" tabindex="-1">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M22 2L11 13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Commander
-              </button>
-
-            </div><!-- /.phone-screen -->
-          </div><!-- /.phone-frame -->
-
-          <!-- Floating notification -->
-          <div class="phone-notif-chip">
-            <div class="pnc-icon">✓</div>
+          <!-- Floating notification chip -->
+          <div id="soom-notif">
+            <div id="soom-notif-icon">✓</div>
             <div>
-              <div class="pnc-title">Commande envoyée</div>
-              <div class="pnc-sub">Chic Distribution · à l'instant</div>
+              <div id="soom-notif-title">Commande envoyée</div>
+              <div id="soom-notif-sub">Chic Distribution · à l'instant</div>
             </div>
           </div>
 
-          <!-- Floating stat chip -->
-          <div class="phone-stat-chip">
-            <span class="psc-num">200+</span>&nbsp;fournisseurs
-          </div>
+          <!-- Stat chip -->
+          <div id="soom-chip"><b>200+</b>&nbsp;fournisseurs</div>
 
-        </div><!-- /.phone-wrap -->
-      </div><!-- /.hero-visual -->
+        </div><!-- #soom -->
+      </div><!-- .hero-visual -->
+
+      <script>
+      (function(){
+        var items = document.querySelectorAll('.soom-item');
+        items.forEach(function(el,i){
+          setTimeout(function(){ el.classList.add('soom-vis'); }, 350 + i * 480);
+        });
+      })();
+      </script>
 
     </div><!-- /.hero-inner -->
   </div><!-- /.container -->
