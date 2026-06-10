@@ -680,9 +680,10 @@ footer {
 .hero-text .hero-actions  { justify-content: center; }
 .hero-text .store-btns    { justify-content: center; }
 .hero-text .hero-eyebrow  { justify-content: center; }
-.hero-text .stats-bar     { margin-top: 3rem; }
+.hero-inner > .stats-bar  { width: 100%; margin-top: 3rem; }
 .hero-visual {
-  width: auto;
+  width: 100%;
+  max-width: 320px;
   position: relative;
   display: flex;
   justify-content: center;
