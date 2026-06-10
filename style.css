@@ -254,7 +254,7 @@ section { padding: 100px 0; }
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   padding-top: 140px;
   padding-bottom: 80px;
 }
@@ -715,7 +715,8 @@ footer {
   .nav-burger { display: flex; }
 
   /* ── Hero ── */
-  .hero { min-height: auto; padding-top: 120px; padding-bottom: 3rem; }
+  .hero { min-height: auto; padding-top: 120px; padding-bottom: 5rem; }
+  .hero-visual { max-width: 290px; }
   .hero-title { font-size: 58px; line-height: 1.1; }
   .hero-subtitle { font-size: 0.93rem; margin-bottom: 2rem; }
   .hero-eyebrow { margin-bottom: 1.2rem; }

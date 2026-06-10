@@ -118,7 +118,7 @@
           position:relative;
           width:272px;
           flex-shrink:0;
-          margin-top:60px;
+          margin-top:80px;
           animation:soom_float 6s ease-in-out infinite;
         }
         @keyframes soom_float{
@@ -252,18 +252,10 @@
         }
         #soom-notif-title{font-size:10.5px;font-weight:700;color:#fff;line-height:1.3;}
         #soom-notif-sub{font-size:9px;color:#4a6b5a;margin-top:2px;line-height:1;}
-        #soom-chip{
-          position:absolute;top:22px;right:-34px;
-          background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.28);
-          border-radius:20px;padding:5px 11px;
-          font-size:10px;color:#a0c8a8;white-space:nowrap;
-          backdrop-filter:blur(12px);
-          opacity:0;animation:soom_chip .5s ease .7s forwards;
+        @media(max-width:768px){
+          #soom{width:240px;max-width:280px;margin:60px auto 0;}
+          #soom-notif{display:none;}
         }
-        #soom-chip b{color:#2ecc71;font-weight:800;}
-        @keyframes soom_chip{to{opacity:1;}}
-        @media(max-width:1024px){#soom-chip{display:none;}}
-        @media(max-width:680px){#soom{display:none;}}
       </style>
 
       <div class="hero-visual" aria-hidden="true">
@@ -365,9 +357,6 @@
               <div id="soom-notif-sub">Chic Distribution · à l'instant</div>
             </div>
           </div>
-
-          <!-- Stat chip -->
-          <div id="soom-chip"><b>200+</b>&nbsp;fournisseurs</div>
 
         </div><!-- #soom -->
       </div><!-- .hero-visual -->
