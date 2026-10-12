@@ -1,15 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://soorder.ch/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://soorder.ch/restaurateur.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/fournisseur.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/prix.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/faq.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/contact.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/apropos.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/blog.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://soorder.ch/carrieres.html</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://soorder.ch/confidentialite.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://soorder.ch/cgu.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
-  <url><loc>https://soorder.ch/mentions-legales.html</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://soorder.ch/</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/"/>
+  </url>
+  <url><loc>https://soorder.ch/de/</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/"/>
+  </url>
+  <url><loc>https://soorder.ch/it/</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/"/>
+  </url>
+  <url><loc>https://soorder.ch/en/</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/"/>
+  </url>
+  <url><loc>https://soorder.ch/restaurateurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/restaurateurs"/>
+  </url>
+  <url><loc>https://soorder.ch/de/restaurateurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/restaurateurs"/>
+  </url>
+  <url><loc>https://soorder.ch/it/restaurateurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/restaurateurs"/>
+  </url>
+  <url><loc>https://soorder.ch/en/restaurateurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/restaurateurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/restaurateurs"/>
+  </url>
+  <url><loc>https://soorder.ch/fournisseurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/fournisseurs"/>
+  </url>
+  <url><loc>https://soorder.ch/de/fournisseurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/fournisseurs"/>
+  </url>
+  <url><loc>https://soorder.ch/it/fournisseurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/fournisseurs"/>
+  </url>
+  <url><loc>https://soorder.ch/en/fournisseurs</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/fournisseurs"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/fournisseurs"/>
+  </url>
+  <url><loc>https://soorder.ch/parrainage</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/parrainage"/>
+  </url>
+  <url><loc>https://soorder.ch/de/parrainage</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/parrainage"/>
+  </url>
+  <url><loc>https://soorder.ch/it/parrainage</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/parrainage"/>
+  </url>
+  <url><loc>https://soorder.ch/en/parrainage</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/parrainage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/parrainage"/>
+  </url>
+  <url><loc>https://soorder.ch/mentions-legales</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/mentions-legales"/>
+  </url>
+  <url><loc>https://soorder.ch/de/mentions-legales</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/mentions-legales"/>
+  </url>
+  <url><loc>https://soorder.ch/it/mentions-legales</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/mentions-legales"/>
+  </url>
+  <url><loc>https://soorder.ch/en/mentions-legales</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/mentions-legales"/>
+  </url>
+  <url><loc>https://soorder.ch/confidentialite</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/confidentialite"/>
+  </url>
+  <url><loc>https://soorder.ch/de/confidentialite</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/confidentialite"/>
+  </url>
+  <url><loc>https://soorder.ch/it/confidentialite</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/confidentialite"/>
+  </url>
+  <url><loc>https://soorder.ch/en/confidentialite</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/confidentialite"/>
+  </url>
+  <url><loc>https://soorder.ch/cgu</loc><lastmod>2026-10-12</lastmod>
+  </url>
 </urlset>

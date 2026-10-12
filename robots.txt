@@ -1,4 +1,32 @@
+# robots.txt — soorder.ch
+# Moteurs de recherche et assistants IA autorisés à lire le site
+
 User-agent: *
 Allow: /
+
+# Assistants IA (autorisés pour que Soorder soit cité dans leurs réponses)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://soorder.ch/sitemap.xml
-Disallow: /

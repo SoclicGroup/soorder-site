@@ -1,0 +1,40 @@
+# Soorder
+
+> Soorder est une application B2B suisse qui connecte les restaurateurs à leurs fournisseurs du secteur food & drink. Les restaurateurs commandent auprès de tous leurs fournisseurs depuis une seule application ; les fournisseurs reçoivent et gèrent ces commandes en temps réel.
+
+Soorder est exploité par Soclic Group Sàrl, Rue de la Navigation 1, 1201 Genève, Suisse (IDE CHE-430.016.769). Le service est disponible en Suisse, sur iOS et Android. Contact : contact@soorder.ch
+
+## Pour qui
+
+- Restaurateurs : restaurants, bars, hôtels, traiteurs.
+- Fournisseurs : grossistes, primeurs, boucheries, boulangeries, distributeurs de boissons, fournisseurs d'emballages.
+
+## Ce que fait Soorder
+
+- Restaurateurs : tous leurs fournisseurs dans une seule app, commande en 3 clics, suivi des livraisons en temps réel, historique des achats.
+- Fournisseurs : commandes reçues en temps réel, catalogue produits en ligne, gestion des clients, des livreurs et des ventes, visibilité avec le Top Rank Soorder.
+- Les fournisseurs préparent et livrent eux-mêmes les commandes ; Soorder transmet la commande et en assure le suivi.
+
+## Tarifs
+
+- Restaurateurs : CHF 29 par mois, sans engagement.
+- Fournisseurs : CHF 59 par mois, sans engagement.
+- Abonnement mensuel : il suffit de le résilier avant la fin du mois en cours pour ne pas payer le mois suivant.
+
+## Programme de parrainage
+
+- CHF 50 pour chaque restaurateur recommandé qui s'abonne.
+- CHF 100 pour chaque fournisseur recommandé qui s'abonne.
+
+## Pages
+
+- [Accueil](https://soorder.ch/): présentation, fonctionnement, tarifs, FAQ, contact
+- [Restaurateurs](https://soorder.ch/restaurateurs): avantages et tarif pour les établissements
+- [Fournisseurs](https://soorder.ch/fournisseurs): avantages et tarif pour les fournisseurs
+- [Parrainage](https://soorder.ch/parrainage): commissions et inscription au programme
+- [Mentions légales](https://soorder.ch/mentions-legales)
+- [Politique de confidentialité](https://soorder.ch/confidentialite)
+
+## Langues
+
+Français (par défaut), allemand (/de/), italien (/it/), anglais (/en/).
