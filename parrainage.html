@@ -2,6 +2,8 @@
 <html lang="fr-CH">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-r8tLGRR3lTMJOyqQxxtEXgJzLK7VpeoH1GEyJQCLB8U=' 'sha256-Rv1LFqqRURK8fKgwE5N7JH29VBKsu/RphUxZqChODJI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Parrainage Soorder — Gagnez jusqu'à CHF 100 par recommandation</title>
 <meta name="description" content="Recommandez Soorder à un restaurateur (CHF 50) ou à un fournisseur (CHF 100) et touchez une commission à chaque inscription.">
@@ -654,6 +656,7 @@ fieldset.fl{border:0;margin:0;padding:0;min-width:0}
 <div class="contact">
 <div class="contact-side reveal"><div class="eyebrow" style="color: #243f2f">Devenir parrain</div><h2 class="h2" style="margin-top: 20px">Rejoignez<br><span class="light">le programme.</span></h2><p>Laissez-nous vos coordonnées : nous vous envoyons votre contrat et tout ce qu’il faut pour commencer à recommander Soorder.</p></div>
 <form class="form reveal" action="https://formspree.io/f/mdavkvna" method="POST">
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <input type="hidden" name="_subject" value="Nouvelle demande de parrainage soorder.ch">
 <input type="hidden" name="type" value="Parrainage">
 <div class="fl"><label for="p-name">Nom et prénom</label><input id="p-name" name="nom" type="text" autocomplete="name" placeholder="Jean Dupont" required></div>

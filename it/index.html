@@ -2,6 +2,8 @@
 <html lang="it-CH">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-t9BXq+mDiaNyVPFWFeMdQzVgOIBPYNI1w9ZOvkn+9eU=' 'sha256-fgxC8KP/EcvjfBabRAOqDSmyM/BAouYyM1bPMAOFuCI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soorder — Ordinate da tutti i vostri fornitori in 3 clic</title>
 <meta name="description" content="Soorder è l&#x27;app B2B che collega ristoratori e fornitori in Svizzera. Frutta, verdura, bevande, carne: ordinate e seguite le consegne da un&#x27;unica app.">
@@ -841,6 +843,7 @@ fieldset.fl{border:0;margin:0;padding:0;min-width:0}
 </ul>
 </div>
 <form class="form reveal" action="https://formspree.io/f/mdavkvna" method="POST">
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <input type="hidden" name="_subject" value="Nuovo contatto da soorder.ch">
 <div class="fl"><label for="c-name">Nome e cognome</label><input id="c-name" name="nom" type="text" autocomplete="name" placeholder="Mario Rossi" required></div>
 <div class="fl"><label for="c-biz">Esercizio</label><input id="c-biz" name="etablissement" type="text" autocomplete="organization" placeholder="Nome del vostro esercizio" required></div>
