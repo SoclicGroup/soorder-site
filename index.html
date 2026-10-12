@@ -1,715 +1,963 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr-CH">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Soorder — Commandez auprès de vos fournisseurs en 1 clic | Genève</title>
-  <meta name="description" content="Soorder centralise vos commandes fournisseurs sur une seule app mobile. Restaurateurs et fournisseurs genevois, simplifiez votre approvisionnement. Dès 29 CHF/mois." />
-  <meta name="keywords" content="commande fournisseur restaurant, app restauration Genève, plateforme approvisionnement, logiciel commande restaurant Suisse" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Soorder" />
-  <link rel="canonical" href="https://soorder.ch/index.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Soorder" />
-  <meta property="og:image" content="https://soorder.ch/logo-soorder.png" />
-  <meta property="og:locale" content="fr_CH" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@soorder_ch" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Soorder",
-    "description": "Plateforme de commandes entre restaurateurs et fournisseurs",
-    "url": "https://soorder.ch",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": "29",
-      "priceCurrency": "CHF"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rue de la Navigation 1",
-      "addressLocality": "Genève",
-      "postalCode": "1201",
-      "addressCountry": "CH"
-    }
-  }
-  </script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="icon" href="favicon.ico" sizes="48x48" /><link rel="apple-touch-icon" href="apple-touch-icon.png" /><link rel="manifest" href="site.webmanifest" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soorder — Commandez à tous vos fournisseurs en 3 clics</title>
+<meta name="description" content="Soorder est l&#x27;application B2B qui connecte restaurateurs et fournisseurs en Suisse. Fruits, légumes, boissons, viandes : commandez et suivez vos livraisons depuis une seule app.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://soorder.ch/">
+<link rel="alternate" hreflang="fr" href="https://soorder.ch/">
+<link rel="alternate" hreflang="de" href="https://soorder.ch/de/">
+<link rel="alternate" hreflang="it" href="https://soorder.ch/it/">
+<link rel="alternate" hreflang="en" href="https://soorder.ch/en/">
+<link rel="alternate" hreflang="x-default" href="https://soorder.ch/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Soorder">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Soorder — Commandez à tous vos fournisseurs en 3 clics">
+<meta property="og:description" content="Soorder est l&#x27;application B2B qui connecte restaurateurs et fournisseurs en Suisse. Fruits, légumes, boissons, viandes : commandez et suivez vos livraisons depuis une seule app.">
+<meta property="og:url" content="https://soorder.ch/">
+<meta property="og:image" content="https://soorder.ch/assets/og-soorder.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Soorder — Commandez à tous vos fournisseurs en 3 clics">
+<meta name="twitter:description" content="Soorder est l&#x27;application B2B qui connecte restaurateurs et fournisseurs en Suisse. Fruits, légumes, boissons, viandes : commandez et suivez vos livraisons depuis une seule app.">
+<meta name="twitter:image" content="https://soorder.ch/assets/og-soorder.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/markdown" title="Soorder pour les IA" href="https://soorder.ch/llms.txt">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://soorder.ch/#organization", "name": "Soorder", "legalName": "Soclic Group Sàrl", "url": "https://soorder.ch/", "logo": "https://soorder.ch/Logo-soorder.png", "taxID": "CHE-430.016.769", "email": "contact@soorder.ch", "address": {"@type": "PostalAddress", "streetAddress": "Rue de la Navigation 1", "postalCode": "1201", "addressLocality": "Genève", "addressCountry": "CH"}, "areaServed": "CH", "sameAs": ["https://www.instagram.com/soorder.ch"]}, {"@type": "WebSite", "@id": "https://soorder.ch/#website", "url": "https://soorder.ch/", "name": "Soorder", "inLanguage": ["fr-CH", "de-CH", "it-CH", "en"], "publisher": {"@id": "https://soorder.ch/#organization"}}, {"@type": "WebPage", "url": "https://soorder.ch/", "name": "Soorder — Commandez à tous vos fournisseurs en 3 clics", "description": "Soorder est l'application B2B qui connecte restaurateurs et fournisseurs en Suisse. Fruits, légumes, boissons, viandes : commandez et suivez vos livraisons depuis une seule app.", "inLanguage": "fr-CH", "isPartOf": {"@id": "https://soorder.ch/#website"}}, {"@type": "SoftwareApplication", "@id": "https://soorder.ch/#app", "name": "Soorder", "applicationCategory": "BusinessApplication", "operatingSystem": "iOS, Android", "description": "Soorder est l'application B2B qui connecte restaurateurs et fournisseurs en Suisse. Fruits, légumes, boissons, viandes : commandez et suivez vos livraisons depuis une seule app.", "publisher": {"@id": "https://soorder.ch/#organization"}, "offers": [{"@type": "Offer", "name": "Restaurateurs", "price": "29", "priceCurrency": "CHF", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "29", "priceCurrency": "CHF", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Fournisseurs", "price": "59", "priceCurrency": "CHF", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "59", "priceCurrency": "CHF", "unitText": "MONTH"}}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qu'est-ce que Soorder ?", "acceptedAnswer": {"@type": "Answer", "text": "Soorder est une application B2B qui permet aux restaurateurs de commander auprès de tous leurs fournisseurs depuis une seule plateforme, et aux fournisseurs de recevoir et gérer ces commandes en temps réel."}}, {"@type": "Question", "name": "Combien coûte Soorder ?", "acceptedAnswer": {"@type": "Answer", "text": "L'abonnement est de CHF 29 par mois pour les restaurateurs et de CHF 59 par mois pour les fournisseurs."}}, {"@type": "Question", "name": "Y a-t-il un engagement ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L’abonnement est mensuel et sans engagement. Pour ne pas être facturé le mois suivant, il suffit de le résilier avant la fin du mois en cours."}}, {"@type": "Question", "name": "Qui livre les commandes ?", "acceptedAnswer": {"@type": "Answer", "text": "Vos fournisseurs préparent et livrent les commandes, comme aujourd'hui. Soorder transmet la commande et vous permet d'en suivre l'avancement jusqu'à la livraison."}}, {"@type": "Question", "name": "Mes fournisseurs actuels peuvent-ils rejoindre Soorder ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Invitez-les à s'inscrire en tant que fournisseur."}}, {"@type": "Question", "name": "Sur quels appareils fonctionne l'application ?", "acceptedAnswer": {"@type": "Answer", "text": "Soorder est disponible sur iPhone (App Store) et sur Android (Google Play)."}}, {"@type": "Question", "name": "Où Soorder est-il disponible ?", "acceptedAnswer": {"@type": "Answer", "text": "Soorder est disponible en Suisse."}}, {"@type": "Question", "name": "Comment mes données sont-elles protégées ?", "acceptedAnswer": {"@type": "Answer", "text": "Vos données sont traitées conformément à la loi suisse sur la protection des données (nLPD). Tous les détails figurent dans notre politique de confidentialité."}}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#000000;text-decoration:none}a:hover{color:#243f2f}
+.s{font-family:'Montserrat',system-ui,sans-serif;color:#000000;background:#ffffff;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.mark{padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* nav */
+.nav{position:relative;z-index:6;display:flex;align-items:center;gap:40px;height:96px}
+.nav-logo img{height:26px;width:auto;display:block}
+.nav-links{display:flex;gap:2px;font-size:15px;font-weight:500;background:#ffffff;border:1px solid #e7e9e8;border-radius:999px;padding:5px}
+.nav-links a{color:#3d4440;padding:10px 16px;border-radius:999px}.nav-links a:hover{background:#f2f4f3;color:#000000}.nav-links a[aria-current]{background:#000000;color:#ffffff;font-weight:600}
+.nav-actions{margin-left:auto;display:flex;align-items:center;gap:28px}
+.nav-login{color:#ffffff;font-size:15px;font-weight:600}.nav-login:hover{color:#00d782}
+.btn-green{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;background:#00d782;color:#000000;font-weight:700;font-size:15px}
+.btn-green:hover{color:#000000;background:#2ee39c}
+.btn-black{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 34px;border-radius:999px;background:#000000;color:#ffffff;font-weight:700;font-size:16px}
+.btn-black:hover{color:#00d782}
+.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:999px;border:1.5px solid #000000;color:#000000;font-weight:700;font-size:16px}
+.btn-line:hover{background:#000000;color:#ffffff}
+
+/* hero */
+.hero{position:relative;min-height:880px;overflow:hidden}
+.hero-disc{position:absolute;left:50%;top:50%;width:1000px;height:1000px;margin:-650px 0 0 -310px;border-radius:50%;background:#000000;z-index:0}
+.hero-grid{position:relative;z-index:2;margin-top:-96px;padding-top:96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;min-height:784px;padding-bottom:40px}
+.h1{margin:0;font-size:clamp(52px,6vw,84px);line-height:1;letter-spacing:-.035em;font-weight:800}
+.h1 .light{font-weight:300;display:block}
+.lead{margin:0;max-width:460px;font-size:19px;line-height:1.65;color:#5f6661}
+.price{display:flex;align-items:baseline;gap:10px}
+.price small{font-size:15px;color:#5f6661;font-weight:500}
+.price strong{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.cats{display:flex;gap:28px}
+.cat{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:12px;font-weight:600;color:#5f6661}
+.cat span.thumb{width:64px;height:64px;border-radius:50%;background:#000000;display:grid;place-items:center}
+.cat img{width:46px;height:46px;object-fit:contain}
+
+.stage{position:relative;height:640px;z-index:1}
+.plate{position:absolute;left:50%;top:50%;width:470px;height:470px;margin:-235px 0 0 -235px;border-radius:50%;background:#243f2f;box-shadow:0 0 0 18px #1c3326,0 30px 60px rgba(0,0,0,.5);z-index:1}
+.orbit{position:absolute;inset:0;animation:spin 60s linear infinite}
+.orb{position:absolute;width:118px;height:118px;margin:-59px 0 0 -59px}
+.orb > span{display:block;width:100%;height:100%;animation:spin 60s linear infinite reverse}
+.stage img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 14px rgba(0,0,0,.6))}
+.core{position:absolute;left:50%;top:50%;width:250px;height:250px;margin:-125px 0 0 -125px;animation:bob 6s ease-in-out infinite}
+.herb{position:absolute;right:4%;bottom:10px;z-index:2;width:96px;height:186px;transform-origin:50% 100%;animation:sway 9s ease-in-out infinite}
+.stage-caption{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);color:#ffffff;opacity:.55;font-size:11px;font-weight:600;letter-spacing:3px;white-space:nowrap}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #e7e9e8;border-bottom:1px solid #e7e9e8}
+.stat{padding:48px 0 44px}
+.stat + .stat{border-left:1px solid #e7e9e8;padding-left:48px}
+.stat b{display:block;font-size:56px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.stat span{display:block;margin-top:12px;font-size:15px;color:#5f6661}
+
+/* steps */
+.section{padding:140px 0}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:72px}
+.h2{margin:0;font-size:clamp(38px,4.2vw,58px);line-height:1.04;letter-spacing:-.03em;font-weight:800}
+.h2 .light{font-weight:300}
+.section-head p{margin:0;font-size:19px;line-height:1.65;color:#5f6661;max-width:480px;justify-self:end}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.step{padding-top:28px}
+.step-n{font-size:14px;font-weight:700;color:#243f2f;letter-spacing:2px}
+.step h3{margin:40px 0 12px;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.step p{margin:0;font-size:15px;line-height:1.7;color:#5f6661}
+
+/* audiences */
+.dark{background:#000000;color:#ffffff}
+.dark .h2{color:#ffffff}
+.dark .eyebrow{color:#00d782}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.plan{border-radius:28px;padding:48px;display:flex;flex-direction:column;gap:28px}
+.plan-a{background:#0f1411;border:1px solid #1f2723}
+.plan-b{background:#243f2f}
+.plan h3{margin:0;font-size:32px;font-weight:800;letter-spacing:-.02em}
+.plan-price{display:flex;align-items:baseline;gap:8px}
+.plan-price b{font-size:64px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.plan-price span{font-size:18px;color:rgba(255,255,255,.75)}
+.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(255,255,255,.12);padding-top:28px}
+.plan li{display:flex;gap:14px;align-items:flex-start;font-size:18px;line-height:1.5;color:rgba(255,255,255,.85)}
+.plan li svg{flex-shrink:0;margin-top:3px}
+.plan .btn-green,.plan .btn-white{align-self:flex-start;margin-top:auto}
+.btn-white{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:#ffffff;color:#000000;font-weight:700;font-size:16px}
+.btn-white:hover{color:#243f2f}
+
+/* products */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.tile{position:relative;border-radius:24px;background:#000000;aspect-ratio:3/4;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.tile img{position:absolute;left:14%;top:13%;width:72%;height:62%;object-fit:contain;transition:transform .5s ease}
+.tile:hover img{transform:scale(1.06)}
+.tile b{position:relative;color:#ffffff;font-size:24px;font-weight:700}
+.tile span{position:relative;color:rgba(255,255,255,.8);font-size:16px;margin-top:4px}
+.more{margin-top:32px;font-size:18px;color:#5f6661}
+.more b{color:#000000;font-weight:600}
+
+/* app */
+.app{background:#243f2f;color:#ffffff;border-radius:32px;padding:88px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center;position:relative;overflow:hidden}
+.app .h2{color:#ffffff}
+.app p{margin:20px 0 0;font-size:19px;line-height:1.7;color:rgba(255,255,255,.85);max-width:440px}
+.stores{display:flex;flex-direction:column;gap:14px;justify-self:end;width:100%;max-width:320px}
+.store{display:flex;align-items:center;gap:16px;min-height:68px;padding:0 24px;border-radius:16px;background:#000000;color:#ffffff}
+.store:hover{color:#00d782}
+.store small{display:block;font-size:13px;opacity:.75;letter-spacing:.3px}
+.store b{display:block;font-size:20px;font-weight:700}
+.app-fruit{position:absolute;width:200px;height:200px;right:-50px;top:-60px;object-fit:contain;opacity:.95}
+
+/* footer */
+.foot{background:#000000;color:#ffffff;padding:96px 0 40px;margin-top:140px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:40px}
+.foot-grid img{height:28px;width:auto}
+.foot-grid p{margin:20px 0 0;font-size:16px;line-height:1.7;color:rgba(255,255,255,.7);max-width:320px}
+.foot h4{margin:0 0 20px;font-size:14px;font-weight:700;letter-spacing:2px;color:#00d782}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.foot li a{color:rgba(255,255,255,.8);font-size:16px}.foot li a:hover{color:#ffffff}
+.foot-legal{margin-top:80px;padding-top:28px;border-top:1px solid #1f2723;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:rgba(255,255,255,.65)}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@media (prefers-reduced-motion:reduce){.orbit,.orb > span,.core,.herb{animation:none}}
+
+
+/* ---------- motion ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes plateIn{from{opacity:0;transform:scale(.82) rotate(-25deg)}to{opacity:1;transform:none}}
+@keyframes discIn{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+@keyframes pop{0%{opacity:0;transform:scale(.3)}70%{transform:scale(1.08)}100%{opacity:1;transform:scale(1)}}
+@keyframes markIn{to{background-size:100% 100%}}
+@keyframes ticker{to{transform:translateX(-50%)}}
+@keyframes lineIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+.hero-disc{animation:discIn 1.2s cubic-bezier(.2,.7,.2,1) both}
+.plate{animation:plateIn 1.3s .25s cubic-bezier(.2,.7,.2,1) both}
+.orb img{animation:pop .7s cubic-bezier(.3,1.4,.5,1) both;animation-delay:var(--d,1s)}
+.core img{animation:pop .9s .9s cubic-bezier(.3,1.4,.5,1) both}
+.herb img{animation:fade 1.2s 1.6s both}
+.mark{background:linear-gradient(#00d782,#00d782) no-repeat 0 0/0% 100%;animation:markIn .8s 1s cubic-bezier(.6,0,.2,1) forwards}
+.nav{animation:fade .8s both}
+
+/* ticker */
+.ticker{background:#000000;color:#ffffff;overflow:hidden;padding:22px 0;margin-top:20px}
+.ticker-track{display:flex;width:max-content;animation:ticker 38s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track span{display:flex;align-items:center;gap:28px;padding-right:28px;font-size:24px;font-weight:300;letter-spacing:-.01em;white-space:nowrap}
+.ticker-track b{font-weight:700}
+.ticker-track i{width:8px;height:8px;border-radius:50%;background:#00d782;display:inline-block}
+
+/* hovers */
+.btn-black,.btn-line,.btn-green,.btn-white,.store{transition:transform .25s ease,background-color .25s ease,color .25s ease}
+.btn-black:hover,.btn-line:hover,.btn-green:hover,.btn-white:hover{transform:translateY(-2px)}
+.store:hover{transform:translateX(6px)}
+.plan{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}
+.plan:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.tile{transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.tile:hover{transform:translateY(-6px)}
+.nav-links a{transition:background-color .2s ease,color .2s ease}
+
+/* scroll reveal (browsers that support it; others show everything) */
+.step{position:relative;border-top:0}
+.step::before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:#000000;transform-origin:left}
+@supports (animation-timeline: view()){
+.reveal{animation:riseT linear both;animation-timeline:view();animation-range:entry 5% cover 30%}
+.step::before{animation:lineIn linear both;animation-timeline:view();animation-range:entry 10% cover 35%}
+.tile img{animation:popT linear both;animation-timeline:view();animation-range:entry 10% cover 40%}
+}
+@media (prefers-reduced-motion:reduce){
+.rise,.hero-disc,.plate,.orb img,.core img,.herb img,.nav,.reveal,.step::before,.tile img,.ticker-track{animation:none!important}
+.mark{background-size:100% 100%;animation:none}
+}
+
+/* ---------- motion, round 2 ---------- */
+/* scroll progress */
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;background:#00d782;transform-origin:0 50%;transform:scaleX(0);z-index:50;display:none}
+@keyframes grow{to{transform:scaleX(1)}}
+@supports (animation-timeline: scroll()){.progress{display:block;animation:grow linear both;animation-timeline:scroll(root)}}
+/* 3D tilt wrapper */
+.tilt{position:absolute;inset:0;transition:transform .5s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d;will-change:transform}
+/* depth: blurred fruits drifting on the disc */
+.drift{position:absolute;opacity:.55;filter:blur(3px);z-index:0}
+.drift img{filter:none!important}
+.d1{width:54px;height:54px;right:6%;top:4%;animation:drift1 14s ease-in-out infinite}
+.d2{width:40px;height:40px;right:30%;top:-2%;animation:drift2 18s ease-in-out infinite}
+.d3{width:46px;height:46px;right:-2%;bottom:30%;animation:drift1 16s ease-in-out infinite -6s}
+@keyframes drift1{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(-18px,22px) rotate(20deg)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(16px,18px) rotate(-25deg)}}
+/* shine sweep */
+.tile::after,.plan::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);transform:translateX(-100%);transition:transform .9s ease;pointer-events:none}
+.tile:hover::after,.plan:hover::after{transform:translateX(100%)}
+.plan{position:relative;overflow:hidden}
+/* step numbers fill */
+.step-n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid #000000;background:linear-gradient(#00d782,#00d782) no-repeat 50% 100%/100% 0%;transition:background-size .5s ease}
+.step:hover .step-n{background-size:100% 100%}
+@supports (animation-timeline: view()){
+.step-n{animation:fill linear both;animation-timeline:view();animation-range:entry 30% cover 45%}
+@keyframes fill{to{background-size:100% 100%}}
+.h2 .light{display:inline-block;animation:slideR linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+@keyframes slideR{from{transform:translateX(60px)}to{transform:none}}
+}
+/* app block fruits */
+.app-float{position:absolute;pointer-events:none;filter:drop-shadow(0 18px 20px rgba(0,0,0,.45))}
+.app-float img{width:100%;height:100%;object-fit:contain}
+.af1{width:96px;height:110px;right:56px;top:28px;animation:bob 6s ease-in-out infinite}
+.af2{width:74px;height:74px;right:300px;bottom:26px;animation:bob 7s ease-in-out infinite -3s}
+.af3{width:56px;height:96px;right:150px;bottom:20px;animation:sway 8s ease-in-out infinite}
+.app > div:not(.app-float){position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){.drift,.app-float,.step-n,.h2 .light,.progress{animation:none!important}.tilt{transition:none}}
+/* ---------- how it works : scroll-driven phone ---------- */
+.how-scroll{position:relative;padding:64px 0 20px}
+.how-sticky{position:relative}
+.how{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:center}
+.how-list{display:flex;flex-direction:column;gap:6px}
+.how-item{display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;text-align:left;width:100%;padding:24px 26px 30px;border:0;border-radius:22px;background:transparent;cursor:pointer;font:inherit;color:#000000;position:relative;overflow:hidden;transition:background-color .35s ease}
+.how-item:hover{background:#f6f8f7}
+.how-item.on{background:#f1f4f2}
+.how-n{width:44px;height:44px;border-radius:50%;border:1.5px solid #000000;display:grid;place-items:center;font-size:14px;font-weight:700;transition:background-color .35s,color .35s}
+.how-item.on .how-n{background:#000000;color:#00d782}
+.how-item.past .how-n{background:#00d782;border-color:#00d782}
+.how-t{display:block;margin:8px 0 0;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.how-item:not(.on) .how-t{color:#5f6661}
+.how-subs{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.how-sub{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:500;color:#8a918d;transition:color .3s}
+.how-sub i{width:22px;height:22px;border-radius:50%;border:1.5px solid #c9d0cc;display:grid;place-items:center;color:#000000;flex-shrink:0;transition:background-color .3s,border-color .3s}
+.how-sub i svg{opacity:0;transition:opacity .2s}
+.how-sub.ok{color:#000000}
+.how-sub.ok i{background:#00d782;border-color:#00d782}
+.how-sub.ok i svg{opacity:1}
+.how-bar{position:absolute;left:98px;right:26px;bottom:14px;height:3px;border-radius:2px;background:#dfe4e1;overflow:hidden}
+.how-fill{display:block;height:100%;background:#00d782;transition:width .15s linear}
+.how-play{display:inline-flex;align-items:center;gap:10px;margin:18px 0 0 26px;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid #000000;background:#ffffff;font:inherit;font-size:15px;font-weight:700;color:#000000;cursor:pointer;transition:background-color .2s,color .2s}
+.how-play:hover{background:#000000;color:#ffffff}
+
+.how-stage{position:relative;height:700px;border-radius:32px;background:#243f2f;display:grid;place-items:center;overflow:hidden}
+.how-stage .deco{position:absolute;object-fit:contain;filter:drop-shadow(0 18px 20px rgba(0,0,0,.45))}
+.how-stage .k1{width:120px;height:120px;left:-24px;bottom:40px;animation:bob 7s ease-in-out infinite}
+.how-stage .k2{width:96px;height:110px;right:-10px;top:40px;animation:bob 6s ease-in-out infinite -2s}
+.phone{position:relative;width:300px;height:608px;border-radius:48px;background:#000000;padding:10px;box-shadow:0 50px 90px rgba(0,0,0,.5),inset 0 0 0 2px #1d1d1d}
+.screen{width:100%;height:100%;border-radius:39px;background:#ffffff;overflow:hidden;position:relative;display:flex;flex-direction:column}
+.scr-head{display:flex;align-items:center;justify-content:space-between;padding:24px 20px 8px}
+.scr-head img{height:13px;width:auto}
+.scr-avatar{width:28px;height:28px;border-radius:50%;background:#00d782;color:#000000;display:grid;place-items:center;font-size:11px;font-weight:800}
+.scr{flex:1;display:flex;flex-direction:column;gap:11px;padding:6px 16px 12px;position:relative;animation:scrIn .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes scrIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.scr-kicker{font-size:10px;font-weight:700;letter-spacing:2px;color:#00a866}
+.scr-title{font-size:21px;font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-top:-5px}
+.tabbar{display:flex;justify-content:space-around;align-items:center;height:56px;border-top:1px solid #eef1ef;color:#9aa19d;flex-shrink:0}
+.tb{width:40px;height:34px;border-radius:12px;display:grid;place-items:center}
+.tb.on{background:#e3f9ef;color:#00a866}
+
+/* screen 1 */
+.welcome{position:relative;border-radius:18px;background:#00d782;padding:14px 16px;overflow:hidden;min-height:66px}
+.welcome b{display:block;font-size:14px;font-weight:800;color:#000000}
+.welcome span{display:block;font-size:11px;color:#123d28;margin-top:2px;max-width:150px}
+.welcome img{position:absolute;right:-12px;top:-8px;width:84px;height:84px;object-fit:contain}
+.fld{border:1.5px solid #e3e7e5;border-radius:14px;padding:8px 13px;transition:border-color .25s,box-shadow .25s,background-color .25s}
+.fld.focus{border-color:#00d782;box-shadow:0 0 0 4px rgba(0,215,130,.15)}
+.fld.done{background:#f6fbf8;border-color:#cfeedd}
+.fld small{display:block;font-size:10px;color:#6b726e;font-weight:500}
+.fld .type{display:inline-block;max-width:0;overflow:hidden;white-space:nowrap;vertical-align:bottom;font-size:13px;font-weight:600;transition:max-width .6s steps(16)}
+.fld.done .type{max-width:230px}
+.pills{display:flex;gap:6px}
+.pill{flex:1;text-align:center;font-size:11px;font-weight:700;padding:9px 0;border-radius:12px;border:1.5px solid #e3e7e5;transition:all .3s}
+.pills.done .p-rest{background:#00d782;border-color:#00d782}
+.p-bar{background:#fff4e0;border-color:#ffe2b0}.p-hot{background:#e8efff;border-color:#cfdcff}
+.scr-btn{margin-top:auto;position:relative;height:48px;border-radius:999px;background:#000000;color:#ffffff;display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:700;transition:background-color .35s,color .35s,transform .2s}
+.scr-btn.done{background:#00d782;color:#000000}
+.scr-btn .b-done{display:none}.scr-btn.done .b-done{display:flex;align-items:center;gap:8px}.scr-btn.done .b-go{display:none}
+
+/* screen 2 */
+.srch{display:flex;align-items:center;gap:8px;border-radius:999px;background:#f1f4f2;padding:10px 14px;font-size:12px;color:#6b726e}
+.chips{display:flex;gap:6px}
+.chip{font-size:11px;font-weight:700;padding:6px 10px;border-radius:999px;white-space:nowrap;transition:all .3s}
+.c-all{background:#000000;color:#ffffff}
+.c-veg{background:#dff7ea;color:#0e6b3f}.c-fru{background:#ffe9cc;color:#9a4d00}.c-bev{background:#dde8ff;color:#1d4bb8}
+.chips.filtered .c-all{background:#f1f4f2;color:#000000}
+.chips.filtered .c-fru{background:#ff9a1f;color:#000000;box-shadow:0 0 0 3px rgba(255,154,31,.25)}
+.sup{display:flex;align-items:center;gap:11px;padding:9px;border-radius:16px;background:#f6f8f7;opacity:0;transform:translateY(14px);transition:opacity .4s ease,transform .4s ease,background-color .3s,box-shadow .3s;transition-delay:var(--d)}
+.sup.in{opacity:1;transform:none}
+.filtered-list .sup.dim{opacity:.3;transition-delay:0s}
+.filtered-list .sup.hl{background:#fff4e6;box-shadow:inset 0 0 0 1.5px #ff9a1f;transition-delay:0s}
+.sup-img{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex-shrink:0}
+.sup-img img{width:32px;height:32px;object-fit:contain}
+.bg-g{background:#dff7ea}.bg-o{background:#ffe9cc}.bg-r{background:#ffe0dc}.bg-y{background:#fff3c4}.bg-b{background:#dde8ff}
+.sup b{display:block;font-size:13px;font-weight:700}
+.sup span{display:block;font-size:11px;color:#6b726e}
+.sup-add{margin-left:auto;width:30px;height:30px;border-radius:50%;border:1.5px solid #000000;display:grid;place-items:center;font-size:16px;font-weight:600;flex-shrink:0;color:#000000;transition:all .3s}
+.sup-add .tick{display:none}
+.added .sup-add.go{background:#00d782;border-color:#00d782}
+.added .sup-add.go .plus{display:none}.added .sup-add.go .tick{display:block}
+.toast{position:absolute;left:16px;right:16px;bottom:12px;border-radius:14px;background:#243f2f;color:#ffffff;font-size:12px;font-weight:600;padding:12px 14px;display:flex;align-items:center;gap:10px;opacity:0;transform:translateY(20px);transition:all .4s cubic-bezier(.2,.7,.2,1)}
+.toast.in{opacity:1;transform:none}
+.toast i{width:20px;height:20px;border-radius:50%;background:#00d782;color:#000000;display:grid;place-items:center}
+
+/* screen 3 */
+.line{display:flex;align-items:center;gap:11px;padding:7px 0;border-bottom:1px solid #eef1ef;opacity:0;transform:translateY(12px);transition:all .4s ease;transition-delay:var(--d)}
+.line.in{opacity:1;transform:none}
+.line .sup-img{width:38px;height:38px}
+.line b{font-size:13px;font-weight:700}
+.line span.q{margin-left:auto;font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px}
+.track{margin-top:auto;position:relative;min-height:196px}
+.order-btn{position:absolute;left:0;right:0;bottom:0;height:48px;border-radius:999px;background:#00d782;color:#000000;display:grid;place-items:center;font-size:14px;font-weight:800;transition:opacity .3s,transform .3s}
+.track.sent .order-btn{opacity:0;transform:scale(.9);pointer-events:none}
+.status{position:absolute;inset:0;border-radius:20px;background:#243f2f;color:#ffffff;padding:14px 14px 12px;display:flex;flex-direction:column;opacity:0;transform:translateY(16px);transition:all .4s cubic-bezier(.2,.7,.2,1)}
+.track.sent .status{opacity:1;transform:none}
+.st{display:grid;grid-template-columns:20px minmax(0,1fr);gap:11px;align-items:start;padding-bottom:12px;position:relative}
+.st::before{content:"";position:absolute;left:9px;top:20px;bottom:0;width:2px;background:rgba(255,255,255,.15)}
+.st:last-of-type::before{display:none}
+.st-dot{width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.3);display:grid;place-items:center;color:#000000;transition:all .3s}
+.st-dot svg{opacity:0;transition:opacity .2s}
+.st.ok .st-dot{background:#00d782;border-color:#00d782}.st.ok .st-dot svg{opacity:1}
+.st b{display:block;font-size:12px;font-weight:700}
+.st span{display:block;font-size:10px;color:rgba(255,255,255,.65)}
+.road{position:relative;height:6px;border-radius:3px;background:rgba(255,255,255,.15);margin-top:auto}
+.road-fill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:#00d782;transition:width .15s linear}
+.truck{position:absolute;top:-12px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:#00d782;color:#000000;display:grid;place-items:center;transition:left .15s linear}
+
+/* ---------- pricing ---------- */
+.pr-head{text-align:center;max-width:720px;margin:0 auto 64px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.pr-head p{margin:0;font-size:19px;line-height:1.65;color:rgba(255,255,255,.75);max-width:560px}
+.pr-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pr-card{position:relative;overflow:hidden;border-radius:32px;padding:44px;display:flex;flex-direction:column;gap:26px;transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}
+.pr-card:hover{transform:translateY(-8px);box-shadow:0 34px 70px rgba(0,0,0,.5)}
+.pr-a{background:#ffffff;color:#000000}
+.pr-b{background:#ffffff;color:#000000}
+.pr-fruit{position:absolute;right:-18px;top:-18px;width:150px;height:150px;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(0,0,0,.25));transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.pr-card:hover .pr-fruit{transform:rotate(-12deg) scale(1.06)}
+.pr-tag{align-self:flex-start;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.pr-a .pr-tag{background:#000000;color:#00d782}
+.pr-b .pr-tag{background:#000000;color:#00d782}
+.pr-card h3{margin:0;font-size:34px;font-weight:800;letter-spacing:-.025em;line-height:1.1;max-width:70%}
+.pr-price{display:flex;align-items:flex-start;gap:8px;line-height:1}
+.pr-price small{font-size:22px;font-weight:700;margin-top:10px}
+.pr-price b{font-size:96px;font-weight:800;letter-spacing:-.05em}
+.pr-price span{align-self:flex-end;font-size:18px;font-weight:500;margin-bottom:12px;opacity:.7}
+.pr-note{margin-top:-14px;font-size:16px;font-weight:600;opacity:.75}
+.pr-for{display:flex;flex-wrap:wrap;gap:8px}
+.pr-for span{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px}
+.pr-a .pr-for span{background:#f1f4f2}
+.pr-b .pr-for span{background:#f1f4f2}
+.pr-cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;border-radius:999px;background:#000000;color:#ffffff;font-size:17px;font-weight:700;transition:transform .25s ease,color .25s ease}
+.pr-cta:hover{color:#00d782;transform:translateY(-2px)}
+.pr-cta svg{transition:transform .25s ease}
+.pr-cta:hover svg{transform:translateX(4px)}
+.pr-inc{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.6;padding-top:26px;border-top:1px solid rgba(0,0,0,.12)}
+.pr-list{list-style:none;margin:-10px 0 0;padding:0;display:flex;flex-direction:column;gap:16px}
+.pr-list li{display:flex;gap:14px;align-items:flex-start;font-size:18px;line-height:1.45;font-weight:500}
+.pr-list li svg{flex-shrink:0;margin-top:2px}
+.pr-trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:40px;border-top:1px solid #1f2723;border-bottom:1px solid #1f2723}
+.pr-trust div{display:flex;align-items:center;gap:16px;padding:28px 0;font-size:18px;font-weight:600}
+.pr-trust div + div{padding-left:32px;border-left:1px solid #1f2723}
+.pr-trust i{width:48px;height:48px;border-radius:50%;background:#243f2f;color:#00d782;display:grid;place-items:center;flex-shrink:0}
+.pr-ref{margin-top:40px;border-radius:32px;background:#243f2f;padding:44px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;gap:40px;align-items:center}
+.pr-ref h3{margin:12px 0 0;font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.pr-ref p{margin:12px 0 0;font-size:17px;line-height:1.6;color:rgba(255,255,255,.75)}
+.pr-ref-amounts{display:flex;gap:32px}
+.pr-ref-amounts b{display:block;font-size:44px;font-weight:800;letter-spacing:-.03em;color:#00d782;line-height:1}
+.pr-ref-amounts span{display:block;margin-top:8px;font-size:15px;color:rgba(255,255,255,.75)}
+/* ---------- shared: lang, faq, forms, inner pages ---------- */
+.lang{position:relative}
+.lang summary{list-style:none;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:999px;background:#ffffff;border:1px solid #e7e9e8;font-size:14px;font-weight:700;color:#000000;cursor:pointer}
+.lang summary::-webkit-details-marker{display:none}
+.lang-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:160px;background:#ffffff;border:1px solid #e7e9e8;border-radius:16px;padding:6px;box-shadow:0 20px 40px rgba(0,0,0,.15);display:flex;flex-direction:column;z-index:20}
+.lang-menu a{padding:10px 12px;border-radius:10px;font-size:14px;font-weight:600;color:#3d4440}
+.lang-menu a:hover{background:#f2f4f3;color:#000000}
+.lang-menu a[aria-current]{background:#000000;color:#00d782}
+.nav.light .nav-login{color:#000000}.nav.light .nav-login:hover{color:#243f2f}
+@media (max-width:1320px){.nav-login{display:none}}
+
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.faq-side p{margin:20px 0 0;font-size:19px;line-height:1.65;color:#5f6661}
+.faq-list{border-top:1px solid #e7e9e8}
+.faq-item{border-bottom:1px solid #e7e9e8}
+.faq-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font-size:21px;font-weight:700;letter-spacing:-.01em;cursor:pointer}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{color:#243f2f}
+.faq-i{position:relative;width:36px;height:36px;border-radius:50%;border:1.5px solid #000000;flex-shrink:0;transition:background-color .25s,transform .35s cubic-bezier(.2,.7,.2,1)}
+.faq-i::before,.faq-i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;background:#000000;border-radius:1px}
+.faq-i::after{transform:rotate(90deg);transition:transform .3s}
+.faq-item[open] .faq-i{background:#00d782;border-color:#00d782;transform:rotate(180deg)}
+.faq-item[open] .faq-i::after{transform:rotate(0)}
+.faq-a{padding:0 60px 28px 0;font-size:18px;line-height:1.7;color:#4d5651}
+.faq-a a{text-decoration:underline;text-underline-offset:3px}
+.dark .faq-list,.dark .faq-item{border-color:#1f2723}
+.dark .faq-item summary:hover{color:#00d782}
+.dark .faq-i{border-color:#ffffff}.dark .faq-i::before,.dark .faq-i::after{background:#ffffff}
+.dark .faq-item[open] .faq-i::before,.dark .faq-item[open] .faq-i::after{background:#000000}
+.dark .faq-a,.dark .faq-side p{color:rgba(255,255,255,.75)}
+
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}
+.contact-side p{margin:20px 0 0;font-size:19px;line-height:1.65;color:#5f6661}
+.contact-points{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-direction:column;gap:16px}
+.contact-points li{display:flex;gap:14px;align-items:center;font-size:18px;font-weight:600}
+.contact-points i{width:36px;height:36px;border-radius:50%;background:#e3f9ef;display:grid;place-items:center;flex-shrink:0;color:#00a866}
+.form{background:#f6f8f7;border-radius:32px;padding:44px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.form .full{grid-column:1 / -1}
+.fl{display:flex;flex-direction:column;gap:8px}
+.fl label,.fl legend{font-size:15px;font-weight:700;color:#000000;padding:0}
+.fl input,.fl textarea,.fl select{font:inherit;font-size:17px;color:#000000;background:#ffffff;border:1.5px solid #dfe4e1;border-radius:14px;padding:15px 16px;outline:none;transition:border-color .2s,box-shadow .2s}
+.fl textarea{min-height:130px;resize:vertical}
+.fl input:focus,.fl textarea:focus,.fl select:focus{border-color:#00d782;box-shadow:0 0 0 4px rgba(0,215,130,.18)}
+.fl input::placeholder,.fl textarea::placeholder{color:#8a918d}
+fieldset.fl{border:0;margin:0;padding:0;min-width:0}
+.seg{display:flex;gap:10px;flex-wrap:wrap}
+.seg label{position:relative;display:flex;align-items:center;gap:10px;min-height:52px;padding:0 18px;border-radius:14px;background:#ffffff;border:1.5px solid #dfe4e1;font-size:16px;font-weight:600;cursor:pointer;transition:border-color .2s,background-color .2s}
+.seg input{accent-color:#00a866;width:18px;height:18px;margin:0}
+.seg label:has(input:checked){border-color:#00d782;background:#effcf6}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.55;color:#4d5651}
+.consent input{accent-color:#00a866;width:20px;height:20px;margin:2px 0 0;flex-shrink:0}
+.consent a{text-decoration:underline;text-underline-offset:3px}
+.form-submit{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;border:0;border-radius:999px;background:#000000;color:#ffffff;font:inherit;font-size:17px;font-weight:700;cursor:pointer;transition:transform .25s,color .25s}
+.form-submit:hover{color:#00d782;transform:translateY(-2px)}
+
+/* inner page hero */
+.ph{position:relative;padding:40px 0 100px}
+.ph-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.ph-panel{position:relative;height:580px;border-radius:40px;background:#243f2f;overflow:hidden}
+.ph-panel .big{position:absolute;left:50%;top:50%;width:300px;height:300px;margin:-150px 0 0 -150px;object-fit:contain;filter:drop-shadow(0 30px 30px rgba(0,0,0,.5));animation:bob 6s ease-in-out infinite}
+.ph-panel .sm{position:absolute;object-fit:contain;filter:drop-shadow(0 16px 18px rgba(0,0,0,.5))}
+.ph-card{position:absolute;left:28px;bottom:28px;right:28px;display:flex;align-items:center;gap:14px;padding:18px 20px;border-radius:20px;background:#ffffff;box-shadow:0 20px 40px rgba(0,0,0,.25);animation:rise .8s 1s both}
+.ph-card i{width:40px;height:40px;border-radius:50%;background:#00d782;display:grid;place-items:center;flex-shrink:0}
+.ph-card b{display:block;font-size:16px;font-weight:700}
+.ph-card span{display:block;font-size:14px;color:#5f6661}
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.cmp-col{border-radius:28px;padding:44px}
+.cmp-a{background:#f6f8f7}
+.cmp-b{background:#000000;color:#ffffff}
+.cmp-col h3{margin:0 0 28px;font-size:14px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.cmp-a h3{color:#8a918d}.cmp-b h3{color:#00d782}
+.cmp-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px}
+.cmp-col li{display:flex;gap:14px;align-items:flex-start;font-size:19px;line-height:1.45;font-weight:500}
+.cmp-a li{color:#5f6661}
+.cmp-x{width:24px;height:24px;border-radius:50%;background:#ffe3e0;color:#c62f1e;display:grid;place-items:center;flex-shrink:0;font-size:12px;font-weight:800;margin-top:1px}
+.cmp-v{width:24px;height:24px;border-radius:50%;background:#00d782;color:#000000;display:grid;place-items:center;flex-shrink:0;margin-top:1px}
+.ben{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.ben-card{border-radius:28px;background:#f6f8f7;padding:36px;display:flex;flex-direction:column;gap:14px;transition:transform .4s cubic-bezier(.2,.7,.2,1),background-color .3s}
+.ben-card:hover{transform:translateY(-6px);background:#effcf6}
+.ben-ic{width:56px;height:56px;border-radius:18px;background:#000000;color:#00d782;display:grid;place-items:center;margin-bottom:10px}
+.ben-card h3{margin:0;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.ben-card p{margin:0;font-size:17px;line-height:1.6;color:#5f6661}
+.st3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.st3 > div{border-top:2px solid #ffffff;padding-top:28px}
+.st3 b{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#00d782;color:#000000;font-size:15px;font-weight:800}
+.st3 h3{margin:32px 0 12px;font-size:26px;font-weight:700;letter-spacing:-.02em}
+.st3 p{margin:0;font-size:18px;line-height:1.65;color:rgba(255,255,255,.75)}
+.solo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.solo-side p{margin:20px 0 0;font-size:19px;line-height:1.65;color:rgba(255,255,255,.75)}
+.cta-band{border-radius:32px;background:#00d782;color:#000000;padding:72px;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap}
+.cta-band .h2{color:#000000}
+.cta-band p{margin:16px 0 0;font-size:19px;line-height:1.6;max-width:520px}
+
+@media (max-width:1100px){
+.faq,.contact,.ph-grid,.cmp,.solo{grid-template-columns:minmax(0,1fr)}
+.ben,.st3{grid-template-columns:minmax(0,1fr)}
+.ph-panel{height:460px}
+.faq-a{padding-right:0}
+}
+@media (max-width:640px){
+.form{grid-template-columns:minmax(0,1fr);padding:28px}
+.cmp-col,.cta-band{padding:32px}
+.ben-card{padding:28px}
+}
+
+@media (max-width:1100px){
+.pr-grid{grid-template-columns:minmax(0,1fr)}
+.pr-trust{grid-template-columns:minmax(0,1fr)}
+.pr-trust div + div{padding-left:0;border-left:0;border-top:1px solid #1f2723}
+.pr-ref{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+.pr-card,.pr-ref{padding:30px}
+.pr-price b{font-size:76px}
+.pr-fruit{width:110px;height:110px}
+.pr-card h3{font-size:28px}
+}
+
+@media (max-width:1100px){
+.how-scroll{height:auto;min-height:0}
+.how-sticky{position:relative;height:auto;min-height:0}
+.how{grid-template-columns:minmax(0,1fr);gap:32px}
+.how-stage{height:680px}
+.how-stage .k1,.how-stage .k2{display:none}
+}
+
+@media (max-width:1100px){.af2,.af3{display:none}.af1{width:70px;height:80px;right:24px;top:20px}}
+
+@media (max-width:1100px){
+.nav-links{display:none}
+.nav-login{color:#000000}
+.hero-grid{grid-template-columns:minmax(0,1fr)}
+.hero-disc{width:620px;height:620px;margin:-310px 0 0 -310px}
+.hero-grid{margin-top:0;padding-top:20px}
+.herb{right:6%;bottom:70px;width:72px;height:140px}
+.stage{height:620px}
+.plate{width:360px;height:360px;margin:-180px 0 0 -180px}
+.orb{width:90px;height:90px;margin:-45px 0 0 -45px}
+.core{width:180px;height:180px;margin:-90px 0 0 -90px}
+.section-head{grid-template-columns:minmax(0,1fr)}
+.section-head p{justify-self:start}
+.steps,.plans{grid-template-columns:minmax(0,1fr)}
+.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+.app{grid-template-columns:minmax(0,1fr);padding:48px 32px}
+.stores{justify-self:start}
+.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+.wrap{padding:0 20px}
+.stats{grid-template-columns:minmax(0,1fr)}
+.stat + .stat{border-left:0;border-top:1px solid #e7e9e8;padding-left:0}
+.plan{padding:32px}
+.cats{gap:16px}
+.nav{height:76px}
+.nav-login{display:none}
+.nav-logo img{height:22px}
+.btn-green{min-height:44px;padding:0 20px}
+.hero-disc{width:560px;height:560px;margin:-280px 0 0 -280px}
+.stage{height:560px}
+.plate{width:290px;height:290px;margin:-145px 0 0 -145px}
+.orb{width:72px;height:72px;margin:-36px 0 0 -36px}
+.core{width:140px;height:140px;margin:-70px 0 0 -70px}
+.foot-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){.nav-actions{gap:8px}.lang summary span{display:none}.lang summary{padding:0 11px}.nav-logo img{height:20px}.nav .btn-green{padding:0 16px;font-size:14px}}
+@keyframes riseT{from{transform:translateY(40px)}to{transform:none}}
+@keyframes popT{from{transform:scale(.82)}to{transform:none}}
+.consent span{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+</style>
 </head>
 <body>
+<div class="s">
+<div class="progress" aria-hidden="true"></div>
 
-<nav class="nav">
-  <a href="index.html" style="margin-right:auto;"><img src="logo-transparent.png" height="160" style="width:auto;max-width:320px;object-fit:contain;filter:brightness(0) invert(1);" alt="Soorder"></a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="active" data-i18n="nav.home">Accueil</a></li>
-    <li><a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a></li>
-    <li><a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a></li>
-    <li><a href="prix.html" data-i18n="nav.prix">Tarifs</a></li>
-    <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-  </ul>
-  <select id="lang-switcher" onchange="switchLang(this.value)" style="background:#1a2e1f;color:#2ecc71;border:1px solid rgba(46,204,113,0.3);border-radius:20px;padding:6px 12px;font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;width:auto;max-width:90px;">
-    <option value="fr">🇫🇷 FR</option>
-    <option value="en">🇬🇧 EN</option>
-    <option value="de">🇩🇪 DE</option>
-    <option value="it">🇮🇹 IT</option>
-    <option value="es">🇪🇸 ES</option>
-    <option value="pt">🇵🇹 PT</option>
-  </select>
-  <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Commencer</a>
-  <div class="nav-burger" id="burger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-<div class="nav-mobile" id="mobileMenu">
-  <a href="index.html" data-i18n="nav.home">Accueil</a>
-  <a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a>
-  <a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a>
-  <a href="prix.html" data-i18n="nav.prix">Tarifs</a>
-  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
-  <a href="contact.html" data-i18n="nav.contact">Contact</a>
-  <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav.cta.mob">Commencer gratuitement</a>
-</div>
-
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-inner">
+<div class="wrap">
+<header class="nav">
+<a href="/" class="nav-logo" aria-label="Soorder — accueil"><img src="/assets/logo-noir.svg" alt="Soorder"></a>
+<nav class="nav-links" aria-label="Navigation principale">
+<a href="/restaurateurs">Restaurateurs</a>
+<a href="/fournisseurs">Fournisseurs</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#faq">FAQ</a>
+</nav>
+<div class="nav-actions">
+<details class="lang"><summary aria-label="Langue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>FR</span></summary><div class="lang-menu"><a href="/" lang="fr" aria-current="true">Français</a><a href="/de/" lang="de-CH">Deutsch</a><a href="/it/" lang="it-CH">Italiano</a><a href="/en/" lang="en">English</a></div></details>
+<a href="#app" class="btn-green">Commencer</a>
+</div>
+</header>
 
-      <!-- ── Texte gauche ── -->
-      <div class="hero-text hero-content">
-        <h1 class="hero-title animate" data-i18n="hero.title">
-          Commandez<br>autrement.<br><span class="accent">Enfin.</span>
-        </h1>
-        <p class="hero-subtitle animate delay-1" data-i18n="hero.sub">
-          Une application mobile pour permettre aux restaurateurs de commander facilement auprès de leurs fournisseurs, depuis une seule plateforme centralisée.
-        </p>
-        <div class="hero-actions animate delay-2">
-          <a href="restaurateur.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;" data-i18n="hero.btn1">Je suis restaurateur</a>
-          <a href="fournisseur.html" class="btn btn-outline" style="padding: 18px 40px; font-size: 17px; border-radius: 50px;" data-i18n="hero.btn2">Je suis fournisseur</a>
-        </div>
-        <div class="store-btns animate delay-3">
-          <a href="#" aria-label="Télécharger sur l'App Store">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="180" height="60"><rect width="120" height="40" rx="6" fill="#000"/><path d="M24.769 20.301c-.03-3.207 2.617-4.766 2.738-4.84-1.493-2.183-3.813-2.481-4.635-2.511-1.963-.2-3.84 1.17-4.833 1.17-.997 0-2.529-1.146-4.16-1.114-2.133.033-4.1 1.254-5.198 3.168-2.228 3.859-.568 9.564 1.594 12.693 1.066 1.532 2.325 3.252 3.983 3.19 1.602-.065 2.207-1.031 4.144-1.031 1.938 0 2.494 1.031 4.183.997 1.727-.03 2.818-1.554 3.876-3.094 1.215-1.773 1.718-3.488 1.75-3.578-.036-.017-3.374-1.295-3.407-5.05z" fill="#fff"/><path d="M21.573 11.39c.874-1.073 1.464-2.562 1.303-4.047-1.26.053-2.786.847-3.689 1.897-.806.938-1.516 2.44-1.327 3.88 1.404.112 2.838-.722 3.713-1.73z" fill="#fff"/><text x="38" y="15" font-family="SF Pro Display,-apple-system,sans-serif" font-size="7" fill="#fff" opacity="0.8">Download on the</text><text x="38" y="27" font-family="SF Pro Display,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#fff">App Store</text></svg>
-          </a>
-          <a href="#" aria-label="Disponible sur Google Play">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40" width="180" height="60"><rect width="135" height="40" rx="6" fill="#000"/><path d="M10.438 7.2c-.4.425-.637 1.087-.637 1.95v22.7c0 .862.237 1.525.637 1.95l.1.1 12.712-12.712v-.3L10.538 7.1l-.1.1z" fill="url(#gp1a)"/><path d="M27.487 24.287l-4.237-4.25v-.3l4.25-4.25.1.062 5.025 2.862c1.437.812 1.437 2.15 0 2.974l-5.025 2.862-.113.04z" fill="url(#gp1b)"/><path d="M27.6 24.225L23.25 19.875 10.438 32.7c .475.5 1.25.562 2.137.062l15.025-8.537" fill="url(#gp1c)"/><path d="M27.6 15.525L12.575 6.988c-.887-.5-1.662-.438-2.137.062L23.25 19.875l4.35-4.35z" fill="url(#gp1d)"/><defs><linearGradient id="gp1a" x1="22.138" y1="8.312" x2="5.15" y2="25.3" gradientUnits="userSpaceOnUse"><stop stop-color="#00A0FF"/><stop offset="1" stop-color="#00A0FF" stop-opacity="0"/></linearGradient><linearGradient id="gp1b" x1="33.834" y1="19.875" x2="9.638" y2="19.875" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD900"/><stop offset="1" stop-color="#FF9100" stop-opacity="0"/></linearGradient><linearGradient id="gp1c" x1="25.8" y1="22.13" x2="3.7" y2="44.4" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A44"/><stop offset="1" stop-color="#C31162" stop-opacity="0"/></linearGradient><linearGradient id="gp1d" x1="7.3" y1="-0.18" x2="17.46" y2="10.05" gradientUnits="userSpaceOnUse"><stop stop-color="#32A071"/><stop offset="1" stop-color="#2DA771" stop-opacity="0"/></linearGradient></defs><text x="42" y="15" font-family="sans-serif" font-size="7" fill="#fff" opacity="0.8">GET IT ON</text><text x="42" y="27" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Google Play</text></svg>
-          </a>
-        </div>
-      </div><!-- /.hero-text -->
+<div class="hero-grid">
+<div style="display: flex; flex-direction: column; gap: 36px">
+<div class="eyebrow rise" style="color: #243f2f; --d: .1s">Plateforme B2B food &amp; drink</div>
+<h1 class="h1 rise" style="--d: .2s">Commandez<span class="light">vos produits</span><span class="light"><span class="mark">en 3 clics.</span></span></h1>
+<p class="lead rise" style="--d: .35s">Fruits, légumes, boissons, viandes, emballages. Tous vos fournisseurs réunis dans une seule application.</p>
+<div class="rise" style="display: flex; gap: 12px; flex-wrap: wrap; --d: .5s">
+<a href="/restaurateurs" class="btn-black">Je suis restaurateur</a>
+<a href="/fournisseurs" class="btn-line">Je suis fournisseur</a>
+</div></div>
 
-      <!-- ── Stats bar ── -->
-      <div class="stats-bar animate delay-4">
-        <div class="stat-item"><span class="stat-value">500+</span><span class="stat-label" data-i18n="stat.l1">Restaurateurs actifs</span></div>
-        <div class="stat-item"><span class="stat-value">200+</span><span class="stat-label" data-i18n="stat.l2">Fournisseurs partenaires</span></div>
-        <div class="stat-item"><span class="stat-value">98%</span><span class="stat-label" data-i18n="stat.l3">Satisfaction client</span></div>
-        <div class="stat-item"><span class="stat-value">3×</span><span class="stat-label" data-i18n="stat.l4">Plus rapide qu'un appel</span></div>
-      </div>
-
-      <!-- ── Mockup téléphone centré (self-contained) ── -->
-      <style>
-        #soom,#soom *{box-sizing:border-box;}
-        #soom{
-          position:relative;
-          width:272px;
-          flex-shrink:0;
-          margin-top:80px;
-          animation:soom_float 6s ease-in-out infinite;
-        }
-        @keyframes soom_float{
-          0%,100%{transform:translateY(0) rotate(-1.5deg);}
-          50%{transform:translateY(-14px) rotate(-1.5deg);}
-        }
-        #soom-glow{
-          position:absolute;inset:-50px;
-          background:radial-gradient(circle at 50% 48%,rgba(46,204,113,.15) 0%,transparent 62%);
-          pointer-events:none;z-index:0;
-        }
-        #soom-phone{
-          position:relative;z-index:1;
-          width:260px;margin:0 auto;
-          background:#0d1210;
-          border-radius:44px;
-          border:1.5px solid rgba(46,204,113,.22);
-          box-shadow:0 0 0 1px rgba(255,255,255,.04),0 48px 80px rgba(0,0,0,.7),0 0 55px rgba(46,204,113,.09),inset 0 1px 0 rgba(255,255,255,.06);
-          overflow:hidden;
-          font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
-        }
-        #soom-phone-wrap{position:relative;width:260px;margin:0 auto;}
-        #soom-phone-wrap::before{
-          content:'';position:absolute;left:-3px;top:96px;
-          width:3px;height:28px;background:rgba(46,204,113,.2);border-radius:2px 0 0 2px;
-          box-shadow:0 40px 0 rgba(46,204,113,.2);
-        }
-        #soom-phone-wrap::after{
-          content:'';position:absolute;right:-3px;top:115px;
-          width:3px;height:46px;background:rgba(46,204,113,.2);border-radius:0 2px 2px 0;
-        }
-        #soom-island{
-          width:86px;height:26px;background:#000;
-          border-radius:0 0 20px 20px;margin:0 auto;
-          position:relative;z-index:2;
-        }
-        #soom-screen{padding:10px 15px 18px;}
-        #soom-sb{
-          display:flex;justify-content:space-between;align-items:center;
-          margin-bottom:11px;
-        }
-        #soom-sb-time{font-size:11px;font-weight:700;color:#fff;line-height:1;}
-        #soom-sb-name{font-size:11px;font-weight:800;color:#2ecc71;letter-spacing:.8px;line-height:1;}
-        #soom-sb-right{display:flex;align-items:center;gap:4px;}
-        #soom-card{
-          background:#121f18;
-          border-radius:16px;
-          border:1px solid rgba(46,204,113,.13);
-          padding:13px;
-          margin-bottom:11px;
-        }
-        #soom-card-head{
-          display:flex;justify-content:space-between;align-items:flex-start;
-          margin-bottom:9px;gap:6px;
-        }
-        #soom-order-num{font-size:12px;font-weight:800;color:#fff;margin-bottom:3px;line-height:1.2;}
-        #soom-route{
-          font-size:9px;color:#5a8070;line-height:1.3;
-          display:flex;align-items:center;gap:3px;white-space:nowrap;
-          overflow:hidden;text-overflow:ellipsis;max-width:150px;
-        }
-        #soom-pill{
-          display:flex;align-items:center;gap:5px;flex-shrink:0;
-          background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.26);
-          border-radius:20px;padding:4px 9px;
-          font-size:9px;font-weight:600;color:#2ecc71;
-          line-height:1;
-        }
-        #soom-pill-dot{
-          width:6px;height:6px;background:#2ecc71;border-radius:50%;
-          animation:soom_dot 2s ease-in-out infinite;flex-shrink:0;
-        }
-        @keyframes soom_dot{0%,100%{opacity:1;}50%{opacity:.3;}}
-        #soom-divider{height:1px;background:rgba(46,204,113,.1);margin-bottom:9px;}
-        #soom-items{display:flex;flex-direction:column;gap:6px;margin-bottom:9px;}
-        .soom-item{
-          display:flex;justify-content:space-between;align-items:center;
-          padding:7px 9px;
-          background:rgba(46,204,113,.04);
-          border:1px solid rgba(46,204,113,.09);
-          border-radius:9px;
-          opacity:0;transform:translateX(-10px);
-          transition:opacity .38s ease,transform .38s ease;
-        }
-        .soom-item.soom-vis{opacity:1;transform:translateX(0);}
-        .soom-item-l{flex:1;min-width:0;}
-        .soom-item-name{font-size:10.5px;font-weight:600;color:#dde8e2;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-        .soom-item-qty{font-size:9px;color:#4a6b5a;margin-top:1px;line-height:1;}
-        .soom-item-price{font-size:10.5px;font-weight:700;color:#2ecc71;flex-shrink:0;margin-left:6px;line-height:1.2;}
-        #soom-total{
-          display:flex;justify-content:space-between;align-items:center;
-          padding-top:9px;border-top:1px solid rgba(46,204,113,.14);
-        }
-        #soom-total-lbl{font-size:10px;font-weight:600;color:#7a9a8a;}
-        #soom-total-val{font-size:13px;font-weight:800;color:#fff;}
-        #soom-cta{
-          width:100%;background:#2ecc71;color:#000;
-          border:none;border-radius:13px;padding:12px 14px;
-          font-size:12.5px;font-weight:700;cursor:default;
-          display:flex;align-items:center;justify-content:center;gap:6px;
-          font-family:'DM Sans',-apple-system,sans-serif;
-          outline:none;
-          animation:soom_cta_pulse 3s ease-in-out 3s infinite;
-        }
-        @keyframes soom_cta_pulse{
-          0%,100%{box-shadow:0 0 0 0 rgba(46,204,113,.45);}
-          50%{box-shadow:0 0 0 8px rgba(46,204,113,0);}
-        }
-        #soom-notif{
-          position:absolute;bottom:-14px;left:-38px;
-          background:#0b1f12;border:1px solid rgba(46,204,113,.28);
-          border-radius:13px;padding:8px 12px;
-          display:flex;align-items:center;gap:9px;
-          box-shadow:0 10px 30px rgba(0,0,0,.6);
-          white-space:nowrap;z-index:10;
-          opacity:0;
-          animation:soom_notif 7s ease-in-out 3.8s infinite;
-        }
-        @keyframes soom_notif{
-          0%{opacity:0;transform:translateY(10px);}
-          10%{opacity:1;transform:translateY(0);}
-          70%{opacity:1;transform:translateY(0);}
-          88%{opacity:0;transform:translateY(-6px);}
-          100%{opacity:0;transform:translateY(10px);}
-        }
-        #soom-notif-icon{
-          width:26px;height:26px;background:#2ecc71;border-radius:7px;
-          display:flex;align-items:center;justify-content:center;
-          color:#000;font-weight:800;font-size:13px;flex-shrink:0;
-          font-family:'DM Sans',sans-serif;
-        }
-        #soom-notif-title{font-size:10.5px;font-weight:700;color:#fff;line-height:1.3;}
-        #soom-notif-sub{font-size:9px;color:#4a6b5a;margin-top:2px;line-height:1;}
-        @media(max-width:768px){
-          #soom{width:240px;max-width:280px;margin:60px auto 0;}
-          #soom-notif{display:none;}
-        }
-      </style>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div id="soom">
-          <div id="soom-glow"></div>
-          <div id="soom-phone-wrap">
-            <div id="soom-phone">
-              <div id="soom-island"></div>
-              <div id="soom-screen">
-
-                <!-- Status bar -->
-                <div id="soom-sb">
-                  <span id="soom-sb-time">09:41</span>
-                  <span id="soom-sb-name">soorder</span>
-                  <div id="soom-sb-right">
-                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
-                      <rect x="0" y="5" width="2.5" height="5" rx=".5" fill="#fff" opacity=".35"/>
-                      <rect x="3.5" y="3" width="2.5" height="7" rx=".5" fill="#fff" opacity=".55"/>
-                      <rect x="7" y="1" width="2.5" height="9" rx=".5" fill="#fff" opacity=".75"/>
-                      <rect x="10.5" y="0" width="2.5" height="10" rx=".5" fill="#fff"/>
-                    </svg>
-                    <svg width="22" height="11" viewBox="0 0 22 11" fill="none" aria-hidden="true">
-                      <rect x=".5" y=".5" width="18" height="10" rx="2.5" stroke="#fff" stroke-opacity=".35"/>
-                      <rect x="2" y="2" width="13" height="7" rx="1.5" fill="#2ecc71"/>
-                      <path d="M20 3.5v4a1.5 1.5 0 000-4z" fill="#fff" opacity=".45"/>
-                    </svg>
-                  </div>
-                </div>
-
-                <!-- Order card -->
-                <div id="soom-card">
-                  <div id="soom-card-head">
-                    <div style="min-width:0;flex:1;">
-                      <div id="soom-order-num">Commande #1842</div>
-                      <div id="soom-route">Chic Chicken&nbsp;→&nbsp;Chic Distribution</div>
-                    </div>
-                    <div id="soom-pill">
-                      <span id="soom-pill-dot"></span>En cours
-                    </div>
-                  </div>
-
-                  <div id="soom-divider"></div>
-
-                  <div id="soom-items">
-                    <div class="soom-item">
-                      <div class="soom-item-l">
-                        <div class="soom-item-name">Filet de saumon</div>
-                        <div class="soom-item-qty">× 12 kg</div>
-                      </div>
-                      <div class="soom-item-price">72.00</div>
-                    </div>
-                    <div class="soom-item">
-                      <div class="soom-item-l">
-                        <div class="soom-item-name">Entrecôte 400g</div>
-                        <div class="soom-item-qty">× 6 pcs</div>
-                      </div>
-                      <div class="soom-item-price">84.00</div>
-                    </div>
-                    <div class="soom-item">
-                      <div class="soom-item-l">
-                        <div class="soom-item-name">Mozzarella bufala</div>
-                        <div class="soom-item-qty">× 4 kg</div>
-                      </div>
-                      <div class="soom-item-price">48.00</div>
-                    </div>
-                    <div class="soom-item">
-                      <div class="soom-item-l">
-                        <div class="soom-item-name">Vacherin Mont-d'Or</div>
-                        <div class="soom-item-qty">× 2 pcs</div>
-                      </div>
-                      <div class="soom-item-price">43.50</div>
-                    </div>
-                  </div>
-
-                  <div id="soom-total">
-                    <span id="soom-total-lbl">Total HT</span>
-                    <span id="soom-total-val">CHF 247.50</span>
-                  </div>
-                </div>
-
-                <!-- Commander button -->
-                <button id="soom-cta" tabindex="-1">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  Commander
-                </button>
-
-              </div><!-- #soom-screen -->
-            </div><!-- #soom-phone -->
-          </div><!-- #soom-phone-wrap -->
-
-          <!-- Floating notification chip -->
-          <div id="soom-notif">
-            <div id="soom-notif-icon">✓</div>
-            <div>
-              <div id="soom-notif-title">Commande envoyée</div>
-              <div id="soom-notif-sub">Chic Distribution · à l'instant</div>
-            </div>
-          </div>
-
-        </div><!-- #soom -->
-      </div><!-- .hero-visual -->
-
-      <script>
-      (function(){
-        var items = document.querySelectorAll('.soom-item');
-        items.forEach(function(el,i){
-          setTimeout(function(){ el.classList.add('soom-vis'); }, 350 + i * 480);
-        });
-      })();
-      </script>
-
-    </div><!-- /.hero-inner -->
-  </div><!-- /.container -->
+<div class="stage" data-on-mousemove="move" data-on-mouseleave="leave">
+<div class="hero-disc" aria-hidden="true"></div>
+<div class="drift d1" aria-hidden="true"><img src="/assets/citron.webp" alt=""></div>
+<div class="drift d2" aria-hidden="true"><img src="/assets/tomate.webp" alt=""></div>
+<div class="drift d3" aria-hidden="true"><img src="/assets/orange.webp" alt=""></div>
+<div class="tilt" data-s="transform:tilt">
+<div class="plate">
+<div class="orbit">
+<div class="orb" style="left: 50%; top: 8%; --d: 1s"><span><img src="/assets/tomate.webp" alt=""></span></div>
+<div class="orb" style="left: 86%; top: 29%; --d: 1.1s"><span><img src="/assets/citron.webp" alt=""></span></div>
+<div class="orb" style="left: 86%; top: 71%; --d: 1.2s"><span><img src="/assets/orange.webp" alt=""></span></div>
+<div class="orb" style="left: 50%; top: 92%; --d: 1.3s"><span><img src="/assets/courge.webp" alt=""></span></div>
+<div class="orb" style="left: 14%; top: 71%; --d: 1.4s"><span><img src="/assets/piments.webp" alt=""></span></div>
+<div class="orb" style="left: 14%; top: 29%; --d: 1.5s"><span><img src="/assets/ananas.webp" alt=""></span></div>
+</div>
+<div class="core"><img src="/assets/salade.webp" alt="Produits frais"></div>
+</div>
+</div>
+<div class="herb" aria-hidden="true"><img src="/assets/herbe.webp" alt=""></div>
+</div>
+</div>
+</div>
 </section>
 
-<div class="ticker-wrap" role="region" aria-labelledby="ticker-title">
-  <span id="ticker-title" class="sr-only" data-i18n="ticker.label">Secteurs partenaires</span>
-  <div class="ticker-track">
-    <span class="ticker-content">BOULANGERIE <span class="ticker-sep">*</span> POISSONNERIE <span class="ticker-sep">*</span> BOUCHERIE <span class="ticker-sep">*</span> EPICERIE <span class="ticker-sep">*</span> RESTAURATION <span class="ticker-sep">*</span> TRAITEUR <span class="ticker-sep">*</span> PATISSERIE <span class="ticker-sep">*</span> CAVE A VIN <span class="ticker-sep">*</span> FROMAGERIE <span class="ticker-sep">*</span> GROSSISTE <span class="ticker-sep">*</span> LIVRAISON <span class="ticker-sep">*</span> DISTRIBUTION <span class="ticker-sep">*</span>&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-content" aria-hidden="true">BOULANGERIE <span class="ticker-sep">*</span> POISSONNERIE <span class="ticker-sep">*</span> BOUCHERIE <span class="ticker-sep">*</span> EPICERIE <span class="ticker-sep">*</span> RESTAURATION <span class="ticker-sep">*</span> TRAITEUR <span class="ticker-sep">*</span> PATISSERIE <span class="ticker-sep">*</span> CAVE A VIN <span class="ticker-sep">*</span> FROMAGERIE <span class="ticker-sep">*</span> GROSSISTE <span class="ticker-sep">*</span> LIVRAISON <span class="ticker-sep">*</span> DISTRIBUTION <span class="ticker-sep">*</span>&nbsp;&nbsp;&nbsp;</span>
-  </div>
+<!-- TICKER -->
+<div class="ticker" aria-label="Catégories de produits">
+<div class="ticker-track">
+<span><b>Fruits</b><i></i>Légumes<i></i><b>Boissons</b><i></i>Viandes<i></i><b>Épices</b><i></i>Produits laitiers<i></i><b>Emballages</b><i></i>Boulangerie<i></i></span>
+<span aria-hidden="true"><b>Fruits</b><i></i>Légumes<i></i><b>Boissons</b><i></i>Viandes<i></i><b>Épices</b><i></i>Produits laitiers<i></i><b>Emballages</b><i></i>Boulangerie<i></i></span>
+<span aria-hidden="true"><b>Fruits</b><i></i>Légumes<i></i><b>Boissons</b><i></i>Viandes<i></i><b>Épices</b><i></i>Produits laitiers<i></i><b>Emballages</b><i></i>Boulangerie<i></i></span>
+<span aria-hidden="true"><b>Fruits</b><i></i>Légumes<i></i><b>Boissons</b><i></i>Viandes<i></i><b>Épices</b><i></i>Produits laitiers<i></i><b>Emballages</b><i></i>Boulangerie<i></i></span>
+</div>
 </div>
 
-<div class="divider"></div>
+<!-- STEPS -->
+<section class="section" style="padding-top: 80px; padding-bottom: 60px">
+<div class="wrap">
+<div class="section-head reveal" style="margin-bottom: 0">
+<h2 class="h2">Fini les appels.<br><span class="light">Fini les emails perdus.</span></h2>
+<p>Soorder remplace le téléphone, les messages et les bons de commande papier par une seule application, pensée pour aller vite même en plein service.</p>
+</div>
+</div>
+<div class="how-scroll" id="so-how">
+<div class="how-sticky">
+<div class="wrap" style="width: 100%">
+<div class="how">
+<div>
+<div class="how-list" role="tablist" aria-label="Comment ça marche">
 
-<section>
-  <div class="container">
-    <div class="section-header animate">
-      <span class="badge" data-i18n="feat.badge">❖ Pourquoi Soorder</span>
-      <h2 data-i18n="feat.title">Tout ce dont vous avez besoin,<br>en un seul endroit</h2>
-      <p data-i18n="feat.sub">Soorder centralise commandes, livraisons, factures et communication entre restaurateurs et fournisseurs.</p>
-    </div>
-    <div class="bento">
-      <div class="card animate" style="grid-column: span 5; grid-row: span 2; background: linear-gradient(145deg, #0d2018, #0a1510); min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end;">
-        <div class="feat-icon" style="margin-bottom: 1.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 15.75h3" /></svg></div>
-        <h3 style="font-size: 1.5rem; margin-bottom: 0.6rem;" data-i18n="feat.card1.title">Une seule app pour tout gérer</h3>
-        <p data-i18n="feat.card1.text">Commandes, livraisons, suivi et facturation — tout est centralisé dans une interface mobile intuitive.</p>
-        <div style="margin-top: 1.5rem;"><a href="restaurateur.html" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.6rem 1.2rem;" data-i18n="feat.card1.cta">Voir les fonctionnalités →</a></div>
-      </div>
-      <div class="card animate delay-1" style="grid-column: span 7;"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg></div><h3 data-i18n="feat.card2.title">Commandes en temps réel</h3><p data-i18n="feat.card2.text">Passez vos commandes en quelques secondes et suivez leur statut en temps réel directement depuis l'app.</p></div>
-      <div class="card animate delay-2" style="grid-column: span 3;"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg></div><h3 data-i18n="feat.card3.title">Messagerie intégrée</h3><p data-i18n="feat.card3.text">Communiquez directement avec vos fournisseurs sans quitter l'application.</p></div>
-      <div class="card animate delay-3" style="grid-column: span 4;"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg></div><h3 data-i18n="feat.card4.title">Tableau de bord ventes</h3><p data-i18n="feat.card4.text">Visualisez vos performances, ventes et statistiques en un coup d'œil.</p></div>
-      <div class="card animate delay-1" style="grid-column: span 4;"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg></div><h3 data-i18n="feat.card5.title">Contrôle des factures</h3><p data-i18n="feat.card5.text">Suivez, archivez et gérez toutes vos dépenses depuis un seul tableau de bord.</p></div>
-      <div class="card animate delay-2" style="grid-column: span 4;"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" /></svg></div><h3 data-i18n="feat.card6.title">Offres exclusives</h3><p data-i18n="feat.card6.text">Accédez aux meilleures offres et promotions de vos fournisseurs préférés.</p></div>
-      <div class="card animate delay-3" style="grid-column: span 4; background: linear-gradient(145deg, #0d2018, #0a1510);"><div class="feat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c-.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" /></svg></div><h3 data-i18n="feat.card7.title">Suivi des itinéraires</h3><p data-i18n="feat.card7.text">Tracez les livraisons en temps réel et optimisez les tournées de vos livreurs.</p></div>
-    </div>
-  </div>
+</div>
+<button type="button" class="how-play" data-on-click="toggle">
+<span data-if="paused" style="display:contents"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>Lecture</span>
+<span data-if="playing" style="display:contents"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>Pause</span>
+</button>
+</div>
+
+<div class="how-stage">
+<img class="deco k1" src="/assets/orange.webp" alt="" aria-hidden="true">
+<img class="deco k2" src="/assets/citron.webp" alt="" aria-hidden="true">
+<div class="phone" role="img" aria-label="Aperçu de l'application Soorder">
+<div class="screen">
+<div class="scr-head"><img src="/assets/logo-noir.svg" alt=""><span class="scr-avatar">MR</span></div>
+
+<span data-if="s1" style="display:contents">
+<div class="scr">
+<div class="scr-kicker">ÉTAPE 1 SUR 3</div>
+<div class="scr-title">Créez votre compte</div>
+<div class="welcome"><b>Bienvenue sur Soorder</b><span>Votre espace est prêt en quelques minutes</span><img src="/assets/salade.webp" alt=""></div>
+<div class="" data-c="f1"><small>Nom de l'établissement</small><span class="type">Mon restaurant</span></div>
+<div class="" data-c="f2"><span class="pill p-rest">Restaurant</span><span class="pill p-bar">Bar</span><span class="pill p-hot">Hôtel</span></div>
+<div class="" data-c="f3"><small>Adresse email</small><span class="type">contact@monresto.ch</span></div>
+<div class="" data-c="btn1"><span class="b-go">Créer mon compte</span><span class="b-done"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Compte créé</span></div>
+</div>
+<div class="tabbar"><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9H4z"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.5 11h10L20 7H6.5"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></span><span class="tb on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span></div>
+</span>
+
+<span data-if="s2" style="display:contents">
+<div class="scr">
+<div class="scr-kicker">ÉTAPE 2 SUR 3</div>
+<div class="scr-title">Vos fournisseurs</div>
+<div class="srch"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Rechercher un fournisseur</div>
+<div class="" data-c="chips"><span class="chip c-all">Tous</span><span class="chip c-veg">Légumes</span><span class="chip c-fru">Fruits</span><span class="chip c-bev">Boissons</span></div>
+<div class="" data-c="list2" style="display: flex; flex-direction: column; gap: 8px">
+<div class="dim" data-c="sup" data-cx="dim" style="--d: 0s"><span class="sup-img bg-g"><img src="/assets/salade.webp" alt=""></span><span><b>Primeur</b><span>Légumes frais</span></span><span class="sup-add">+</span></div>
+<div class="hl" data-c="sup" data-cx="hl" style="--d: .08s"><span class="sup-img bg-o"><img src="/assets/orange.webp" alt=""></span><span><b>Fruits &amp; agrumes</b><span>Fruits de saison</span></span><span class="sup-add go"><span class="plus">+</span><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></span></div>
+<div class="dim" data-c="sup" data-cx="dim" style="--d: .16s"><span class="sup-img bg-r"><img src="/assets/piments.webp" alt=""></span><span><b>Épicerie fine</b><span>Épices et condiments</span></span><span class="sup-add">+</span></div>
+<div class="dim" data-c="sup" data-cx="dim" style="--d: .24s"><span class="sup-img bg-y"><img src="/assets/ananas.webp" alt=""></span><span><b>Exotiques</b><span>Produits d'ailleurs</span></span><span class="sup-add">+</span></div>
+</div>
+<div class="" data-c="toast"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Fournisseur ajouté à votre liste</div>
+</div>
+<div class="tabbar"><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9H4z"/></svg></span><span class="tb on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.5 11h10L20 7H6.5"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span></div>
+</span>
+
+<span data-if="s3" style="display:contents">
+<div class="scr">
+<div class="scr-kicker">ÉTAPE 3 SUR 3</div>
+<div class="scr-title">Votre commande</div>
+<div>
+<div class="" data-c="line" style="--d: 0s"><span class="sup-img bg-r"><img src="/assets/tomate.webp" alt=""></span><b>Tomates</b><span class="q bg-r">5 kg</span></div>
+<div class="" data-c="line" style="--d: .08s"><span class="sup-img bg-y"><img src="/assets/citron.webp" alt=""></span><b>Citrons</b><span class="q bg-y">2 kg</span></div>
+<div class="" data-c="line" style="--d: .16s"><span class="sup-img bg-o"><img src="/assets/courge.webp" alt=""></span><b>Courges</b><span class="q bg-o">4 pièces</span></div>
+</div>
+<div class="" data-c="track">
+<div class="order-btn">Commander</div>
+<div class="status">
+<div class="" data-c="st1"><span class="st-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Commande envoyée</b><span>Le fournisseur est notifié</span></span></div>
+<div class="" data-c="st2"><span class="st-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Confirmée</b><span>Préparation en cours</span></span></div>
+<div class="" data-c="st3"><span class="st-dot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>En livraison</b><span>Suivi en temps réel</span></span></div>
+<div class="road"><span class="road-fill" data-s="width:roadW"></span><span class="truck" data-s="left:roadW"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span></div>
+</div>
+</div>
+</div>
+<div class="tabbar"><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9H4z"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><span class="tb on"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.5 11h10L20 7H6.5"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span></div>
+</span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<div class="divider"></div>
+<!-- AUDIENCES / TARIFS -->
+<section class="section dark" id="tarifs">
+<div class="wrap">
+<div class="pr-head reveal">
+<div class="eyebrow">Tarifs</div>
+<h2 class="h2">Un prix clair.<br><span class="light">Sans surprise.</span></h2>
+<p>Un abonnement mensuel simple, que vous soyez restaurateur ou fournisseur. Sans engagement : résiliez avant la fin du mois et vous ne payez pas le suivant.</p>
+</div>
 
-<section>
-  <div class="container">
-    <div class="section-header animate">
-      <span class="badge" data-i18n="testi.badge">❖ Témoignages</span>
-      <h2 data-i18n="testi.title">Ils font confiance à Soorder</h2>
-      <p data-i18n="testi.sub">Des restaurateurs et fournisseurs de Genève nous font confiance au quotidien.</p>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testi-card animate delay-1"><div class="testi-stars">★★★★★</div><p class=”testi-text” data-i18n=”testi.ns”>”Soorder a complètement transformé notre façon de commander. Plus de téléphones, plus de fax — tout se passe sur l’app. Un gain de temps incroyable au quotidien.”</p><div class="testi-author"><div class="testi-avatar">NS</div><div><div class="testi-name">N. Sulejmani</div><div class="testi-role">Chic Chicken, Genève</div></div></div></div>
-      <div class="testi-card animate delay-2"><div class="testi-stars">★★★★★</div><p class=”testi-text” data-i18n=”testi.mp”>”En tant que pâtissier, la précision des commandes est essentielle. Avec Soorder, zéro erreur, zéro oubli. L’interface est claire et nos fournisseurs adorent aussi.”</p><div class="testi-author"><div class="testi-avatar">MP</div><div><div class="testi-name">M. Palazzo</div><div class="testi-role">Pâtisserie AMO, Genève</div></div></div></div>
-      <div class="testi-card animate delay-3"><div class="testi-stars">★★★★★</div><p class=”testi-text” data-i18n=”testi.ds”>”Côté fournisseur, la visibilité que nous offre Soorder est exceptionnelle. Le tableau de bord nous permet de gérer facilement nos clients et de créer des promos ciblées.”</p><div class="testi-author"><div class="testi-avatar">DS</div><div><div class="testi-name">D. Sarfati</div><div class="testi-role">Chic Distribution</div></div></div></div>
-    </div>
-  </div>
+<div class="pr-grid reveal">
+<div class="pr-card pr-a" id="restaurateurs">
+<img class="pr-fruit" src="/assets/tomate.webp" alt="" aria-hidden="true">
+<span class="pr-tag">Restaurateurs</span>
+<h3>Commandez plus vite</h3>
+<div class="pr-price"><small>CHF</small><b>29</b><span>/ mois</span></div>
+<div class="pr-note">Sans engagement</div>
+<div class="pr-for"><span>Restaurants</span><span>Bars</span><span>Hôtels</span><span>Traiteurs</span></div>
+<a href="/restaurateurs" class="pr-cta">Créer mon compte restaurateur <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<div class="pr-inc">Inclus</div>
+<ul class="pr-list">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Tous vos fournisseurs dans une seule app</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Commande en 3 clics</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Suivi des livraisons en temps réel</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Historique complet de vos achats</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Application iOS et Android</span></li>
+</ul>
+</div>
+
+<div class="pr-card pr-b" id="fournisseurs">
+<img class="pr-fruit" src="/assets/ananas.webp" alt="" aria-hidden="true" style="width: 110px; height: 170px; right: 10px; top: -10px">
+<span class="pr-tag">Fournisseurs</span>
+<h3>Développez votre réseau</h3>
+<div class="pr-price"><small>CHF</small><b>59</b><span>/ mois</span></div>
+<div class="pr-note">Sans engagement</div>
+<div class="pr-for"><span>Grossistes</span><span>Primeurs</span><span>Boissons</span><span>Boucheries</span></div>
+<a href="/fournisseurs" class="pr-cta">Devenir fournisseur partenaire <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<div class="pr-inc">Inclus</div>
+<ul class="pr-list">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Commandes reçues en temps réel</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Catalogue produits en ligne</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Gestion des clients, livreurs et ventes</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Nouveaux clients restaurateurs</span></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00a866" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Visibilité boostée avec le Top Rank Soorder</span></li>
+</ul>
+</div>
+</div>
+
+<div class="pr-trust reveal">
+<div><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.3 8-8 9-4.7-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></i>Sans engagement</div>
+<div><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i>Inscription en quelques minutes</div>
+<div><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></i>Disponible sur iOS et Android</div>
+</div>
+
+</div>
 </section>
 
-<div class="divider"></div>
-
-<section>
-  <div class="container">
-    <div class="section-header animate">
-      <span class="badge" data-i18n="price.badge">❖ Tarifs transparents</span>
-      <h2 data-i18n="price.title">Simple. Sans surprise.</h2>
-      <p data-i18n="price.sub">Des abonnements adaptés à votre activité, sans engagement annuel obligatoire.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card animate delay-1">
-        <div class="pricing-plan" data-i18n="price.plan1">Restaurateur</div>
-        <div class="pricing-price"><span>CHF</span> 29 <span style="font-size: 1rem; font-weight: 400; opacity: 0.6;">HT</span></div>
-        <div class="pricing-period" data-i18n="price.period1">par mois, par établissement</div>
-        <p class="pricing-desc" data-i18n="price.desc1">Tout ce qu'il faut pour commander intelligemment auprès de vos fournisseurs.</p>
-        <ul class="pricing-features"><li data-i18n="pf.1.1">Commandes illimitées</li><li data-i18n="pf.1.2">Suivi des livraisons</li><li data-i18n="pf.1.3">Gestion des factures</li><li data-i18n="pf.1.4">Offres exclusives fournisseurs</li><li data-i18n="pf.1.5">Messagerie intégrée</li></ul>
-        <a href="contact.html" class="btn btn-outline" style="text-align:center; justify-content: center;" data-i18n="price.cta1">Commencer →</a>
-      </div>
-      <div class="pricing-card featured animate delay-2">
-        <div class="pricing-plan" data-i18n="price.plan2">Fournisseur</div>
-        <div class="pricing-price"><span>CHF</span> 59 <span style="font-size: 1rem; font-weight: 400; opacity: 0.6;">HT</span></div>
-        <div class="pricing-period" data-i18n="price.period2">par mois</div>
-        <p class="pricing-desc" data-i18n="price.desc2">La solution complète pour gérer vos clients restaurateurs et booster vos ventes.</p>
-        <ul class="pricing-features"><li data-i18n="pf.2.1">Gestion multi-clients</li><li data-i18n="pf.2.2">Création de promotions</li><li data-i18n="pf.2.3">Gestion des livreurs</li><li data-i18n="pf.2.4">Catalogue produit numérisé</li><li data-i18n="pf.2.5">Tableau de bord ventes</li><li data-i18n="pf.2.6">Suivi des itinéraires</li><li data-i18n="pf.2.7">Top rank — visibilité accrue</li></ul>
-        <a href="contact.html" class="btn btn-primary" style="text-align:center; justify-content: center;" data-i18n="price.cta2">Commencer →</a>
-      </div>
-      <div class="pricing-card animate delay-3">
-        <div class="pricing-plan" data-i18n="price.plan3">Franchise / Groupe</div>
-        <div class="pricing-price" style="font-size: 2rem;" data-i18n="price.plan3.price">Sur-mesure</div>
-        <div class="pricing-period" data-i18n="price.period3">tarif personnalisé</div>
-        <p class="pricing-desc" data-i18n="price.desc3">Vous gérez plusieurs établissements ? Nous avons une solution adaptée à votre structure.</p>
-        <ul class="pricing-features"><li data-i18n="pf.3.1">Gestion multi-sites</li><li data-i18n="pf.3.2">Tableau de bord centralisé</li><li data-i18n="pf.3.3">Facturation consolidée</li><li data-i18n="pf.3.4">Support dédié</li><li data-i18n="pf.3.5">Onboarding personnalisé</li></ul>
-        <a href="contact.html" class="btn btn-ghost" style="text-align:center; justify-content: center;" data-i18n="price.cta3">Nous contacter →</a>
-      </div>
-    </div>
-  </div>
+<!-- PRODUITS -->
+<section class="section">
+<div class="wrap">
+<div class="section-head reveal">
+<h2 class="h2">Tout ce que<br><span class="light">votre cuisine commande.</span></h2>
+<p>Du primeur au grossiste en boissons, chaque fournisseur publie son catalogue sur Soorder. Vous choisissez, il livre.</p>
+</div>
+<div class="tiles reveal">
+<div class="tile"><img src="/assets/salade.webp" alt=""><b>Légumes</b><span>Primeurs locaux</span></div>
+<div class="tile"><img src="/assets/orange.webp" alt=""><b>Fruits</b><span>De saison et agrumes</span></div>
+<div class="tile"><img src="/assets/piments.webp" alt=""><b>Épices</b><span>Herbes et condiments</span></div>
+<div class="tile"><img src="/assets/ananas.webp" alt=""><b>Exotiques</b><span>Produits d'ailleurs</span></div>
+</div>
+<p class="more">Et aussi : <b>boissons</b>, <b>viandes</b>, <b>produits laitiers</b>, <b>emballages</b>.</p>
+</div>
 </section>
 
-<div class="divider"></div>
+<!-- APP -->
+<div class="wrap">
+<div class="app reveal" id="app">
+<div>
+<div class="eyebrow" style="color: #00d782; margin-bottom: 20px">Disponible sur iOS et Android</div>
+<h2 class="h2">Commandez autrement.<br><span class="light">Enfin.</span></h2>
+<p>Téléchargez l'application Soorder et passez votre première commande aujourd'hui.</p>
+</div>
+<div class="app-float af1" aria-hidden="true"><img src="/assets/citron.webp" alt=""></div>
+<div class="app-float af2" aria-hidden="true"><img src="/assets/tomate.webp" alt=""></div>
+<div class="app-float af3" aria-hidden="true"><img src="/assets/piments.webp" alt=""></div>
+<div class="stores">
+<a href="#" class="store"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span><small>Télécharger dans</small><b>l'App Store</b></span></a>
+<a href="#" class="store"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5l13 8.5-13 8.5z"/></svg><span><small>Disponible sur</small><b>Google Play</b></span></a>
+</div>
+</div>
+</div>
 
-<section class="cta-section">
-  <div class="container">
-    <span class="badge" style="margin-bottom: 1.5rem; display: inline-flex;" data-i18n="cta.badge">❖ Prêt à démarrer ?</span>
-    <h2 data-i18n="cta.title">Rejoignez Soorder aujourd'hui</h2>
-    <p data-i18n="cta.sub">Des centaines de restaurateurs et fournisseurs genevois ont déjà adopté la plateforme. Pourquoi pas vous ?</p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn1">Démarrer maintenant</a>
-      <a href="prix.html" class="btn btn-outline" data-i18n="cta.btn2">Voir les tarifs</a>
-    </div>
-    <div class="store-btns" style="margin-top: 2rem;">
-      <a href="#" aria-label="Télécharger sur l'App Store">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="180" height="60"><rect width="120" height="40" rx="6" fill="#000"/><path d="M24.769 20.301c-.03-3.207 2.617-4.766 2.738-4.84-1.493-2.183-3.813-2.481-4.635-2.511-1.963-.2-3.84 1.17-4.833 1.17-.997 0-2.529-1.146-4.16-1.114-2.133.033-4.1 1.254-5.198 3.168-2.228 3.859-.568 9.564 1.594 12.693 1.066 1.532 2.325 3.252 3.983 3.19 1.602-.065 2.207-1.031 4.144-1.031 1.938 0 2.494 1.031 4.183.997 1.727-.03 2.818-1.554 3.876-3.094 1.215-1.773 1.718-3.488 1.75-3.578-.036-.017-3.374-1.295-3.407-5.05z" fill="#fff"/><path d="M21.573 11.39c.874-1.073 1.464-2.562 1.303-4.047-1.26.053-2.786.847-3.689 1.897-.806.938-1.516 2.44-1.327 3.88 1.404.112 2.838-.722 3.713-1.73z" fill="#fff"/><text x="38" y="15" font-family="SF Pro Display,-apple-system,sans-serif" font-size="7" fill="#fff" opacity="0.8">Download on the</text><text x="38" y="27" font-family="SF Pro Display,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#fff">App Store</text></svg>
-      </a>
-      <a href="#" aria-label="Disponible sur Google Play">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40" width="180" height="60"><rect width="135" height="40" rx="6" fill="#000"/><path d="M10.438 7.2c-.4.425-.637 1.087-.637 1.95v22.7c0 .862.237 1.525.637 1.95l.1.1 12.712-12.712v-.3L10.538 7.1l-.1.1z" fill="url(#gp2a)"/><path d="M27.487 24.287l-4.237-4.25v-.3l4.25-4.25.1.062 5.025 2.862c1.437.812 1.437 2.15 0 2.974l-5.025 2.862-.113.04z" fill="url(#gp2b)"/><path d="M27.6 24.225L23.25 19.875 10.438 32.7c .475.5 1.25.562 2.137.062l15.025-8.537" fill="url(#gp2c)"/><path d="M27.6 15.525L12.575 6.988c-.887-.5-1.662-.438-2.137.062L23.25 19.875l4.35-4.35z" fill="url(#gp2d)"/><defs><linearGradient id="gp2a" x1="22.138" y1="8.312" x2="5.15" y2="25.3" gradientUnits="userSpaceOnUse"><stop stop-color="#00A0FF"/><stop offset="1" stop-color="#00A0FF" stop-opacity="0"/></linearGradient><linearGradient id="gp2b" x1="33.834" y1="19.875" x2="9.638" y2="19.875" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD900"/><stop offset="1" stop-color="#FF9100" stop-opacity="0"/></linearGradient><linearGradient id="gp2c" x1="25.8" y1="22.13" x2="3.7" y2="44.4" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A44"/><stop offset="1" stop-color="#C31162" stop-opacity="0"/></linearGradient><linearGradient id="gp2d" x1="7.3" y1="-0.18" x2="17.46" y2="10.05" gradientUnits="userSpaceOnUse"><stop stop-color="#32A071"/><stop offset="1" stop-color="#2DA771" stop-opacity="0"/></linearGradient></defs><text x="42" y="15" font-family="sans-serif" font-size="7" fill="#fff" opacity="0.8">GET IT ON</text><text x="42" y="27" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Google Play</text></svg>
-      </a>
-    </div>
-  </div>
+<!-- FAQ -->
+<section class="section" style="padding-bottom: 60px">
+<div class="wrap">
+<div class="faq" id="faq">
+<div class="faq-side reveal"><div class="eyebrow" style="color: #243f2f">Questions fréquentes</div><h2 class="h2" style="margin-top: 20px">Vous avez des<br><span class="light">questions ?</span></h2><p>Les réponses aux questions qu’on nous pose le plus souvent. Vous ne trouvez pas la vôtre ? Écrivez-nous.</p></div>
+<div class="faq-list">
+<details class="faq-item"><summary>Qu'est-ce que Soorder ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Soorder est une application B2B qui permet aux restaurateurs de commander auprès de tous leurs fournisseurs depuis une seule plateforme, et aux fournisseurs de recevoir et gérer ces commandes en temps réel.</div></details>
+<details class="faq-item"><summary>Combien coûte Soorder ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">L'abonnement est de CHF 29 par mois pour les restaurateurs et de CHF 59 par mois pour les fournisseurs.</div></details>
+<details class="faq-item"><summary>Y a-t-il un engagement ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Non. L’abonnement est mensuel et sans engagement. Pour ne pas être facturé le mois suivant, il suffit de le résilier avant la fin du mois en cours.</div></details>
+<details class="faq-item"><summary>Qui livre les commandes ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Vos fournisseurs préparent et livrent les commandes, comme aujourd'hui. Soorder transmet la commande et vous permet d'en suivre l'avancement jusqu'à la livraison.</div></details>
+<details class="faq-item"><summary>Mes fournisseurs actuels peuvent-ils rejoindre Soorder ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Oui. Invitez-les à s'inscrire en tant que fournisseur.</div></details>
+<details class="faq-item"><summary>Sur quels appareils fonctionne l'application ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Soorder est disponible sur iPhone (App Store) et sur Android (Google Play).</div></details>
+<details class="faq-item"><summary>Où Soorder est-il disponible ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Soorder est disponible en Suisse.</div></details>
+<details class="faq-item"><summary>Comment mes données sont-elles protégées ?<span class="faq-i" aria-hidden="true"></span></summary><div class="faq-a">Vos données sont traitées conformément à la loi suisse sur la protection des données (nLPD). Tous les détails figurent dans notre <a href="/confidentialite">politique de confidentialité</a>.</div></details>
+</div>
+</div>
+</div>
 </section>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html"><img src="logo-transparent.png" height="120" style="width:auto;max-width:300px;object-fit:contain;filter:brightness(0) invert(1);" alt="Soorder"></a>
-        <p data-i18n="ft.tag">La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.</p>
-        <div class="footer-social">
-          <a href="#" class="social-btn" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-          <a href="#" class="social-btn" aria-label="X (Twitter)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-          <a href="https://www.instagram.com/soorder.ch" class="social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col"><h4 data-i18n="ft.col1">Produit</h4><ul><li><a href="restaurateur.html" data-i18n="nav.rest">Restaurateurs</a></li><li><a href="fournisseur.html" data-i18n="nav.four">Fournisseurs</a></li><li><a href="prix.html" data-i18n="nav.prix">Tarifs</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li></ul></div>
-      <div class="footer-col"><h4 data-i18n="ft.col2">Entreprise</h4><ul><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="apropos.html" data-i18n="ft.about">À propos</a></li><li><a href="carrieres.html" data-i18n="ft.jobs">Carrières</a></li><li><a href="blog.html">Blog</a></li></ul></div>
-      <div class="footer-col"><h4 data-i18n="nav.contact">Contact</h4><ul><li><a href="mailto:contact@soorder.ch">contact@soorder.ch</a></li><li><a href="#">Rue de la Navigation 1</a></li><li><a href="#">1201 Genève</a></li><li><a href="#">Suisse</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <p data-i18n="ft.copy">© 2026 Soorder. Tous droits réservés.</p>
-      <p><a href="confidentialite.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.privacy">Politique de confidentialité</a> · <a href="cgu.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.cgu">CGU</a> · <a href="mentions-legales.html" style="color:var(--text-s);text-decoration:none;" data-i18n="ft.legal">Mentions légales</a></p>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section class="section" id="contact" style="padding-top: 60px; padding-bottom: 0">
+<div class="wrap">
+<div class="contact">
+<div class="contact-side reveal">
+<div class="eyebrow" style="color: #243f2f">Contact</div>
+<h2 class="h2" style="margin-top: 20px">Parlons de votre<br><span class="light">établissement.</span></h2>
+<p>Laissez-nous vos coordonnées, notre équipe vous recontacte pour répondre à vos questions ou vous aider à démarrer.</p>
+<ul class="contact-points">
+<li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></i>Démonstration de l’application</li>
+<li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Aide à l’inscription</li>
+<li><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg></i>Questions sur les tarifs</li>
+</ul>
+</div>
+<form class="form reveal" action="https://formspree.io/f/mdavkvna" method="POST">
+<input type="hidden" name="_subject" value="Nouveau contact depuis soorder.ch">
+<div class="fl"><label for="c-name">Nom et prénom</label><input id="c-name" name="nom" type="text" autocomplete="name" placeholder="Jean Dupont" required></div>
+<div class="fl"><label for="c-biz">Établissement</label><input id="c-biz" name="etablissement" type="text" autocomplete="organization" placeholder="Nom de votre établissement" required></div>
+<div class="fl"><label for="c-mail">Email</label><input id="c-mail" name="email" type="email" autocomplete="email" placeholder="vous@exemple.ch" required></div>
+<div class="fl"><label for="c-tel">Téléphone</label><input id="c-tel" name="telephone" type="tel" autocomplete="tel" placeholder="+41 79 000 00 00"></div>
+<fieldset class="fl full"><legend>Vous êtes</legend><div class="seg"><label><input type="radio" name="profil" value="Restaurateur" checked>Restaurateur</label><label><input type="radio" name="profil" value="Fournisseur">Fournisseur</label><label><input type="radio" name="profil" value="Autre">Autre</label></div></fieldset>
+<div class="fl full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Dites-nous en quelques mots ce dont vous avez besoin"></textarea></div>
+<label class="consent full"><input type="checkbox" name="consentement" required><span>J’accepte que mes données soient utilisées pour être recontacté, conformément à la <a href="/confidentialite">politique de confidentialité</a>.</span></label>
+<button type="submit" class="form-submit full">Envoyer ma demande <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<img src="/assets/logo-blanc.svg" alt="Soorder">
+<p>La plateforme qui connecte les restaurateurs à leurs fournisseurs.</p>
+</div>
+<div><h4>PLATEFORME</h4><ul><li><a href="/restaurateurs">Restaurateurs</a></li><li><a href="/fournisseurs">Fournisseurs</a></li><li><a href="#tarifs">Tarifs</a></li></ul></div>
+<div><h4>AIDE</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="/parrainage">Parrainage</a></li></ul></div>
+<div><h4>LÉGAL</h4><ul><li><a href="/mentions-legales">Mentions légales</a></li><li><a href="/confidentialite">Politique de confidentialité</a></li></ul></div>
+</div>
+<div class="foot-legal"><span>© 2026 Soorder — Soclic Group Sàrl, Genève</span><span>soorder.ch</span></div>
+</div>
 </footer>
 
+</div>
+<script src="/assets/dc.js"></script>
 <script>
-const i18n = {
-  fr: {
-    'nav.home':'Accueil','nav.rest':'Restaurateurs','nav.four':'Fournisseurs','nav.prix':'Tarifs','nav.faq':'FAQ','nav.contact':'Contact','nav.cta':'Commencer','nav.cta.mob':'Commencer gratuitement',
-    'hero.title':'Commandez<br>autrement.<br><span class="accent">Enfin.</span>',
-    'hero.sub':'Une application mobile pour permettre aux restaurateurs de commander facilement auprès de leurs fournisseurs, depuis une seule plateforme centralisée.',
-    'hero.btn1':'Je suis restaurateur','hero.btn2':'Je suis fournisseur',
-    'stat.l1':'Restaurateurs actifs','stat.l2':'Fournisseurs partenaires','stat.l3':'Satisfaction client','stat.l4':'Plus rapide qu\'un appel',
-    'feat.badge':'❖ Pourquoi Soorder','feat.title':'Tout ce dont vous avez besoin,<br>en un seul endroit',
-    'feat.sub':'Soorder centralise commandes, livraisons, factures et communication entre restaurateurs et fournisseurs.',
-    'feat.card1.title':'Une seule app pour tout gérer','feat.card1.text':'Commandes, livraisons, suivi et facturation — tout est centralisé dans une interface mobile intuitive.','feat.card1.cta':'Voir les fonctionnalités →',
-    'feat.card2.title':'Commandes en temps réel','feat.card2.text':"Passez vos commandes en quelques secondes et suivez leur statut en temps réel directement depuis l'app.",
-    'feat.card3.title':'Messagerie intégrée','feat.card3.text':"Communiquez directement avec vos fournisseurs sans quitter l'application.",
-    'feat.card4.title':'Tableau de bord ventes','feat.card4.text':"Visualisez vos performances, ventes et statistiques en un coup d'œil.",
-    'feat.card5.title':'Contrôle des factures','feat.card5.text':'Suivez, archivez et gérez toutes vos dépenses depuis un seul tableau de bord.',
-    'feat.card6.title':'Offres exclusives','feat.card6.text':'Accédez aux meilleures offres et promotions de vos fournisseurs préférés.',
-    'feat.card7.title':'Suivi des itinéraires','feat.card7.text':'Tracez les livraisons en temps réel et optimisez les tournées de vos livreurs.',
-    'testi.badge':'❖ Témoignages','testi.title':'Ils font confiance à Soorder','testi.sub':'Des restaurateurs et fournisseurs de Genève nous font confiance au quotidien.','testi.ns':"\"Soorder a complètement transformé notre façon de commander. Plus de téléphones, plus de fax — tout se passe sur l'app. Un gain de temps incroyable au quotidien.",'testi.mp':"\"En tant que pâtissier, la précision des commandes est essentielle. Avec Soorder, zéro erreur, zéro oubli. L'interface est claire et nos fournisseurs adorent aussi.",'testi.ds':"\"Côté fournisseur, la visibilité que nous offre Soorder est exceptionnelle. Le tableau de bord nous permet de gérer facilement nos clients et de créer des promos ciblées.",
-    'price.badge':'❖ Tarifs transparents','price.title':'Simple. Sans surprise.','price.sub':'Des abonnements adaptés à votre activité, sans engagement annuel obligatoire.',
-    'price.plan1':'Restaurateur','price.period1':'par mois, par établissement','price.desc1':"Tout ce qu'il faut pour commander intelligemment auprès de vos fournisseurs.",
-    'pf.1.1':'Commandes illimitées','pf.1.2':'Suivi des livraisons','pf.1.3':'Gestion des factures','pf.1.4':'Offres exclusives fournisseurs','pf.1.5':'Messagerie intégrée','price.cta1':'Commencer →',
-    'price.plan2':'Fournisseur','price.period2':'par mois','price.desc2':'La solution complète pour gérer vos clients restaurateurs et booster vos ventes.',
-    'pf.2.1':'Gestion multi-clients','pf.2.2':'Création de promotions','pf.2.3':'Gestion des livreurs','pf.2.4':'Catalogue produit numérisé','pf.2.5':'Tableau de bord ventes','pf.2.6':'Suivi des itinéraires','pf.2.7':'Top rank — visibilité accrue','price.cta2':'Commencer →',
-    'price.plan3':'Franchise / Groupe','price.plan3.price':'Sur-mesure','price.period3':'tarif personnalisé','price.desc3':'Vous gérez plusieurs établissements ? Nous avons une solution adaptée à votre structure.',
-    'pf.3.1':'Gestion multi-sites','pf.3.2':'Tableau de bord centralisé','pf.3.3':'Facturation consolidée','pf.3.4':'Support dédié','pf.3.5':'Onboarding personnalisé','price.cta3':'Nous contacter →',
-    'cta.badge':'❖ Prêt à démarrer ?','cta.title':"Rejoignez Soorder aujourd'hui",'cta.sub':"Des centaines de restaurateurs et fournisseurs genevois ont déjà adopté la plateforme. Pourquoi pas vous ?",'cta.btn1':'Démarrer maintenant','cta.btn2':'Voir les tarifs',
-    'ft.tag':'La plateforme qui connecte restaurateurs et fournisseurs locaux en Suisse. Local. Digital. Collaboratif.','ft.copy':'© 2026 Soorder. Tous droits réservés.','ft.col1':'Produit','ft.col2':'Entreprise','ft.about':'À propos','ft.jobs':'Carrières','ft.privacy':'Politique de confidentialité','ft.cgu':'CGU','ft.legal':'Mentions légales',
-    'ticker.label':'Secteurs partenaires'
-  },
-  en: {
-    'nav.home':'Home','nav.rest':'Restaurants','nav.four':'Suppliers','nav.prix':'Pricing','nav.faq':'FAQ','nav.contact':'Contact','nav.cta':'Get started','nav.cta.mob':'Get started free',
-    'hero.title':'Order<br>differently.<br><span class="accent">Finally.</span>',
-    'hero.sub':'A mobile app allowing restaurateurs to easily order from their suppliers, all from a single centralized platform.',
-    'hero.btn1':'I am a restaurateur','hero.btn2':'I am a supplier',
-    'stat.l1':'Active restaurants','stat.l2':'Partner suppliers','stat.l3':'Customer satisfaction','stat.l4':'Faster than a phone call',
-    'feat.badge':'❖ Why Soorder','feat.title':'Everything you need,<br>in one place',
-    'feat.sub':'Soorder centralizes orders, deliveries, invoices and communication between restaurants and suppliers.',
-    'feat.card1.title':'One app to manage everything','feat.card1.text':'Orders, deliveries, tracking and invoicing — all centralized in an intuitive mobile interface.','feat.card1.cta':'View features →',
-    'feat.card2.title':'Real-time orders','feat.card2.text':'Place orders in seconds and track their status in real time directly from the app.',
-    'feat.card3.title':'Integrated messaging','feat.card3.text':'Communicate directly with your suppliers without leaving the app.',
-    'feat.card4.title':'Sales dashboard','feat.card4.text':'Visualize your performance, sales and statistics at a glance.',
-    'feat.card5.title':'Invoice control','feat.card5.text':'Track, archive and manage all your expenses from a single dashboard.',
-    'feat.card6.title':'Exclusive offers','feat.card6.text':'Access the best deals and promotions from your favourite suppliers.',
-    'feat.card7.title':'Route tracking','feat.card7.text':'Track deliveries in real time and optimize your delivery rounds.',
-    'testi.badge':'❖ Testimonials','testi.title':'They trust Soorder','testi.sub':'Restaurants and suppliers in Geneva trust us every day.','testi.ns':"\"Soorder has completely transformed the way we order. No more phone calls, no more faxes — everything happens in the app. An incredible time-saver every day.",'testi.mp':"\"As a pastry chef, order accuracy is essential. With Soorder, zero errors, zero forgotten items. The interface is clear and our suppliers love it too.",'testi.ds':"\"As a supplier, the visibility Soorder gives us is exceptional. The dashboard lets us easily manage our clients and create targeted promotions.",
-    'price.badge':'❖ Transparent pricing','price.title':'Simple. No surprises.','price.sub':'Subscriptions tailored to your activity, no annual commitment required.',
-    'price.plan1':'Restaurant','price.period1':'per month, per location','price.desc1':'Everything you need to order smartly from your suppliers.',
-    'pf.1.1':'Unlimited orders','pf.1.2':'Delivery tracking','pf.1.3':'Invoice management','pf.1.4':'Exclusive supplier offers','pf.1.5':'Integrated messaging','price.cta1':'Get started →',
-    'price.plan2':'Supplier','price.period2':'per month','price.desc2':'The complete solution to manage your restaurant clients and boost your sales.',
-    'pf.2.1':'Multi-client management','pf.2.2':'Create promotions','pf.2.3':'Delivery driver management','pf.2.4':'Digital product catalogue','pf.2.5':'Sales dashboard','pf.2.6':'Route tracking','pf.2.7':'Top rank — increased visibility','price.cta2':'Get started →',
-    'price.plan3':'Franchise / Group','price.plan3.price':'Custom','price.period3':'custom pricing','price.desc3':'Managing multiple locations? We have a solution tailored to your structure.',
-    'pf.3.1':'Multi-site management','pf.3.2':'Centralized dashboard','pf.3.3':'Consolidated billing','pf.3.4':'Dedicated support','pf.3.5':'Custom onboarding','price.cta3':'Contact us →',
-    'cta.badge':'❖ Ready to start?','cta.title':'Join Soorder today','cta.sub':'Hundreds of restaurants and suppliers in Geneva have already adopted the platform. Why not you?','cta.btn1':'Get started now','cta.btn2':'View pricing',
-    'ft.tag':'The platform connecting local restaurants and suppliers in Switzerland. Local. Digital. Collaborative.','ft.copy':'© 2026 Soorder. All rights reserved.','ft.col1':'Product','ft.col2':'Company','ft.about':'About','ft.jobs':'Careers','ft.privacy':'Privacy policy','ft.cgu':'Terms','ft.legal':'Legal notice',
-    'ticker.label':'Partner sectors'
-  },
-  de: {
-    'nav.home':'Startseite','nav.rest':'Restaurants','nav.four':'Lieferanten','nav.prix':'Preise','nav.faq':'FAQ','nav.contact':'Kontakt','nav.cta':'Loslegen','nav.cta.mob':'Kostenlos starten',
-    'hero.title':'Bestellen<br>Sie anders.<br><span class="accent">Endlich.</span>',
-    'hero.sub':'Eine mobile App, mit der Gastronomen ganz einfach bei ihren Lieferanten bestellen können – alles auf einer einzigen Plattform.',
-    'hero.btn1':'Ich bin Gastronom','hero.btn2':'Ich bin Lieferant',
-    'stat.l1':'Aktive Restaurants','stat.l2':'Partner-Lieferanten','stat.l3':'Kundenzufriedenheit','stat.l4':'Schneller als ein Anruf',
-    'feat.badge':'❖ Warum Soorder','feat.title':'Alles, was Sie brauchen,<br>an einem Ort',
-    'feat.sub':'Soorder zentralisiert Bestellungen, Lieferungen, Rechnungen und Kommunikation zwischen Restaurants und Lieferanten.',
-    'feat.card1.title':'Eine App für alles','feat.card1.text':'Bestellungen, Lieferungen, Tracking und Rechnungen – alles zentral in einer intuitiven mobilen Oberfläche.','feat.card1.cta':'Funktionen ansehen →',
-    'feat.card2.title':'Bestellungen in Echtzeit','feat.card2.text':'Geben Sie Bestellungen in Sekunden auf und verfolgen Sie deren Status in Echtzeit direkt in der App.',
-    'feat.card3.title':'Integriertes Messaging','feat.card3.text':'Kommunizieren Sie direkt mit Ihren Lieferanten, ohne die App zu verlassen.',
-    'feat.card4.title':'Verkaufs-Dashboard','feat.card4.text':'Visualisieren Sie Ihre Leistung, Umsätze und Statistiken auf einen Blick.',
-    'feat.card5.title':'Rechnungskontrolle','feat.card5.text':'Verfolgen, archivieren und verwalten Sie alle Ausgaben über ein einziges Dashboard.',
-    'feat.card6.title':'Exklusive Angebote','feat.card6.text':'Profitieren Sie von den besten Angeboten Ihrer Lieblingslieferanten.',
-    'feat.card7.title':'Routenverfolgung','feat.card7.text':'Verfolgen Sie Lieferungen in Echtzeit und optimieren Sie die Liefertouren.',
-    'testi.badge':'❖ Erfahrungsberichte','testi.title':'Sie vertrauen Soorder','testi.sub':'Restaurants und Lieferanten in Genf vertrauen uns täglich.','testi.ns':"\"Soorder hat unsere Bestellweise komplett verändert. Keine Telefonanrufe, kein Fax mehr — alles läuft über die App. Eine unglaubliche Zeitersparnis im Alltag.",'testi.mp':"\"Als Patissier ist die Genauigkeit der Bestellungen entscheidend. Mit Soorder: null Fehler, null Vergessen. Die Oberfläche ist klar und unsere Lieferanten lieben sie auch.",'testi.ds':"\"Als Lieferant ist die Sichtbarkeit, die uns Soorder bietet, außergewöhnlich. Das Dashboard ermöglicht uns, unsere Kunden einfach zu verwalten und gezielte Aktionen zu erstellen.",
-    'price.badge':'❖ Transparente Preise','price.title':'Einfach. Keine Überraschungen.','price.sub':'Abonnements, die auf Ihre Aktivität zugeschnitten sind, ohne Jahresverpflichtung.',
-    'price.plan1':'Restaurant','price.period1':'pro Monat, pro Standort','price.desc1':'Alles, was Sie brauchen, um intelligent bei Ihren Lieferanten zu bestellen.',
-    'pf.1.1':'Unbegrenzte Bestellungen','pf.1.2':'Lieferverfolgung','pf.1.3':'Rechnungsverwaltung','pf.1.4':'Exklusive Lieferantenangebote','pf.1.5':'Integriertes Messaging','price.cta1':'Loslegen →',
-    'price.plan2':'Lieferant','price.period2':'pro Monat','price.desc2':'Die vollständige Lösung zur Verwaltung Ihrer Restaurant-Kunden und zur Umsatzsteigerung.',
-    'pf.2.1':'Multi-Client-Verwaltung','pf.2.2':'Aktionen erstellen','pf.2.3':'Fahrerverwaltung','pf.2.4':'Digitaler Produktkatalog','pf.2.5':'Verkaufs-Dashboard','pf.2.6':'Routenverfolgung','pf.2.7':'Top Rank — erhöhte Sichtbarkeit','price.cta2':'Loslegen →',
-    'price.plan3':'Franchise / Gruppe','price.plan3.price':'Individuell','price.period3':'individueller Preis','price.desc3':'Mehrere Standorte? Wir haben eine auf Ihre Struktur zugeschnittene Lösung.',
-    'pf.3.1':'Multi-Standort-Verwaltung','pf.3.2':'Zentrales Dashboard','pf.3.3':'Konsolidierte Abrechnung','pf.3.4':'Dedizierter Support','pf.3.5':'Individuelles Onboarding','price.cta3':'Kontakt →',
-    'cta.badge':'❖ Bereit loszulegen?','cta.title':'Treten Sie Soorder noch heute bei','cta.sub':'Hunderte von Restaurants und Lieferanten in Genf haben die Plattform bereits übernommen. Warum nicht Sie?','cta.btn1':'Jetzt starten','cta.btn2':'Preise ansehen',
-    'ft.tag':'Die Plattform, die lokale Restaurants und Lieferanten in der Schweiz vernetzt. Lokal. Digital. Kollaborativ.','ft.copy':'© 2026 Soorder. Alle Rechte vorbehalten.','ft.col1':'Produkt','ft.col2':'Unternehmen','ft.about':'Über uns','ft.jobs':'Karriere','ft.privacy':'Datenschutzerklärung','ft.cgu':'AGB','ft.legal':'Impressum',
-    'ticker.label':'Partnerbranchen'
-  },
-  it: {
-    'nav.home':'Home','nav.rest':'Ristoratori','nav.four':'Fornitori','nav.prix':'Prezzi','nav.faq':'FAQ','nav.contact':'Contatto','nav.cta':'Inizia','nav.cta.mob':'Inizia gratis',
-    'hero.title':'Ordina<br>diversamente.<br><span class="accent">Finalmente.</span>',
-    'hero.sub':"Un'app mobile per permettere ai ristoratori di ordinare facilmente dai loro fornitori, da un'unica piattaforma centralizzata.",
-    'hero.btn1':'Sono un ristoratore','hero.btn2':'Sono un fornitore',
-    'stat.l1':'Ristoratori attivi','stat.l2':'Fornitori partner','stat.l3':'Soddisfazione clienti','stat.l4':'Più veloce di una telefonata',
-    'feat.badge':'❖ Perché Soorder','feat.title':'Tutto ciò di cui hai bisogno,<br>in un unico posto',
-    'feat.sub':'Soorder centralizza ordini, consegne, fatture e comunicazioni tra ristoratori e fornitori.',
-    'feat.card1.title':"Un'unica app per tutto",'feat.card1.text':"Ordini, consegne, tracciamento e fatturazione — tutto centralizzato in un'interfaccia mobile intuitiva.",'feat.card1.cta':'Vedi le funzionalità →',
-    'feat.card2.title':'Ordini in tempo reale','feat.card2.text':"Effettua ordini in pochi secondi e segui il loro stato in tempo reale direttamente dall'app.",
-    'feat.card3.title':'Messaggistica integrata','feat.card3.text':"Comunica direttamente con i tuoi fornitori senza uscire dall'app.",
-    'feat.card4.title':'Dashboard vendite','feat.card4.text':"Visualizza le tue performance, le vendite e le statistiche in un colpo d'occhio.",
-    'feat.card5.title':'Controllo fatture','feat.card5.text':'Monitora, archivia e gestisci tutte le spese da un unico dashboard.',
-    'feat.card6.title':'Offerte esclusive','feat.card6.text':'Accedi alle migliori offerte e promozioni dei tuoi fornitori preferiti.',
-    'feat.card7.title':'Tracciamento itinerari','feat.card7.text':'Traccia le consegne in tempo reale e ottimizza i giri dei tuoi corrieri.',
-    'testi.badge':'❖ Testimonianze','testi.title':'Si fidano di Soorder','testi.sub':'Ristoratori e fornitori di Ginevra si affidano a noi ogni giorno.','testi.ns':"\"Soorder ha completamente trasformato il nostro modo di ordinare. Niente più telefonate, niente più fax — tutto avviene nell'app. Un risparmio di tempo incredibile ogni giorno.",'testi.mp':"\"Come pasticcere, la precisione degli ordini è fondamentale. Con Soorder, zero errori, zero dimenticanze. L'interfaccia è chiara e anche i nostri fornitori la adorano.",'testi.ds':"\"Dal lato fornitore, la visibilità che ci offre Soorder è eccezionale. La dashboard ci permette di gestire facilmente i clienti e creare promozioni mirate.",
-    'price.badge':'❖ Prezzi trasparenti','price.title':'Semplice. Senza sorprese.','price.sub':'Abbonamenti adatti alla tua attività, senza impegno annuale obbligatorio.',
-    'price.plan1':'Ristoratore','price.period1':'al mese, per locale','price.desc1':'Tutto ciò che serve per ordinare in modo intelligente dai tuoi fornitori.',
-    'pf.1.1':'Ordini illimitati','pf.1.2':'Tracciamento consegne','pf.1.3':'Gestione fatture','pf.1.4':'Offerte esclusive fornitori','pf.1.5':'Messaggistica integrata','price.cta1':'Inizia →',
-    'price.plan2':'Fornitore','price.period2':'al mese','price.desc2':'La soluzione completa per gestire i tuoi clienti ristoratori e aumentare le vendite.',
-    'pf.2.1':'Gestione multi-cliente','pf.2.2':'Crea promozioni','pf.2.3':'Gestione corrieri','pf.2.4':'Catalogo prodotti digitale','pf.2.5':'Dashboard vendite','pf.2.6':'Tracciamento itinerari','pf.2.7':'Top rank — visibilità aumentata','price.cta2':'Inizia →',
-    'price.plan3':'Franchising / Gruppo','price.plan3.price':'Su misura','price.period3':'prezzo personalizzato','price.desc3':'Gestisci più sedi? Abbiamo una soluzione adatta alla tua struttura.',
-    'pf.3.1':'Gestione multi-sede','pf.3.2':'Dashboard centralizzata','pf.3.3':'Fatturazione consolidata','pf.3.4':'Supporto dedicato','pf.3.5':'Onboarding personalizzato','price.cta3':'Contattaci →',
-    'cta.badge':'❖ Pronto a iniziare?','cta.title':'Unisciti a Soorder oggi','cta.sub':'Centinaia di ristoratori e fornitori ginevrini hanno già adottato la piattaforma. E tu?','cta.btn1':'Inizia adesso','cta.btn2':'Vedi i prezzi',
-    'ft.tag':'La piattaforma che connette ristoratori e fornitori locali in Svizzera. Locale. Digitale. Collaborativo.','ft.copy':'© 2026 Soorder. Tutti i diritti riservati.','ft.col1':'Prodotto','ft.col2':'Azienda','ft.about':'Chi siamo','ft.jobs':'Carriere','ft.privacy':'Privacy','ft.cgu':'Termini','ft.legal':'Note legali',
-    'ticker.label':'Settori partner'
-  },
-  es: {
-    'nav.home':'Inicio','nav.rest':'Restauradores','nav.four':'Proveedores','nav.prix':'Precios','nav.faq':'FAQ','nav.contact':'Contacto','nav.cta':'Empezar','nav.cta.mob':'Empezar gratis',
-    'hero.title':'Pide<br>de otra manera.<br><span class="accent">Por fin.</span>',
-    'hero.sub':'Una app móvil que permite a los restauradores pedir fácilmente a sus proveedores, desde una única plataforma centralizada.',
-    'hero.btn1':'Soy restaurador','hero.btn2':'Soy proveedor',
-    'stat.l1':'Restauradores activos','stat.l2':'Proveedores asociados','stat.l3':'Satisfacción del cliente','stat.l4':'Más rápido que una llamada',
-    'feat.badge':'❖ Por qué Soorder','feat.title':'Todo lo que necesitas,<br>en un solo lugar',
-    'feat.sub':'Soorder centraliza pedidos, entregas, facturas y comunicación entre restauradores y proveedores.',
-    'feat.card1.title':'Una sola app para todo','feat.card1.text':'Pedidos, entregas, seguimiento y facturación — todo centralizado en una interfaz móvil intuitiva.','feat.card1.cta':'Ver funcionalidades →',
-    'feat.card2.title':'Pedidos en tiempo real','feat.card2.text':'Haz tus pedidos en segundos y sigue su estado en tiempo real directamente desde la app.',
-    'feat.card3.title':'Mensajería integrada','feat.card3.text':'Comunícate directamente con tus proveedores sin salir de la app.',
-    'feat.card4.title':'Panel de ventas','feat.card4.text':'Visualiza tu rendimiento, ventas y estadísticas de un vistazo.',
-    'feat.card5.title':'Control de facturas','feat.card5.text':'Sigue, archiva y gestiona todos tus gastos desde un solo panel.',
-    'feat.card6.title':'Ofertas exclusivas','feat.card6.text':'Accede a las mejores ofertas y promociones de tus proveedores favoritos.',
-    'feat.card7.title':'Seguimiento de rutas','feat.card7.text':'Sigue las entregas en tiempo real y optimiza las rutas de tus repartidores.',
-    'testi.badge':'❖ Testimonios','testi.title':'Ellos confían en Soorder','testi.sub':'Restauradores y proveedores de Ginebra confían en nosotros cada día.','testi.ns':"\"Soorder ha transformado completamente nuestra forma de pedir. Nada de llamadas, nada de fax — todo ocurre en la app. Un ahorro de tiempo increíble cada día.",'testi.mp':"\"Como pastelero, la precisión de los pedidos es esencial. Con Soorder, cero errores, cero olvidos. La interfaz es clara y nuestros proveedores también la adoran.",'testi.ds':"\"Como proveedor, la visibilidad que nos ofrece Soorder es excepcional. El panel nos permite gestionar fácilmente a nuestros clientes y crear promociones específicas.",
-    'price.badge':'❖ Precios transparentes','price.title':'Simple. Sin sorpresas.','price.sub':'Suscripciones adaptadas a tu actividad, sin compromiso anual obligatorio.',
-    'price.plan1':'Restaurador','price.period1':'al mes, por local','price.desc1':'Todo lo necesario para pedir de forma inteligente a tus proveedores.',
-    'pf.1.1':'Pedidos ilimitados','pf.1.2':'Seguimiento de entregas','pf.1.3':'Gestión de facturas','pf.1.4':'Ofertas exclusivas de proveedores','pf.1.5':'Mensajería integrada','price.cta1':'Empezar →',
-    'price.plan2':'Proveedor','price.period2':'al mes','price.desc2':'La solución completa para gestionar tus clientes restauradores y potenciar tus ventas.',
-    'pf.2.1':'Gestión multi-cliente','pf.2.2':'Crear promociones','pf.2.3':'Gestión de repartidores','pf.2.4':'Catálogo de productos digital','pf.2.5':'Panel de ventas','pf.2.6':'Seguimiento de rutas','pf.2.7':'Top rank — mayor visibilidad','price.cta2':'Empezar →',
-    'price.plan3':'Franquicia / Grupo','price.plan3.price':'A medida','price.period3':'precio personalizado','price.desc3':'¿Gestionas varios locales? Tenemos una solución adaptada a tu estructura.',
-    'pf.3.1':'Gestión multi-sede','pf.3.2':'Panel centralizado','pf.3.3':'Facturación consolidada','pf.3.4':'Soporte dedicado','pf.3.5':'Onboarding personalizado','price.cta3':'Contáctanos →',
-    'cta.badge':'❖ ¿Listo para empezar?','cta.title':'Únete a Soorder hoy','cta.sub':'Cientos de restauradores y proveedores ginebrinos ya han adoptado la plataforma. ¿Por qué no tú?','cta.btn1':'Empezar ahora','cta.btn2':'Ver precios',
-    'ft.tag':'La plataforma que conecta restauradores y proveedores locales en Suiza. Local. Digital. Colaborativo.','ft.copy':'© 2026 Soorder. Todos los derechos reservados.','ft.col1':'Producto','ft.col2':'Empresa','ft.about':'Acerca de','ft.jobs':'Empleo','ft.privacy':'Privacidad','ft.cgu':'Términos','ft.legal':'Aviso legal',
-    'ticker.label':'Sectores asociados'
-  },
-  pt: {
-    'nav.home':'Início','nav.rest':'Restauradores','nav.four':'Fornecedores','nav.prix':'Preços','nav.faq':'FAQ','nav.contact':'Contacto','nav.cta':'Começar','nav.cta.mob':'Começar grátis',
-    'hero.title':'Encomende<br>de outra forma.<br><span class="accent">Finalmente.</span>',
-    'hero.sub':'Uma aplicação móvel que permite aos restauradores encomendar facilmente aos seus fornecedores, a partir de uma única plataforma centralizada.',
-    'hero.btn1':'Sou restaurador','hero.btn2':'Sou fornecedor',
-    'stat.l1':'Restauradores ativos','stat.l2':'Fornecedores parceiros','stat.l3':'Satisfação do cliente','stat.l4':'Mais rápido do que uma chamada',
-    'feat.badge':'❖ Porquê Soorder','feat.title':'Tudo o que precisa,<br>num só lugar',
-    'feat.sub':'O Soorder centraliza encomendas, entregas, faturas e comunicação entre restauradores e fornecedores.',
-    'feat.card1.title':'Uma app para tudo','feat.card1.text':'Encomendas, entregas, rastreamento e faturação — tudo centralizado numa interface móvel intuitiva.','feat.card1.cta':'Ver funcionalidades →',
-    'feat.card2.title':'Encomendas em tempo real','feat.card2.text':'Faça encomendas em segundos e siga o seu estado em tempo real diretamente na app.',
-    'feat.card3.title':'Mensagens integradas','feat.card3.text':'Comunique diretamente com os seus fornecedores sem sair da app.',
-    'feat.card4.title':'Painel de vendas','feat.card4.text':'Visualize o seu desempenho, vendas e estatísticas de relance.',
-    'feat.card5.title':'Controlo de faturas','feat.card5.text':'Acompanhe, arquive e gira todas as despesas a partir de um único painel.',
-    'feat.card6.title':'Ofertas exclusivas','feat.card6.text':'Aceda às melhores ofertas e promoções dos seus fornecedores favoritos.',
-    'feat.card7.title':'Rastreamento de rotas','feat.card7.text':'Rastreie entregas em tempo real e otimize as rotas dos seus estafetas.',
-    'testi.badge':'❖ Testemunhos','testi.title':'Eles confiam no Soorder','testi.sub':'Restauradores e fornecedores de Genebra confiam em nós todos os dias.','testi.ns':"\"O Soorder transformou completamente a nossa forma de encomendar. Chega de telefonemas, chega de faxes — tudo acontece na app. Uma poupança de tempo incrível todos os dias.",'testi.mp':"\"Como pasteleiro, a precisão das encomendas é essencial. Com o Soorder, zero erros, zero esquecimentos. A interface é clara e os nossos fornecedores também adoram.",'testi.ds':"\"Do lado do fornecedor, a visibilidade que o Soorder nos oferece é excecional. O painel permite-nos gerir facilmente os nossos clientes e criar promoções direcionadas.",
-    'price.badge':'❖ Preços transparentes','price.title':'Simples. Sem surpresas.','price.sub':'Subscrições adaptadas à sua atividade, sem compromisso anual obrigatório.',
-    'price.plan1':'Restaurador','price.period1':'por mês, por estabelecimento','price.desc1':'Tudo o que precisa para encomendar de forma inteligente aos seus fornecedores.',
-    'pf.1.1':'Encomendas ilimitadas','pf.1.2':'Rastreamento de entregas','pf.1.3':'Gestão de faturas','pf.1.4':'Ofertas exclusivas de fornecedores','pf.1.5':'Mensagens integradas','price.cta1':'Começar →',
-    'price.plan2':'Fornecedor','price.period2':'por mês','price.desc2':'A solução completa para gerir os seus clientes restauradores e aumentar as vendas.',
-    'pf.2.1':'Gestão multi-cliente','pf.2.2':'Criar promoções','pf.2.3':'Gestão de estafetas','pf.2.4':'Catálogo de produtos digital','pf.2.5':'Painel de vendas','pf.2.6':'Rastreamento de rotas','pf.2.7':'Top rank — visibilidade aumentada','price.cta2':'Começar →',
-    'price.plan3':'Franquia / Grupo','price.plan3.price':'Personalizado','price.period3':'preço personalizado','price.desc3':'Gere vários estabelecimentos? Temos uma solução adaptada à sua estrutura.',
-    'pf.3.1':'Gestão multi-local','pf.3.2':'Painel centralizado','pf.3.3':'Faturação consolidada','pf.3.4':'Suporte dedicado','pf.3.5':'Onboarding personalizado','price.cta3':'Contactar →',
-    'cta.badge':'❖ Pronto para começar?','cta.title':'Junte-se ao Soorder hoje','cta.sub':'Centenas de restauradores e fornecedores genebrinos já adotaram a plataforma. E você?','cta.btn1':'Começar agora','cta.btn2':'Ver preços',
-    'ft.tag':'A plataforma que liga restauradores e fornecedores locais na Suíça. Local. Digital. Colaborativo.','ft.copy':'© 2026 Soorder. Todos os direitos reservados.','ft.col1':'Produto','ft.col2':'Empresa','ft.about':'Sobre nós','ft.jobs':'Carreiras','ft.privacy':'Privacidade','ft.cgu':'Termos','ft.legal':'Aviso legal',
-    'ticker.label':'Setores parceiros'
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { rx: 0, ry: 0, active: 0, p: 0, paused: false };
+    this.visible = false;
   }
-};
-
-function switchLang(lang) {
-  if (!i18n[lang]) return;
-  var t = i18n[lang];
-  document.querySelectorAll('[data-i18n]').forEach(function(el) {
-    var key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.innerHTML = t[key];
-  });
-  var sel = document.getElementById('lang-switcher');
-  if (sel) sel.value = lang;
-  document.documentElement.lang = lang;
-  localStorage.setItem('so-lang', lang);
-}
-
-(function() {
-  var lang = localStorage.getItem('so-lang') || 'fr';
-  if (lang !== 'fr') {
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() { switchLang(lang); });
-    } else {
-      switchLang(lang);
-    }
-  } else {
-    var sel = document.getElementById('lang-switcher');
-    if (sel) sel.value = 'fr';
+  componentDidMount() {
+    if (typeof window === 'undefined') return;
+    this.still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const el = document.getElementById('so-how');
+    if (el && 'IntersectionObserver' in window) {
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          const was = this.visible;
+          this.visible = en.isIntersecting;
+          if (this.visible && !was && !this.started) { this.started = true; this.setState({ active: 0, p: 0 }); }
+        });
+      }, { threshold: 0.35 });
+      this.io.observe(el);
+    } else { this.visible = true; }
+    this.last = Date.now();
+    this.timer = setInterval(() => this.tick(), 50);
   }
-})();
-
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
+  componentWillUnmount() {
+    if (this.timer) clearInterval(this.timer);
+    if (this.io) this.io.disconnect();
+  }
+  tick() {
+    const now = Date.now(); const dt = now - this.last; this.last = now;
+    if (!this.visible || this.state.paused) return;
+    let p = this.state.p + (this.still ? 1 : dt / 6000);
+    let active = this.state.active;
+    if (p >= 1.2) { active = (active + 1) % 3; p = 0; }
+    p = Math.round(p * 100) / 100;
+    if (p !== this.state.p || active !== this.state.active) this.setState({ active: active, p: p });
+  }
+  renderVals() {
+    const self = this;
+    const still = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const act = this.state.active;
+    const p = Math.min(1, this.state.p);
+    const on = function (th) { return p >= th; };
+    const fld = function (th) { return on(th) ? 'fld done' : (p >= th - 0.1 ? 'fld focus' : 'fld'); };
+    const info = [
+      ['01', 'Créez votre compte', [['Nom de l’établissement', 0.15], ['Type d’activité', 0.32], ['Adresse email', 0.5], ['Compte créé', 0.7]]],
+      ['02', 'Retrouvez vos fournisseurs', [['Parcourez les catalogues', 0.12], ['Filtrez par catégorie', 0.35], ['Ajoutez un fournisseur', 0.6]]],
+      ['03', 'Commandez et suivez', [['Préparez votre panier', 0.12], ['Commande envoyée', 0.35], ['Confirmée par le fournisseur', 0.52], ['En livraison', 0.7]]]
+    ];
+    const steps = info.map(function (s, i) {
+      return {
+        n: s[0], title: s[1], active: i === act, sel: i === act ? 'true' : 'false',
+        subs: s[2].map(function (x) { return { label: x[0], cls: on(x[1]) ? 'how-sub ok' : 'how-sub' }; }),
+        cls: 'how-item' + (i === act ? ' on' : '') + (i < act ? ' past' : ''),
+        pick: function () { self.setState({ active: i, p: 0, paused: false }); }
+      };
+    });
+    const road = Math.max(0, Math.min(1, (p - 0.7) / 0.25)) * 100;
+    return {
+      paused: this.state.paused, playing: !this.state.paused,
+      toggle: function () { self.setState({ paused: !self.state.paused }); },
+      steps: steps, barW: Math.round(p * 100) + '%',
+      s1: act === 0, s2: act === 1, s3: act === 2,
+      f1: fld(0.15), f2: on(0.32) ? 'pills done' : 'pills', f3: fld(0.5), btn1: on(0.7) ? 'scr-btn done' : 'scr-btn',
+      chips: on(0.35) ? 'chips filtered' : 'chips',
+      list2: (on(0.35) ? 'filtered-list' : '') + (on(0.6) ? ' added' : ''),
+      sup: on(0.04) ? 'sup in' : 'sup', toast: on(0.66) ? 'toast in' : 'toast',
+      line: on(0.04) ? 'line in' : 'line', track: on(0.3) ? 'track sent' : 'track',
+      st1: on(0.35) ? 'st ok' : 'st', st2: on(0.52) ? 'st ok' : 'st', st3: on(0.7) ? 'st ok' : 'st',
+      roadW: road + '%',
+      tilt: 'perspective(1100px) rotateX(' + this.state.rx + 'deg) rotateY(' + this.state.ry + 'deg)',
+      move: function (e) {
+        if (still || !e.currentTarget) return;
+        const r = e.currentTarget.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        self.setState({ rx: Math.round(-y * 14 * 10) / 10, ry: Math.round(x * 16 * 10) / 10 });
+      },
+      leave: function () { self.setState({ rx: 0, ry: 0 }); }
+    };
+  }
 }
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+DC.mount(Component);
 </script>
-<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0f1510;border-top:1px solid #1e2e24;padding:1rem 1.5rem;"><div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;"><p style="margin:0;font-size:0.85rem;color:#a0b0a8;flex:1;min-width:200px;">Nous utilisons des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="confidentialite.html" style="color:#2ecc71;text-decoration:none;">politique de confidentialité</a>.</p><div style="display:flex;gap:0.6rem;flex-shrink:0;flex-wrap:wrap;"><button onclick="cookieChoice('accept')" style="background:#2ecc71;color:#000;border:none;border-radius:100px;padding:0.5rem 1.2rem;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;cursor:pointer;white-space:nowrap;">Accepter</button><button onclick="cookieChoice('refuse')" style="background:transparent;color:#2ecc71;border:1px solid rgba(46,204,113,0.5);border-radius:100px;padding:0.5rem 1.2rem;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;cursor:pointer;white-space:nowrap;">Refuser</button></div></div></div>
-<script>(function(){if(!localStorage.getItem('so-cookie')){document.getElementById('cookie-banner').style.display='block';}})();function cookieChoice(c){localStorage.setItem('so-cookie',c);document.getElementById('cookie-banner').style.display='none';}</script>
+<script>window.SO_FORM={"ok": "Merci ! Votre message a bien été envoyé. Nous vous répondons rapidement.", "err": "L'envoi a échoué. Réessayez ou écrivez-nous à contact@soorder.ch.", "sending": "Envoi…"}</script>
+<script src="/assets/form.js"></script>
 </body>
 </html>
