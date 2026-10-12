@@ -2,6 +2,8 @@
 <html lang="it-CH">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-UtsSKuNyAHlbpaQxdHBriMcmrO475y/8Wa1bIkxg7qc=' 'sha256-fgxC8KP/EcvjfBabRAOqDSmyM/BAouYyM1bPMAOFuCI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Programma di referral Soorder — Fino a CHF 100 per segnalazione</title>
 <meta name="description" content="Consigliate Soorder a un ristoratore (CHF 50) o a un fornitore (CHF 100) e ricevete una commissione per ogni iscrizione.">
@@ -654,6 +656,7 @@ fieldset.fl{border:0;margin:0;padding:0;min-width:0}
 <div class="contact">
 <div class="contact-side reveal"><div class="eyebrow" style="color: #243f2f">Diventa referente</div><h2 class="h2" style="margin-top: 20px">Unitevi<br><span class="light">al programma.</span></h2><p>Lasciateci i vostri recapiti: vi inviamo il contratto e tutto il necessario per iniziare a raccomandare Soorder.</p></div>
 <form class="form reveal" action="https://formspree.io/f/mdavkvna" method="POST">
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <input type="hidden" name="_subject" value="Nuova richiesta di referral soorder.ch">
 <input type="hidden" name="type" value="Programma di referral">
 <div class="fl"><label for="p-name">Nome e cognome</label><input id="p-name" name="nom" type="text" autocomplete="name" placeholder="Mario Rossi" required></div>
