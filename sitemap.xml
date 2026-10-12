@@ -169,5 +169,31 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/confidentialite"/>
   </url>
   <url><loc>https://soorder.ch/cgu</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/cgu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/cgu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/cgu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/cgu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/cgu"/>
+  </url>
+  <url><loc>https://soorder.ch/de/cgu</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/cgu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/cgu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/cgu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/cgu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/cgu"/>
+  </url>
+  <url><loc>https://soorder.ch/it/cgu</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/cgu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/cgu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/cgu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/cgu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/cgu"/>
+  </url>
+  <url><loc>https://soorder.ch/en/cgu</loc><lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://soorder.ch/cgu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://soorder.ch/de/cgu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://soorder.ch/it/cgu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://soorder.ch/en/cgu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://soorder.ch/cgu"/>
   </url>
 </urlset>

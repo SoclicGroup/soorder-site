@@ -34,6 +34,7 @@ Soorder est exploité par Soclic Group Sàrl, Rue de la Navigation 1, 1201 Genè
 - [Parrainage](https://soorder.ch/parrainage): commissions et inscription au programme
 - [Mentions légales](https://soorder.ch/mentions-legales)
 - [Politique de confidentialité](https://soorder.ch/confidentialite)
+- [Conditions générales d'utilisation](https://soorder.ch/cgu): abonnement mensuel sans engagement, paiement, résiliation, responsabilités
 
 ## Langues
 
